@@ -17,6 +17,22 @@ public class PlayerMovement : MonoBehaviour
     public float groundDIstance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
+
+    public LayerMask InteractibleMask;
+    public LayerMask ItemMask;
+
+    public GameObject icamera;
+    public float rangePickUp;
+
+    public GameObject Shop;
+    public GameObject cameraUI;
+
+    public bool itempickup = false;
+
+    public float pushPower = 2.0F;
+
+    [SerializeField]
+    private float forceMagnitude;
     
     
 
@@ -49,5 +65,72 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
 
+        RaycastHit hit;
+
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, InteractibleMask))
+        {
+            if(Input.GetMouseButtonDown(0))
+            {
+                Cursor.lockState = CursorLockMode.None;
+                cameraUI.SetActive(true);
+                Shop.SetActive(true);
+            }
+        }
+        
+         if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("EChappe UI");
+            Shop.SetActive(false);
+            cameraUI.SetActive(false);
+
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) && Input.GetMouseButtonDown(0) && itempickup == true)
+        {
+            hit.transform.GetComponent<ItemPickup>().Drop();
+            itempickup = false; 
+            
+        }
+        
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) && itempickup == false)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                hit.transform.GetComponent<ItemPickup>().PickUp();
+                itempickup = true;
+                
+            }
+
+           
+        }
+
+        
+
+       
+
+        
+        
+
+
     }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody body = hit.collider.attachedRigidbody;
+
+        
+        if (body == null || body.isKinematic)
+            return;
+
+        if (hit.moveDirection.y < -0.3f)
+            return;
+
+        
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+
+        body.velocity = pushDir * pushPower;
+    }
+    
 }
