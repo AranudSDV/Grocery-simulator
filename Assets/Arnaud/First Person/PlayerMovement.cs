@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject Shop;
     public GameObject cameraUI;
+    public GameObject Pc;
+
 
     public bool itempickup = false;
 
@@ -75,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 cameraUI.SetActive(true);
                 Shop.SetActive(true);
+                Pc.SetActive(true);
             }
         }
         
@@ -83,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("EChappe UI");
             Shop.SetActive(false);
             cameraUI.SetActive(false);
+            Pc.SetActive(false);
 
             Cursor.lockState = CursorLockMode.Locked;
         }
