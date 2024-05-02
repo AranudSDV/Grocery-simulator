@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask InteractibleMask;
     public LayerMask ItemMask;
+    public LayerMask Place1Mask;
 
     public GameObject icamera;
     public float rangePickUp;
@@ -27,9 +28,13 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Shop;
     public GameObject cameraUI;
     public GameObject Pc;
+    public GameObject ObjetInHand;
 
 
     public bool itempickup = false;
+    public bool itemPickuped = false;
+    public bool itemDroped = false;
+    public bool UIOn = false;
 
     public float pushPower = 2.0F;
 
@@ -78,44 +83,92 @@ public class PlayerMovement : MonoBehaviour
                 cameraUI.SetActive(true);
                 Shop.SetActive(true);
                 Pc.SetActive(true);
+                UIOn = true;
             }
         }
         
-         if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && UIOn == true)
         {
-            Debug.Log("EChappe UI");
             Shop.SetActive(false);
             cameraUI.SetActive(false);
             Pc.SetActive(false);
+            UIOn = false;
 
             Cursor.lockState = CursorLockMode.Locked;
         }
         
-        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) && Input.GetMouseButtonDown(0) && itempickup == true)
-        {
-            hit.transform.GetComponent<ItemPickup>().Drop();
-            itempickup = false; 
-            
-        }
+       
         
-        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) && itempickup == false)
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) )
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetMouseButtonDown(0))
             {
-                hit.transform.GetComponent<ItemPickup>().PickUp();
-                itempickup = true;
+                if(itempickup == false)
+                {
+                    hit.transform.GetComponent<ItemPickup>().PickUp();
+                    ObjetInHand = hit.transform.gameObject;
+                    itemPickuped = true;
+                }
+                
+                if(itempickup == true)
+                {
+                    hit.transform.GetComponent<ItemPickup>().Drop();
+                    ObjetInHand = null;
+                    itemDroped = true;
+                }
+
+                if(itemPickuped == true)
+                {
+                    itempickup = true;
+                    itemPickuped = false;
+                }
+
+                if(itemDroped == true)
+                {
+                    itempickup = false;
+                    itemDroped = false;
+                }
+                
+            }
+        }
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Place1Mask))
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                if(itempickup == false)
+                {
+                    hit.transform.GetComponent<Armoire>().take();
+                    itemPickuped = true;
+                }
+
+                if(itempickup == true)
+                {
+                    hit.transform.GetComponent<Armoire>().place();
+                    ObjetInHand = null;
+                    itemDroped = true;
+                }
+
+                if(itemPickuped == true)
+                {
+                    itempickup = true;
+                    itemPickuped = false;
+                }
+
+                if(itemDroped == true)
+                {
+                    itempickup = false;
+                    itemDroped = false;
+                }
                 
             }
 
-           
+            
+            
+            
         }
 
-        
 
-       
-
-        
-        
 
 
     }

@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class SellButton : MonoBehaviour
 {
 
-    public Item item;
+    public GameObject item;
     public MoneyManagment MoneyManager;
-    public SpriteRenderer image;
+    public SpriteRenderer Icon;
+
+    float itemPrice = 0f;
     
 
     public TMP_Text PriceTxt;
@@ -28,19 +30,21 @@ public class SellButton : MonoBehaviour
     void Update()
     {
 
-        BPrice = item.BuyPrice;
+        itemPrice = GetComponent<item>().SellPrice;
+        Icon.sprite = GetComponent<item>().icon;
+
+        BPrice = itemPrice;
         string SPrice = BPrice.ToString();
         PriceTxt.text = SPrice;
-        image.sprite = item.icon;
 
         
     }
 
     public void BuyButton(GameObject prefab)
     {
-        if(item.BuyPrice <= MoneyManager.Money)
+        if(itemPrice <= MoneyManager.Money)
         {
-            MoneyManager.Money = MoneyManager.Money - item.BuyPrice;
+            MoneyManager.Money = MoneyManager.Money - itemPrice;
             Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
         }
         

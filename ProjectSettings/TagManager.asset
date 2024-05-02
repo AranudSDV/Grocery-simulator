@@ -15,6 +15,7 @@ TagManager:
   - Interactible
   - Item
   - PostProces
+  - Scanner
   - 
   - 
   - 
@@ -36,8 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - place1
   m_SortingLayers:
   - name: Default
     uniqueID: 0

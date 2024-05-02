@@ -6,9 +6,10 @@ public class ItemPickup : MonoBehaviour
 {
 
     public bool Itempickup = false;
-    public Item item;
     public GameObject GOItem;
     //public Transform ItemPos;
+
+    
 
     
     
@@ -26,7 +27,7 @@ public class ItemPickup : MonoBehaviour
 
     public void Drop()
     {
-        Debug.Log("Drop ItempPcikup");
+
         Itempickup = false;
 
         Rigidbody myRigidbody = GetComponent<Rigidbody>();
@@ -39,9 +40,7 @@ public class ItemPickup : MonoBehaviour
     {
         if(Itempickup == true)
         {   
-            transform.localPosition = new Vector3(0f, 0f, 2f);
-            Debug.Log("Itempickup = true");
-            
+            transform.localPosition = new Vector3(0f, 0f, 1f);
         }
     }
 
