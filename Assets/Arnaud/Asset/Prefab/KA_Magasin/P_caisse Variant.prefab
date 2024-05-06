@@ -249,7 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8060076651505131551}
   - component: {fileID: 5140268174352590499}
-  - component: {fileID: 8630844689590933923}
+  - component: {fileID: 3682042480008619926}
   m_Layer: 9
   m_Name: Scanner
   m_TagString: Untagged
@@ -293,7 +293,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7518921, y: 0.38452134, z: 0.9098601}
   m_Center: {x: -0.124053955, y: 0.1060239, z: -0.045069963}
---- !u!114 &8630844689590933923
+--- !u!114 &3682042480008619926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,12 +306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lecteur: {fileID: 5140268174352590499}
-  txtpriceItem: {fileID: 0}
-  txtpanierPrice: {fileID: 0}
+  priceItem: {fileID: 7121940771482131983}
+  txtpanierPrice: {fileID: 851992159906349400}
   scanne: 0
-  itemScanne: {fileID: 0}
-  itemScript: {fileID: 0}
+  itemDejaScanne: 0
   MoneyManager: {fileID: 0}
+  panier: []
+  Price: 0
+  PanierPrice: 0
 --- !u!1 &6421491253939595231
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +719,59 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &9167126372881772402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6906454728429868908}
+  - component: {fileID: 797025070007149249}
+  m_Layer: 0
+  m_Name: Encaissement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6906454728429868908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167126372881772402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4825728400720000564}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &797025070007149249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167126372881772402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.06980896, y: 0.15579218, z: 0.06573102}
+  m_Center: {x: -0.28218842, y: 0.022009008, z: -0.10714237}
 --- !u!1001 &5004298620582793695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -729,6 +784,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
         type: 3}
@@ -779,6 +849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 380bc867899319d4eb01f17059db3975,
         type: 3}
@@ -832,6 +907,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8060076651505131551}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6906454728429868908}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 380bc867899319d4eb01f17059db3975,
         type: 3}
       insertIndex: -1

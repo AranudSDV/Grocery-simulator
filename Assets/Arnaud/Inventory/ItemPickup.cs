@@ -25,6 +25,7 @@ public class ItemPickup : MonoBehaviour
         myRigidbody.useGravity = false;
     }
 
+   
     public void Drop()
     {
 

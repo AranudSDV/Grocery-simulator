@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6777339899069298954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 124.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -180.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6088520856719428068, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1c515b350b31e074c94140aebf0594f0, type: 2}
+    - target: {fileID: -4856336772789610261, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4558906730386509825, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b7d2e23ebb148c84c9e35efa527d3d26, type: 2}
+    - target: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_Name
+      value: Papier toilette
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461601637721758917, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570002329792200453, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.360052
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570002329792200453, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36549965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570002329792200453, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7684409
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570002329792200453, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570002329792200453, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3381450745060650381}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4086866062037258257}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1106798901990563560}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8677009618059863294}
+  m_SourcePrefab: {fileID: 100100000, guid: 3dcc05e17fad87949857b8f00b58b94e, type: 3}
+--- !u!1 &5966314490526319707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3dcc05e17fad87949857b8f00b58b94e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6777339899069298954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3381450745060650381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966314490526319707}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3649521, y: 0.28589106, z: 0.25001526}
+  m_Center: {x: -0.0047798157, y: 0.13979769, z: 0.0027389526}
+--- !u!114 &4086866062037258257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966314490526319707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bc2b10e58c2de4e85b049e24481cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Papier de toilette
+  icon: {fileID: 0}
+  BuyPrice: 7
+  SellPrice: 12
+--- !u!114 &-1106798901990563560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966314490526319707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 278b1247f4ac56f43a3fb51a4258a100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Itempickup: 0
+  GOItem: {fileID: 5966314490526319707}
+--- !u!54 &-8677009618059863294
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966314490526319707}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

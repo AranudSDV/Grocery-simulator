@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask InteractibleMask;
     public LayerMask ItemMask;
     public LayerMask Place1Mask;
+    public LayerMask Encaissement;
+    public LayerMask Carton;
 
     public GameObject icamera;
     public float rangePickUp;
@@ -38,10 +40,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float pushPower = 2.0F;
 
-    [SerializeField]
     private float forceMagnitude;
-    
-    
+
+    public GameObject Caisse;
 
     
     void Update()
@@ -73,6 +74,8 @@ public class PlayerMovement : MonoBehaviour
 
 
         RaycastHit hit;
+        Debug.DrawRay(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward) * rangePickUp, Color.red);
+
 
 
         if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, InteractibleMask))
@@ -137,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 if(itempickup == false)
-                {
+                {    
                     hit.transform.GetComponent<Armoire>().take();
                     itemPickuped = true;
                 }
@@ -163,9 +166,29 @@ public class PlayerMovement : MonoBehaviour
                 
             }
 
-            
-            
-            
+            if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) )
+            {
+                ObjetInHand = hit.transform.gameObject;
+            }
+        }
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Encaissement))
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Caisse.GetComponent<Caisse>().Encaissement();
+                Debug.Log("Encaissé");
+            }
+           
+        }
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Carton))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                
+            }
+           
         }
 
 

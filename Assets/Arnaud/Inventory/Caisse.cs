@@ -5,24 +5,25 @@ using TMPro;
 
 public class Caisse : MonoBehaviour
 {
-  
-  
-  
   public Collider lecteur;
 
   public TextMeshProUGUI priceItem;
   public TextMeshProUGUI txtpanierPrice;
 
   public bool scanne = false;
+  public bool itemDejaScanne = false;
 
   GameObject itemScanne;
 
   public MoneyManagment MoneyManager;
+
+  public List<GameObject> panier = new List<GameObject>();
+
   
   
 
-  float Price = 0;
-  float PanierPrice = 0;
+  public float Price = 0;
+  public float PanierPrice = 0;
     
   void Start()
   {
@@ -38,12 +39,14 @@ public class Caisse : MonoBehaviour
   private void OnTriggerEnter (Collider lecteur)
   {
     scanne = true;
-    
+
     if(scanne == true)
     {
       itemScanne = lecteur.gameObject;
 
       itemScanne.GetComponent<item>();
+
+      panier.Add(itemScanne);
       
       Price = itemScanne.GetComponent<item>().SellPrice;
 
@@ -51,7 +54,7 @@ public class Caisse : MonoBehaviour
       
       PanierPrice = PanierPrice + Price;
       
-      itemScanne.GetComponent<item>().enabled = false;
+      Destroy(itemScanne.GetComponent<item>());
       scanne = false;
     }
   }
@@ -61,6 +64,7 @@ public class Caisse : MonoBehaviour
     MoneyManager.Money = MoneyManager.Money + PanierPrice;
     PanierPrice = 0;
     priceItem.text = "";
+    Debug.Log("encaissement()");
   }
   
 
