@@ -9,6 +9,8 @@ public class Caisse : MonoBehaviour
 
   public TextMeshProUGUI priceItem;
   public TextMeshProUGUI txtpanierPrice;
+  private TextMeshProUGUI Name;
+  private string sName;
 
   public bool scanne = false;
   public bool itemDejaScanne = false;
@@ -42,7 +44,12 @@ public class Caisse : MonoBehaviour
 
     if(scanne == true)
     {
+      
       itemScanne = lecteur.gameObject;
+
+      //itemScanne.GetComponent<item>().name = sName;
+
+      //sName = Name.text;
 
       itemScanne.GetComponent<item>();
 

@@ -36,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
     public bool itempickup = false;
     public bool itemPickuped = false;
     public bool itemDroped = false;
+
+    public bool cartonpickup = false;
+    public bool cartonPickuped = false;
+    public bool cartonDroped = false;
+
     public bool UIOn = false;
 
     public float pushPower = 2.0F;
@@ -102,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         
        
         
-        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) )
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask))
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -131,9 +136,44 @@ public class PlayerMovement : MonoBehaviour
                     itempickup = false;
                     itemDroped = false;
                 }
-                
             }
         }
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Carton))
+        {
+            
+            if (Input.GetMouseButtonDown(0))
+            {
+                
+                if(cartonpickup == false)
+                {
+                    hit.transform.GetComponent<ItemPickup>().PickUp();
+                    ObjetInHand = hit.transform.gameObject;
+                    cartonPickuped = true;
+                }
+                
+                if(cartonpickup == true)
+                {
+                    hit.transform.GetComponent<ItemPickup>().Drop();
+                    ObjetInHand = null;
+                    cartonDroped = true;
+                }
+
+                if(cartonPickuped == true)
+                {
+                    cartonpickup = true;
+                    cartonPickuped = false;
+                }
+
+                if(cartonDroped == true)
+                {
+                    cartonpickup = false;
+                    cartonDroped = false;
+                }
+            }
+        }
+
+        
 
         if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Place1Mask))
         {
@@ -177,7 +217,6 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Caisse.GetComponent<Caisse>().Encaissement();
-                Debug.Log("Encaissé");
             }
            
         }
@@ -186,9 +225,16 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
+                hit.transform.GetComponent<Carton>().Ouverture();
+                ObjetInHand = null;
+                cartonDroped = true;
+
+                if(cartonDroped == true)
+                {
+                    cartonpickup = false;
+                    cartonDroped = false;
+                }
             }
-           
         }
 
 

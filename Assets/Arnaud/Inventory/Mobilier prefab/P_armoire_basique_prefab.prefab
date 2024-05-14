@@ -2498,6 +2498,7 @@ GameObject:
   - component: {fileID: 6865993775945460387}
   - component: {fileID: 3618256342725629443}
   - component: {fileID: 5682726629970318939}
+  - component: {fileID: 6732113073104921854}
   m_Layer: 31
   m_Name: P_armoire_basique_prefab
   m_TagString: Untagged
@@ -2525,6 +2526,7 @@ Transform:
   - {fileID: 69355988263956375}
   - {fileID: 3947616439845902220}
   - {fileID: 793250955623119569}
+  - {fileID: 7184593236698710751}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
@@ -2697,110 +2699,168 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Slot1: {fileID: 3994418309513031336}
   Solt1Occuped: 0
+  ItemSlot1: {fileID: 0}
   Slot2: {fileID: 5186373936037384127}
   Solt2Occuped: 0
+  ItemSlot2: {fileID: 0}
   Slot3: {fileID: 4519235603296190692}
   Solt3Occuped: 0
+  ItemSlot3: {fileID: 0}
   Slot4: {fileID: 734675658988229476}
   Solt4Occuped: 0
+  ItemSlot4: {fileID: 0}
   Slot5: {fileID: 690429377253945639}
   Solt5Occuped: 0
+  ItemSlot5: {fileID: 0}
   Slot6: {fileID: 1811410845173756543}
   Solt6Occuped: 0
-  Emplacement1Full: 0
+  ItemSlot6: {fileID: 0}
   Slot7: {fileID: 6325631788723191647}
   Solt7Occuped: 0
+  ItemSlot7: {fileID: 0}
   Slot8: {fileID: 2238811544524540371}
   Solt8Occuped: 0
+  ItemSlot8: {fileID: 0}
   Slot9: {fileID: 1816139457111189791}
   Solt9Occuped: 0
+  ItemSlot9: {fileID: 0}
   Slot10: {fileID: 316080580852075034}
   Solt10Occuped: 0
+  ItemSlot10: {fileID: 0}
   Slot11: {fileID: 5868608339525299822}
   Solt11Occuped: 0
+  ItemSlot11: {fileID: 0}
   Slot12: {fileID: 8852373346771297510}
   Solt12Occuped: 0
-  Emplacement2Full: 0
+  ItemSlot12: {fileID: 0}
   Slot13: {fileID: 8709860585774660085}
   Solt13Occuped: 0
+  ItemSlot13: {fileID: 0}
   Slot14: {fileID: 4040098613812765578}
   Solt14Occuped: 0
+  ItemSlot14: {fileID: 0}
   Slot15: {fileID: 7128765975826346486}
   Solt15Occuped: 0
+  ItemSlot15: {fileID: 0}
   Slot16: {fileID: 803542814454990774}
   Solt16Occuped: 0
+  ItemSlot16: {fileID: 0}
   Slot17: {fileID: 7360984690363334212}
   Solt17Occuped: 0
+  ItemSlot17: {fileID: 0}
   Slot18: {fileID: 4145022690396248093}
   Solt18Occuped: 0
-  Emplacement3Full: 0
+  ItemSlot18: {fileID: 0}
   Slot19: {fileID: 8424404044950469684}
   Solt19Occuped: 0
+  ItemSlot19: {fileID: 0}
   Slot20: {fileID: 8615816814226769958}
   Solt20Occuped: 0
+  ItemSlot20: {fileID: 0}
   Slot21: {fileID: 6532326041079580609}
   Solt21Occuped: 0
+  ItemSlot21: {fileID: 0}
   Slot22: {fileID: 3672386186389591764}
   Solt22Occuped: 0
+  ItemSlot22: {fileID: 0}
   Slot23: {fileID: 1026312176395256015}
   Solt23Occuped: 0
+  ItemSlot23: {fileID: 0}
   Slot24: {fileID: 8119079282119074011}
   Solt24Occuped: 0
-  Emplacement4Full: 0
+  ItemSlot24: {fileID: 0}
   Slot25: {fileID: 3325569992059174981}
   Solt25Occuped: 0
+  ItemSlot25: {fileID: 0}
   Slot26: {fileID: 381427859075078626}
   Solt26Occuped: 0
+  ItemSlot26: {fileID: 0}
   Slot27: {fileID: 71565138634286342}
   Solt27Occuped: 0
+  ItemSlot27: {fileID: 0}
   Slot28: {fileID: 7349458190074556349}
   Solt28Occuped: 0
+  ItemSlot28: {fileID: 0}
   Slot29: {fileID: 7556207503026337390}
   Solt29Occuped: 0
+  ItemSlot29: {fileID: 0}
   Slot30: {fileID: 243489543956291343}
   Solt30Occuped: 0
-  Emplacement5Full: 0
+  ItemSlot30: {fileID: 0}
   Slot31: {fileID: 501016857322447327}
   Solt31Occuped: 0
+  ItemSlot31: {fileID: 0}
   Slot32: {fileID: 9149372502844732868}
   Solt32Occuped: 0
+  ItemSlot32: {fileID: 0}
   Slot33: {fileID: 1372877456442430581}
   Solt33Occuped: 0
+  ItemSlot33: {fileID: 0}
   Slot34: {fileID: 1835884760382360924}
   Solt34Occuped: 0
+  ItemSlot34: {fileID: 0}
   Slot35: {fileID: 1905834794549563975}
   Solt35Occuped: 0
+  ItemSlot35: {fileID: 0}
   Slot36: {fileID: 5299086015631538041}
   Solt36Occuped: 0
-  Emplacement6Full: 0
+  ItemSlot36: {fileID: 0}
   Slot37: {fileID: 4566511772964378886}
   Solt37Occuped: 0
+  ItemSlot37: {fileID: 0}
   Slot38: {fileID: 2652159852733963086}
   Solt38Occuped: 0
+  ItemSlot38: {fileID: 0}
   Slot39: {fileID: 4785281698242676916}
   Solt39Occuped: 0
+  ItemSlot39: {fileID: 0}
   Slot40: {fileID: 7263298634836605779}
   Solt40Occuped: 0
+  ItemSlot40: {fileID: 0}
   Slot41: {fileID: 807798692898371180}
   Solt41Occuped: 0
+  ItemSlot41: {fileID: 0}
   Slot42: {fileID: 366994679479575727}
   Solt42Occuped: 0
-  Emplacement7Full: 0
+  ItemSlot42: {fileID: 0}
   Slot43: {fileID: 2955510509044677731}
   Solt43Occuped: 0
+  ItemSlot43: {fileID: 0}
   Slot44: {fileID: 1154634113492110607}
   Solt44Occuped: 0
+  ItemSlot44: {fileID: 0}
   Slot45: {fileID: 9100583447561175924}
   Solt45Occuped: 0
+  ItemSlot45: {fileID: 0}
   Slot46: {fileID: 6792608213964143963}
   Solt46Occuped: 0
+  ItemSlot46: {fileID: 0}
   Slot47: {fileID: 3651100804587131976}
   Solt47Occuped: 0
+  ItemSlot47: {fileID: 0}
   Slot48: {fileID: 5946393405076308719}
   Solt48Occuped: 0
-  Emplacement8Full: 0
+  ItemSlot48: {fileID: 0}
   Player: {fileID: 0}
   ObjetInHand: {fileID: 0}
+  ObjectTake: {fileID: 0}
+  ItemPickup: {fileID: 0}
+--- !u!208 &6732113073104921854
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4836826208964220313}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.8880001, y: 0.70900005, z: 0.9250001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.8880001, y: 0, z: 0.9250001}
+  m_TimeToStationary: 0.5
 --- !u!1 &5101181096020396017
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,6 +3304,59 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6158813980677373952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7184593236698710751}
+  - component: {fileID: 7655179278642437754}
+  m_Layer: 31
+  m_Name: IARecup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7184593236698710751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6158813980677373952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.68, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5211803192415538979}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7655179278642437754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6158813980677373952}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6325631788723191647
 GameObject:
   m_ObjectHideFlags: 0
