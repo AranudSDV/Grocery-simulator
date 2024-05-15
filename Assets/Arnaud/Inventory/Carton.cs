@@ -14,6 +14,7 @@ public class Carton : MonoBehaviour
 
     Vector3 positionCarton;
 
+
     
     void Start()
     {
@@ -23,19 +24,21 @@ public class Carton : MonoBehaviour
     
     void Update()
     {
-        
+
     }
 
     public void Ouverture()
     {
-
         positionCarton = carton.transform.position;
+
+
+        FX.transform.SetParent(null);
+        FX.SetActive(true);
 
         for (var i = 0; i < NombreItem; i++)
         {
             Instantiate(Item,positionCarton, Quaternion.identity);
         }
-
         Destroy(carton);
     }
 }

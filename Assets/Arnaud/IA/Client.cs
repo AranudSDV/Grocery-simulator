@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Client : MonoBehaviour
 {
-    /*private NavMeshAgent client;
+    private NavMeshAgent client;
 
     bool bClientArrive = false;
 
@@ -25,24 +25,18 @@ public class Client : MonoBehaviour
 
     void Start()
     {
-        //ClientSpawn();
         client = GetComponent<NavMeshAgent>();
-
-        
     }
 
    
     void Update()
     {
-        Random rdm = new Random();
-        int iNombreArmoireChoisie = rdm.Next(0,2);
+        int iNombreArmoireChoisie = Random.Range(0,2);
 
         for(int i = 0; i < iNombreArmoireChoisie; i++)
         {
-
-
-            Random rdm = new Random();
-            int iArmoireChoose = rdm.Next(1,iNombreArmoireMax);
+            
+            int iArmoireChoose = Random.Range(1,iNombreArmoireMax);
 
             switch(iArmoireChoose)
             {
@@ -64,27 +58,27 @@ public class Client : MonoBehaviour
 
             }
 
-            client.SetDestination(ArmoireChoose.position);
-        }
-        
+            client.SetDestination(aArmoireChoose.position);
     }
+        
 
-    void ClientArrive()
+
+    /*void ClientArrive()
     {
         bClientArrive = true;
+        
     }
 
     void ClientSpawn()
     {
-        Random rdm = new Random();
-        int iNombreArmoireChoisie = rdm.Next(0,2);
+        int iNombreArmoireChoisie = Random.Range(0,2);
 
         for(int i = 0; i < iNombreArmoireChoisie; i++)
         {
 
 
-            Random rdm = new Random();
-            int iArmoireChoose = rdm.Next(1,iNombreArmoireMax);
+            
+            int iArmoireChoose = Random.Range(1,iNombreArmoireMax);
 
             switch(iArmoireChoose)
             {
@@ -106,7 +100,7 @@ public class Client : MonoBehaviour
 
             }
 
-            client.SetDestination(ArmoireChoose.position);
+            client.SetDestination(aArmoireChoose.position);
             
             while(ClientFini == false)
             {
@@ -117,10 +111,15 @@ public class Client : MonoBehaviour
             }
             
         }
+        */
     }
-    */
-
+    
 }
+    
+    
+    
+
+
 
     
 

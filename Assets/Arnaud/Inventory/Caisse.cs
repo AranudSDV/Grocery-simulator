@@ -72,6 +72,13 @@ public class Caisse : MonoBehaviour
     PanierPrice = 0;
     priceItem.text = "";
     Debug.Log("encaissement()");
+
+    for (int i = 0; i < panier.Count; i++)
+    {
+      Destroy(panier[i].gameObject);
+    }
+
+    panier.Clear();
   }
   
 
