@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.24
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.31192595, g: 0.3624844, b: 0.49056602, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7eed240e30967f94380021d90e85f29b, type: 2}
   m_HaloStrength: 0.463
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.3
   m_CustomReflection: {fileID: 2800000, guid: a18fc93c5fc71af409eb8af9ba536a23, type: 3}
   m_Sun: {fileID: 1901758733}
-  m_IndirectSpecularColor: {r: 0.053130433, g: 0.06651076, b: 0.091189735, a: 0.3}
+  m_IndirectSpecularColor: {r: 0.1646031, g: 0.22808537, b: 0.25578302, a: 0.3}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -141,6 +141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (180)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -711,6 +716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (189)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -959,6 +969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -1116,6 +1131,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -1188,6 +1208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -1723,6 +1748,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (141)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -1795,6 +1825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -1965,6 +2000,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2131,6 +2171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (164)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -2435,6 +2480,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2689,6 +2739,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (117)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2857,6 +2912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (188)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -3433,6 +3493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (202)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -3600,6 +3665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (157)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -3853,6 +3923,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -3925,6 +4000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -4089,6 +4169,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -4250,6 +4335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -4604,6 +4694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -4766,6 +4861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -5805,6 +5905,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -6388,6 +6493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -6460,6 +6570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (134)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -6722,6 +6837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (133)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -7035,6 +7155,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (112)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -7290,6 +7415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -7689,6 +7819,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -8015,6 +8150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (190)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -8172,6 +8312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -8328,6 +8473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (192)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -8952,6 +9102,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (194)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -9213,6 +9368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (165)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -9548,6 +9708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (172)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -9734,6 +9899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -10088,6 +10258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (191)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -10160,6 +10335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (159)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -10239,6 +10419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -10502,6 +10687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -10675,6 +10865,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -10747,6 +10942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (135)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -11393,6 +11593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -11600,17 +11805,17 @@ PrefabInstance:
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 141.71
+      value: 149.69
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.83
+      value: 10.85
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -159.39737
+      value: -170.94
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
@@ -11620,17 +11825,17 @@ PrefabInstance:
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071079
+      value: 0.7071078
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000011098611
+      value: 0.00000011098609
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.70710576
+      value: 0.7071058
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
@@ -11640,7 +11845,7 @@ PrefabInstance:
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4265485470795043290, guid: d92f63b9d9d31b34fb5bc0786ccc5407,
         type: 3}
@@ -11931,6 +12136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12165,6 +12375,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12342,6 +12557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12414,6 +12634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -12572,6 +12797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (175)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12644,6 +12874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -12814,6 +13049,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (198)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12887,6 +13127,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (200)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12959,6 +13204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (166)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -13245,6 +13495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -13495,6 +13750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -14068,6 +14328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -15184,6 +15449,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -15469,6 +15739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -16074,6 +16349,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -16358,6 +16638,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (215)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -16751,6 +17036,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -16824,7 +17114,7 @@ GameObject:
   - component: {fileID: 553913265}
   - component: {fileID: 553913264}
   - component: {fileID: 553913263}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Loutre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16843,12 +17133,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bClientArrive: 0
   iNombreArmoireMax: 5
   iNombreItemMax: 1
   ArmoirePosition1: {fileID: 146619067}
   ArmoirePosition2: {fileID: 339032285}
   ArmoirePosition3: {fileID: 1697336830}
   ArmoirePosition4: {fileID: 2063800931}
+  ArmoireMask:
+    serializedVersion: 2
+    m_Bits: 2147483648
 --- !u!195 &553913264
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17260,6 +17554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -17783,6 +18082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -17874,6 +18178,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -17959,6 +18268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -18038,6 +18352,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (136)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -18110,6 +18429,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (196)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -18569,6 +18893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -18878,6 +19207,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (212)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -18950,6 +19284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -19029,6 +19368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -19197,6 +19541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (119)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -19541,6 +19890,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -20440,6 +20794,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (184)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -20512,6 +20871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -20591,6 +20955,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -21810,6 +22179,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (150)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -22239,6 +22613,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (210)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -22311,6 +22690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -22548,6 +22932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (162)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -23364,6 +23753,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7655179278642437754, guid: 512bf815d5f0e524eac1fa056b112100,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23381,6 +23775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -23545,6 +23944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -23617,6 +24021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -23963,6 +24372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (179)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -24687,6 +25101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -24765,6 +25184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (155)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -24923,6 +25347,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -24995,6 +25424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (124)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -25159,6 +25593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -25236,6 +25675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (203)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -25398,6 +25842,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (170)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -25570,6 +26019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -25761,6 +26215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (169)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -25834,6 +26293,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -25906,6 +26370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -26217,11 +26686,26 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8515008982157176402, guid: ac93d365cb126444985f0ea4f952bbf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -7941577837016965257, guid: ac93d365cb126444985f0ea4f952bbf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: -2183203363101745646, guid: ac93d365cb126444985f0ea4f952bbf8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef7dcf4f313b8ce4d891c515ede91ce0, type: 2}
+    - target: {fileID: -113914012711478674, guid: ac93d365cb126444985f0ea4f952bbf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 824133814486125562, guid: ac93d365cb126444985f0ea4f952bbf8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26231,6 +26715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Otter
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac93d365cb126444985f0ea4f952bbf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1633142586429320597, guid: ac93d365cb126444985f0ea4f952bbf8,
         type: 3}
@@ -26285,6 +26774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -26538,6 +27032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -26883,6 +27382,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -26955,6 +27459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -27123,6 +27632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (126)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -27195,6 +27709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (156)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -27607,6 +28126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (207)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -27884,6 +28408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (154)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -27956,6 +28485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (148)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -28192,6 +28726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (213)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -28354,6 +28893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (183)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -28854,6 +29398,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -29173,6 +29722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -29595,6 +30149,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (176)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -29817,6 +30376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (140)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -29901,6 +30465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -29973,6 +30542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -30052,6 +30626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (199)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -31064,6 +31643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (201)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -31234,6 +31818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -32371,6 +32960,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -32443,6 +33037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (160)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -32602,6 +33201,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -32710,12 +33314,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bClientArrive: 0
   iNombreArmoireMax: 1
   iNombreItemMax: 1
   ArmoirePosition1: {fileID: 0}
   ArmoirePosition2: {fileID: 0}
   ArmoirePosition3: {fileID: 0}
   ArmoirePosition4: {fileID: 0}
+  ArmoireMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!195 &1148243757
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -33420,6 +34028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -33735,6 +34348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (127)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -33813,6 +34431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -33893,6 +34516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -33966,6 +34594,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -34038,6 +34671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (187)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -34925,6 +35563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -35033,12 +35676,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bClientArrive: 0
   iNombreArmoireMax: 1
   iNombreItemMax: 1
   ArmoirePosition1: {fileID: 0}
   ArmoirePosition2: {fileID: 0}
   ArmoirePosition3: {fileID: 0}
   ArmoirePosition4: {fileID: 0}
+  ArmoireMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!195 &1242390161
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35228,6 +35875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -35717,6 +36369,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1272130146}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1273971713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1273971714}
+  - component: {fileID: 1273971716}
+  - component: {fileID: 1273971715}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1273971714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273971713}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 127.451675, y: 8.23, z: -228.92}
+  m_LocalScale: {x: 31.288, y: 17.778, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1480831456}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1273971715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273971713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1273971716
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273971713}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1274930880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -35735,6 +36449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (193)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -35814,6 +36533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (144)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -35997,6 +36721,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -36182,6 +36911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -36260,6 +36994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -36596,6 +37335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (146)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -36673,6 +37417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -37261,6 +38010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (173)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -37713,6 +38467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (204)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -38227,6 +38986,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -38389,6 +39153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -38559,6 +39328,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (115)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -38723,6 +39497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (197)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -38795,6 +39574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -38961,6 +39745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370360438}
+  - component: {fileID: 1370360439}
   m_Layer: 0
   m_Name: 1
   m_TagString: Untagged
@@ -38990,6 +39775,22 @@ Transform:
   m_Father: {fileID: 1916776355}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1370360439
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370360437}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1370581241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39447,6 +40248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386611066}
+  - component: {fileID: 1386611067}
   m_Layer: 0
   m_Name: 3
   m_TagString: Untagged
@@ -39483,6 +40285,22 @@ Transform:
   m_Father: {fileID: 1916776355}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1386611067
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386611065}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1388376880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4480300498272717063, guid: 98045cd9f341a50439774e1686c076de,
@@ -39501,6 +40319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -39575,6 +40398,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (182)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -39635,6 +40463,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2addf370a42bdd940888b5b47c6f975a, type: 3}
+--- !u!1 &1393530064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393530065}
+  - component: {fileID: 1393530067}
+  - component: {fileID: 1393530066}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1393530065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393530064}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 127.451675, y: 8.23, z: -130.17}
+  m_LocalScale: {x: 31.288, y: 17.778, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1480831456}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1393530066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393530064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1393530067
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393530064}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1395918378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40175,6 +41065,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -40428,6 +41323,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -40607,6 +41507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -40679,6 +41584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (130)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -41095,6 +42005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -41380,6 +42295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -41545,6 +42465,112 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1864308558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1456017342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456017346}
+  - component: {fileID: 1456017345}
+  - component: {fileID: 1456017344}
+  - component: {fileID: 1456017343}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1456017343
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456017342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1456017344
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456017342}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bc30f35471265b543900fb34c4482c24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1456017345
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456017342}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1456017346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456017342}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.0000029504295}
+  m_LocalPosition: {x: 127.17, y: 32.2, z: -168.9}
+  m_LocalScale: {x: 243.1178, y: 243.1178, z: 243.1178}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1001 &1457779322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41788,6 +42814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -41860,6 +42891,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (177)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -42490,6 +43526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -42684,6 +43725,8 @@ Transform:
   - {fileID: 1261679859}
   - {fileID: 1916776355}
   - {fileID: 1249930073}
+  - {fileID: 1393530065}
+  - {fileID: 1273971714}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43005,6 +44048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (181)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -43157,6 +44205,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (137)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -43235,6 +44288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -43392,6 +44450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (195)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -43715,6 +44778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (168)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -44236,6 +45304,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (167)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -44315,6 +45388,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (153)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -44387,6 +45465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -44552,6 +45635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (131)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -44630,6 +45718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (158)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -44715,6 +45808,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -44794,6 +45892,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -44866,6 +45969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -45064,6 +46172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (149)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -45142,6 +46255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (208)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -45298,6 +46416,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -45544,6 +46667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -45621,6 +46749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (142)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -45862,6 +46995,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -46013,6 +47151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -46172,6 +47315,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (147)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -46245,6 +47393,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (151)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -46314,6 +47467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606357734}
+  - component: {fileID: 1606357735}
   m_Layer: 0
   m_Name: 2
   m_TagString: Untagged
@@ -46357,6 +47511,22 @@ Transform:
   m_Father: {fileID: 1916776355}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1606357735
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606357733}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1606430778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46369,6 +47539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -46880,6 +48055,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (161)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -47738,6 +48918,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (211)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -48410,6 +49595,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -48646,6 +49836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -48881,6 +50076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -49302,6 +50502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -50117,6 +51322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (214)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -50289,6 +51499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (139)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -50923,6 +52138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -51697,6 +52917,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -51775,6 +53000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (171)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -52044,6 +53274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -52116,6 +53351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -52370,6 +53610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (178)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -52530,6 +53775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -52881,6 +54131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -53241,6 +54496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -53318,6 +54578,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -53888,6 +55153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -53960,6 +55230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -54317,6 +55592,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -54479,6 +55759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (143)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -54635,6 +55920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -55496,6 +56786,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -55568,6 +56863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (185)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -55786,6 +57086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -56085,6 +57390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (163)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -56157,6 +57467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -56476,6 +57791,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (205)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -56728,6 +58048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -57175,6 +58500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (128)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -57681,6 +59011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (186)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -62934,6 +64269,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (138)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -63006,6 +64346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -63753,6 +65098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -63825,6 +65175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -64409,6 +65764,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -64756,7 +66116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080802060}
   - component: {fileID: 2080802061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plafond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65364,6 +66724,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (152)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -65629,6 +66994,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -65780,6 +67150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -65937,6 +67312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (145)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -66369,6 +67749,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (206)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -66625,6 +68010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KA_sol_magasin Variant (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
       propertyPath: m_RootOrder
@@ -66703,6 +68093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (209)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
@@ -66870,6 +68265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KA_sol_magasin Variant (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
         type: 3}
