@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3304281045014439516
+--- !u!114 &-8387557130557262060
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: azdazdaz
-  m_Shader: {fileID: -6465566751694194690, guid: 8cab978739b6f4c4b8fa42b109cc15e5,
+  m_Name: atals satu
+  m_Shader: {fileID: -6465566751694194690, guid: 79dba771bbbb7da4fa1b1747010ade12,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -77,6 +77,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_69e0f095c76f4f36b2e250958fd3d69c_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: d9da05626b731724990fcdd57e80188b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -95,7 +99,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _10orscale: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
@@ -113,29 +116,26 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Hue: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Saturation: 0.16
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
+    - _Value: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _cloudalapah: 1.15
-    - _cloudpower: -0.36
-    - _cloudscale: 4000
     m_Colors:
-    - _10or2: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _clludcolor: {r: 0.33113205, g: 0.34017676, b: 0.3679245, a: 1}
-    - _cloud_speed: {r: 0.0005, g: 0.0005, b: 0, a: 0}
   m_BuildTextureStacks: []
