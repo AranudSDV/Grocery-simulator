@@ -71295,6 +71295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Facade011
       objectReference: {fileID: 0}
+    - target: {fileID: 7123369794677536855, guid: 0f1bfc0fc85b6164a92b3e827604299c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7606750997505909485, guid: 0f1bfc0fc85b6164a92b3e827604299c,
         type: 3}
       propertyPath: m_RootOrder

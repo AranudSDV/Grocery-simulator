@@ -34,6 +34,14 @@ public class Client : MonoBehaviour
    
     void Update()
     {
+
+        if(bClientArrive == true)
+        {
+            Debug.Log("client arrive = true");
+            client.isStopped = true;
+            client.ResetPath();
+        }
+
         //Debug.DrawRay(transform.position, client.transform.TransformDirection(Vector3.forward), Color.green);
 
         //NavMeshHit hit;
@@ -89,11 +97,8 @@ public class Client : MonoBehaviour
                 Debug.Log(" client arrive == false");
 
             }
-            if(bClientArrive == true)
-            {
-                client.isStopped = true;
-                client.ResetPath();
-            }
+
+            
         }
     
     }
