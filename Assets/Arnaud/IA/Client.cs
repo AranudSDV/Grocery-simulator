@@ -34,14 +34,18 @@ public class Client : MonoBehaviour
    
     void Update()
     {
-    
+        //Debug.DrawRay(transform.position, client.transform.TransformDirection(Vector3.forward), Color.green);
+
+        //NavMeshHit hit;
+        
+        //bClientArrive = NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit,  NavMesh.AllAreas);
     }
         
 
     void ClientSpawn()
     {
         
-        int iNombreArmoireChoisie = Random.Range(0,2);
+        int iNombreArmoireChoisie = Random.Range(0,1);
 
         for(int i = 0; i < 2; i++)
         {
@@ -72,13 +76,8 @@ public class Client : MonoBehaviour
 
             }
 
-            NavMeshHit hit;
-        
             
-            if(NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit, ArmoireMask))
-            {
-                bClientArrive = true;
-            }
+            
             
 
             
@@ -90,7 +89,18 @@ public class Client : MonoBehaviour
                 Debug.Log(" client arrive == false");
 
             }
+            if(bClientArrive == true)
+            {
+                client.isStopped = true;
+                client.ResetPath();
+            }
         }
+    
+    }
+
+    public void ClientArrive()
+    {
+        bClientArrive = true;
     
     }
 }

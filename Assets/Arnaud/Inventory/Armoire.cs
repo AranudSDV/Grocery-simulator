@@ -211,8 +211,11 @@ public class Armoire : MonoBehaviour
     public GameObject ObjectTake;
     public ItemPickup ItemPickup;
 
-    public Collider ClientArrive;
+    
     GameObject client;
+
+    public bool ArmoireHaveItem = false;
+    
     
 
     
@@ -226,16 +229,21 @@ public class Armoire : MonoBehaviour
   void Update()
   {
     ObjetInHand = Player.GetComponent<PlayerMovement>().ObjetInHand;
+
+    if( Solt1Occuped == true || Solt2Occuped == true || Solt3Occuped == true || Solt4Occuped == true || Solt5Occuped == true || Solt6Occuped == true || Solt7Occuped == true || Solt8Occuped == true || Solt9Occuped == true || Solt10Occuped == true || Solt11Occuped == true || Solt12Occuped == true || Solt13Occuped == true || Solt14Occuped == true || Solt15Occuped == true || Solt16Occuped == true || Solt17Occuped == true || Solt18Occuped == true || Solt19Occuped == true || Solt20Occuped == true || Solt21Occuped == true || Solt22Occuped == true || Solt23Occuped == true || Solt23Occuped == true || Solt24Occuped == true || Solt25Occuped == true || Solt26Occuped == true || Solt27Occuped == true || Solt28Occuped == true || Solt29Occuped == true || Solt30Occuped == true || Solt31Occuped == true || Solt32Occuped == true || Solt33Occuped == true || Solt34Occuped == true || Solt35Occuped == true || Solt36Occuped == true || Solt37Occuped == true || Solt38Occuped == true || Solt39Occuped == true || Solt40Occuped == true || Solt41Occuped == true || Solt42Occuped == true || Solt43Occuped == true || Solt44Occuped == true || Solt45Occuped == true || Solt46Occuped == true || Solt47Occuped == true || Solt48Occuped == true)
+    {
+      ArmoireHaveItem = true;
+    }
+
+    else
+    {
+      ArmoireHaveItem = false;
+    }
   }
 
-  private void OnTriggerEnter (Collider ClientArrive)
-  {
-    client = ClientArrive.gameObject;
+  
 
-    //client.GetComponent<Client>().ClientArrive();
-
-
-  }
+  
 
   public void place()
   {

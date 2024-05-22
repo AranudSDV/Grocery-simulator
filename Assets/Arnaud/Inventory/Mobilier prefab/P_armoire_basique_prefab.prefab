@@ -2845,6 +2845,7 @@ MonoBehaviour:
   ObjetInHand: {fileID: 0}
   ObjectTake: {fileID: 0}
   ItemPickup: {fileID: 0}
+  ArmoireHaveItem: 0
 --- !u!208 &6732113073104921854
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3314,6 +3315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7184593236698710751}
   - component: {fileID: 7655179278642437754}
+  - component: {fileID: 2178431120522904619}
   m_Layer: 31
   m_Name: IARecup
   m_TagString: Untagged
@@ -3357,6 +3359,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2178431120522904619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6158813980677373952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576f63688c84314448fddf666a6d9b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IAWait: 0
+  ClientArrive: {fileID: 7655179278642437754}
 --- !u!1 &6325631788723191647
 GameObject:
   m_ObjectHideFlags: 0
