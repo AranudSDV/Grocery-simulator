@@ -14,11 +14,28 @@ public class Client : MonoBehaviour
 
 
     public Transform ArmoirePosition1;
+    public  GameObject goArmoire1;
+
     public Transform ArmoirePosition2;
+    public  GameObject goArmoire2;
+
     public Transform ArmoirePosition3;
+    public  GameObject goArmoire3;
+
     public Transform ArmoirePosition4;
+    public  GameObject goArmoire4;
+
+    public GameObject[] armoires;
+
 
     Transform aArmoireChoose;
+
+    public  GameObject goArmoireChoose;
+    
+    
+    public Transform Player;
+
+
     
 
     bool ClientFini = false;
@@ -29,6 +46,9 @@ public class Client : MonoBehaviour
     {
         client = GetComponent<NavMeshAgent>();
         ClientSpawn();
+
+        List<GameObject> armoiresAvecObjets = TrouverArmoiresAvecObjets();
+        //List<GameObject> armoiresAvecObjets = new List<GameObject>();
     }
 
    
@@ -38,8 +58,8 @@ public class Client : MonoBehaviour
         if(bClientArrive == true)
         {
             Debug.Log("client arrive = true");
-            client.isStopped = true;
             client.ResetPath();
+            bClientArrive = false;
         }
 
         //Debug.DrawRay(transform.position, client.transform.TransformDirection(Vector3.forward), Color.green);
@@ -47,6 +67,20 @@ public class Client : MonoBehaviour
         //NavMeshHit hit;
         
         //bClientArrive = NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit,  NavMesh.AllAreas);
+    }
+
+    List<GameObject> TrouverArmoiresAvecObjets()
+    {
+        
+        foreach (GameObject armoire in armoires)
+        {
+            Armoire armoireScript = armoire.GetComponent<Armoire>();
+            if (armoireScript != null && !armoireScript.ArmoireHaveItem)
+            {
+                armoiresAvecObjets.Add(armoire);
+            }
+        }
+        return armoiresAvecObjets;
     }
         
 
@@ -58,44 +92,13 @@ public class Client : MonoBehaviour
         for(int i = 0; i < 2; i++)
         {
             
-            int iArmoireChoose = Random.Range(1,iNombreArmoireMax);
-
-            switch(iArmoireChoose)
-            {
-                case 1:
-                aArmoireChoose = ArmoirePosition1;
-                break;
-
-                case 2:
-                aArmoireChoose = ArmoirePosition2;
-                break;
-
-                case 3:
-                aArmoireChoose = ArmoirePosition3;
-                break;
-
-                case 4:
-                aArmoireChoose = ArmoirePosition4;
-                break;
-
-                case 5:
-                aArmoireChoose = ArmoirePosition4;
-                break;
-
-            }
+            int indexAleatoire = Random.Range(0, armoiresAvecObjets.Count);
 
             
-            
-            
 
-            
             if(bClientArrive == false)
             {
-                client.SetDestination(aArmoireChoose.position);
-
-
-                Debug.Log(" client arrive == false");
-
+                client.SetDestination(armoire.transform.position);
             }
 
             
@@ -106,8 +109,10 @@ public class Client : MonoBehaviour
     public void ClientArrive()
     {
         bClientArrive = true;
-    
     }
+
+    
+
 }
     
     
