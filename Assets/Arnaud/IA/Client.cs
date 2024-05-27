@@ -45,10 +45,8 @@ public class Client : MonoBehaviour
     void Start()
     {
         client = GetComponent<NavMeshAgent>();
-        ClientSpawn();
+        //ClientSpawn();
 
-        List<GameObject> armoiresAvecObjets = TrouverArmoiresAvecObjets();
-        //List<GameObject> armoiresAvecObjets = new List<GameObject>();
     }
 
    
@@ -69,22 +67,10 @@ public class Client : MonoBehaviour
         //bClientArrive = NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit,  NavMesh.AllAreas);
     }
 
-    List<GameObject> TrouverArmoiresAvecObjets()
-    {
-        
-        foreach (GameObject armoire in armoires)
-        {
-            Armoire armoireScript = armoire.GetComponent<Armoire>();
-            if (armoireScript != null && !armoireScript.ArmoireHaveItem)
-            {
-                armoiresAvecObjets.Add(armoire);
-            }
-        }
-        return armoiresAvecObjets;
-    }
+    
         
 
-    void ClientSpawn()
+    /*void ClientSpawn()
     {
         
         int iNombreArmoireChoisie = Random.Range(0,1);
@@ -105,6 +91,7 @@ public class Client : MonoBehaviour
         }
     
     }
+    */
 
     public void ClientArrive()
     {
