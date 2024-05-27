@@ -5,15 +5,18 @@ using UnityEngine;
 public class ArmoireManager : MonoBehaviour
 {
 
-    public Armoire[] armoires;
 
+
+  public Armoire[] armoires;
+
+    
     public Armoire GetRandomNonEmptyShelf()
     {
         List<Armoire> nonEmptyShelves = new List<Armoire>();
 
         foreach (Armoire armoire in armoires)
         {
-            if (!armoire.estVide)
+            if (!armoire.ArmoireHaveItem)
             {
                 nonEmptyShelves.Add(armoire);
             }
