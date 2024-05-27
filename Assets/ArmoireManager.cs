@@ -14,9 +14,21 @@ public class ArmoireManager : MonoBehaviour
     {
         List<Armoire> nonEmptyShelves = new List<Armoire>();
 
+         if (armoires == null || armoires.Length == 0)
+        {
+            
+            return null;
+        }
+
         foreach (Armoire armoire in armoires)
         {
-            if (!armoire.ArmoireHaveItem)
+            if (armoire == null)
+            {
+            
+                continue;
+            }
+
+            if (!armoire.EstVide)
             {
                 nonEmptyShelves.Add(armoire);
             }
@@ -29,7 +41,7 @@ public class ArmoireManager : MonoBehaviour
         }
         else
         {
-            return null;  // Retourne null s'il n'y a pas d'armoire non vide
+            return null;
         }
     }
 

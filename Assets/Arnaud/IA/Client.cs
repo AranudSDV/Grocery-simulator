@@ -35,18 +35,20 @@ public class Client : MonoBehaviour
     
     public Transform Player;
 
-
-    
+    public ArmoireManager ArmoireManager;
 
     bool ClientFini = false;
 
     public LayerMask ArmoireMask;
 
+    public bool clientspawn = false;
+
     void Start()
     {
         client = GetComponent<NavMeshAgent>();
-        //ClientSpawn();
-
+        clientspawn = true;
+        
+        
     }
 
    
@@ -60,6 +62,16 @@ public class Client : MonoBehaviour
             bClientArrive = false;
         }
 
+        if(clientspawn == true)
+        {
+            StartCoroutine(FinGame());
+            clientspawn = false;
+            
+        }
+        
+
+        
+
         //Debug.DrawRay(transform.position, client.transform.TransformDirection(Vector3.forward), Color.green);
 
         //NavMeshHit hit;
@@ -67,31 +79,32 @@ public class Client : MonoBehaviour
         //bClientArrive = NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit,  NavMesh.AllAreas);
     }
 
-    
+    IEnumerator FinGame()
+    {
+        yield return new WaitForSeconds(10);
+        ClientSpawn();
+    }
         
+    
 
-    /*void ClientSpawn()
+    public void ClientSpawn()
     {
         
-        int iNombreArmoireChoisie = Random.Range(0,1);
+        Armoire targetArmoire = ArmoireManager.GetRandomNonEmptyShelf();
 
-        for(int i = 0; i < 2; i++)
+        if (targetArmoire != null)
         {
             
-            int indexAleatoire = Random.Range(0, armoiresAvecObjets.Count);
-
+            client.SetDestination(targetArmoire.transform.position);
             
-
-            if(bClientArrive == false)
-            {
-                client.SetDestination(armoire.transform.position);
-            }
-
-            
+        }
+        else
+        {
+            Debug.Log("Toutes les armoires sont vides.");
         }
     
     }
-    */
+    
 
     public void ClientArrive()
     {
