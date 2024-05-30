@@ -11,11 +11,12 @@ public class SellButton : MonoBehaviour
     public MoneyManagment MoneyManager;
     public SpriteRenderer Icon;
 
-    float itemPrice = 0f;
+    public float itemPrice = 0f;
     
 
     public TMP_Text PriceTxt;
     float BPrice;
+
     
     
 
@@ -30,8 +31,7 @@ public class SellButton : MonoBehaviour
     void Update()
     {
 
-        itemPrice = GetComponent<item>().SellPrice;
-        Icon.sprite = GetComponent<item>().icon;
+       
 
         BPrice = itemPrice;
         string SPrice = BPrice.ToString();

@@ -7,7 +7,7 @@ public class PcManager : MonoBehaviour
     public GameObject BouttonMetero;
     public GameObject MeteroSite;
     public GameObject PanierMeteroSite;
-
+    public GameObject Page_1;
 
 
     void Start()
@@ -29,5 +29,15 @@ public class PcManager : MonoBehaviour
     public void MeterositePanier()
     {
         PanierMeteroSite.SetActive(true);
+    }
+
+    public void Page1()
+    {
+        Page_1.SetActive(true);
+    }
+
+    public void Page2()
+    {
+        Page_1.SetActive(false);
     }
 }
