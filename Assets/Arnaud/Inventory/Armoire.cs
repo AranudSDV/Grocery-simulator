@@ -215,6 +215,9 @@ public class Armoire : MonoBehaviour
     GameObject client;
 
     public bool EstVide = false;
+
+    public List<GameObject> ItemInArmoire = new List<GameObject>();
+
     
     
     
@@ -223,7 +226,7 @@ public class Armoire : MonoBehaviour
     
     void Start()
   {
-      
+    
   }
 
     
@@ -260,6 +263,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot1 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot1);
       return;
     }
     
@@ -274,6 +278,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot2 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot2);
+
       return;
 
     }
@@ -289,6 +295,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot3 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot3);
+
       return;
     }
 
@@ -304,6 +312,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot4 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot4);
+
 
       return;
     }
@@ -319,6 +329,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot5 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot5);
+
 
       return;
     }
@@ -334,6 +346,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot6 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot6);
+
 
       return;
     }
@@ -349,6 +363,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot7 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot7);
+
 
       return;
     }
@@ -364,6 +380,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot8 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot8);
+
 
       return;
     }
@@ -379,6 +397,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot9 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot9);
+
 
       return;
     }
@@ -394,6 +414,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot10 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot10);
+
 
       return;
     }
@@ -409,6 +431,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot11 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot11);
+
 
       return;
     }
@@ -424,6 +448,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot12 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot12);
+
 
       return;
     }
@@ -439,6 +465,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot13 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot13);
+
 
       return;
     }
@@ -454,6 +482,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot14 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot14);
+
 
       return;
     }
@@ -469,6 +499,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot15 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot15);
+
 
       return;
     }
@@ -484,6 +516,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot16 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot16);
+
 
       return;
     }
@@ -499,6 +533,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot17 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot17);
+
 
       return;
     }
@@ -514,6 +550,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot18 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot18);
+
 
       return;
     }
@@ -529,6 +567,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot19 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot19);
+
 
       return;
     }
@@ -544,6 +584,8 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot20 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot20);
+
 
       return;
     }
@@ -559,6 +601,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot21 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot21);
 
       return;
     }
@@ -574,6 +617,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot22 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot22);
 
       return;
     }
@@ -589,6 +633,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot23 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot23);
 
       return;
     }
@@ -604,6 +649,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot24 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot24);
 
       return;
     }
@@ -619,6 +665,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot25 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot25);
 
       return;
     }
@@ -634,6 +681,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot26 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot26);
 
       return;
     }
@@ -649,6 +697,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot27 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot27);
 
       return;
     }
@@ -664,6 +713,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot28 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot28);
 
       return;
     }
@@ -679,6 +729,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot29 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot29);
 
       return;
     }
@@ -694,6 +745,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot30 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot30);
 
       return;
     }
@@ -709,6 +761,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot31 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot31);
 
       return;
     }
@@ -724,6 +777,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot32 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot32);
 
       return;
     }
@@ -739,6 +793,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot33 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot33);
 
       return;
     }
@@ -754,6 +809,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot34 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot34);
 
       return;
     }
@@ -769,6 +825,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot35 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot35);
 
       return;
     }
@@ -784,6 +841,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot36 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot36);
 
       return;
     }
@@ -799,6 +857,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot37 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot37);
 
       return;
     }
@@ -814,6 +873,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot38 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot38);
 
       return;
     }
@@ -829,6 +889,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot39 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot39);
 
       return;
     }
@@ -844,6 +905,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot40 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot40);
 
       return;
     }
@@ -859,6 +921,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot41 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot41);
 
       return;
     }
@@ -874,6 +937,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot42 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot42);
 
       return;
     }
@@ -889,6 +953,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot43 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot43);
 
       return;
     }
@@ -904,6 +969,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot44 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot44);
 
       return;
     }
@@ -919,6 +985,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot45 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot45);
 
       return;
     }
@@ -934,6 +1001,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot46 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot46);
 
       return;
     }
@@ -949,6 +1017,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot47 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot47);
 
       return;
     }
@@ -964,6 +1033,7 @@ public class Armoire : MonoBehaviour
       myRigidbody.isKinematic = true;
       myRigidbody.detectCollisions = false;
       ItemSlot48 = ObjetInHand;
+      ItemInArmoire.Add(ItemSlot48);
 
       return;
     }
@@ -983,6 +1053,9 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+  
+      
+      
       return;
     }
 
@@ -997,6 +1070,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1011,6 +1086,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1025,6 +1102,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1039,6 +1118,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1053,6 +1134,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1067,6 +1150,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1081,6 +1166,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1095,6 +1182,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1109,6 +1198,8 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
+      
       return;
     }
 
@@ -1123,6 +1214,7 @@ public class Armoire : MonoBehaviour
       Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
       myRigidbody.isKinematic = false;
       myRigidbody.detectCollisions = true;
+      
       return;
     }
 
