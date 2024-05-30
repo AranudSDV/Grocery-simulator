@@ -36,12 +36,15 @@ public class Client : MonoBehaviour
     public Transform Player;
 
     public ArmoireManager ArmoireManager;
+    public Armoire Armoire;
 
     bool ClientFini = false;
 
     public LayerMask ArmoireMask;
 
     public bool clientspawn = false;
+
+    public int IndexRandomArmoire;
 
     void Start()
     {
@@ -95,7 +98,7 @@ public class Client : MonoBehaviour
         if (targetArmoire != null)
         {
             
-            client.SetDestination(targetArmoire.transform.position);
+            client.SetDestination(targetArmoire.RecupPoint.transform.position);
             
         }
         else
@@ -109,6 +112,8 @@ public class Client : MonoBehaviour
     public void ClientArrive()
     {
         bClientArrive = true;
+        IndexRandomArmoire = Armoire.GetRandomOccupiedIndex();
+        Debug.Log(IndexRandomArmoire);
     }
 
     
