@@ -8,6 +8,15 @@ public class PcManager : MonoBehaviour
     public GameObject MeteroSite;
     public GameObject PanierMeteroSite;
     public GameObject Page_1;
+    public GameObject Page_2;
+    public GameObject Page_3;
+    public GameObject FlecheP1;
+    public GameObject FlecheP2;
+    public GameObject FlecheP22;
+    public GameObject FlecheP3;
+
+    public GameObject Page2Lock;
+    public GameObject Page3Lock;
 
 
     void Start()
@@ -34,10 +43,38 @@ public class PcManager : MonoBehaviour
     public void Page1()
     {
         Page_1.SetActive(true);
+        Page_2.SetActive(false);
+        Page_3.SetActive(false);
+
+        FlecheP1.SetActive(true);
+        FlecheP2.SetActive(false);
+        FlecheP22.SetActive(false);
+        FlecheP3.SetActive(false);
+
     }
 
     public void Page2()
     {
         Page_1.SetActive(false);
+        Page_2.SetActive(true);
+        Page_3.SetActive(false);
+
+
+        FlecheP1.SetActive(false);
+        FlecheP2.SetActive(true);
+        FlecheP22.SetActive(true);
+        FlecheP3.SetActive(false);
+    }
+
+    public void Page3()
+    {
+        Page_1.SetActive(false);
+        Page_2.SetActive(false);
+        Page_3.SetActive(true);
+
+        FlecheP1.SetActive(false);
+        FlecheP2.SetActive(false);
+        FlecheP22.SetActive(false);
+        FlecheP3.SetActive(true);
     }
 }
