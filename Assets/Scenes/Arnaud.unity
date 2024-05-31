@@ -3117,6 +3117,11 @@ PrefabInstance:
       propertyPath: ItemPickup
       value: 
       objectReference: {fileID: 999520218}
+    - target: {fileID: 5682726629970318939, guid: 512bf815d5f0e524eac1fa056b112100,
+        type: 3}
+      propertyPath: RecupPoint
+      value: 
+      objectReference: {fileID: 2038457364}
     - target: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
         type: 3}
       propertyPath: m_Name
@@ -10322,6 +10327,11 @@ PrefabInstance:
       propertyPath: ItemPickup
       value: 
       objectReference: {fileID: 999520218}
+    - target: {fileID: 5682726629970318939, guid: 512bf815d5f0e524eac1fa056b112100,
+        type: 3}
+      propertyPath: RecupPoint
+      value: 
+      objectReference: {fileID: 544353261}
     - target: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
         type: 3}
       propertyPath: m_Name
@@ -17698,6 +17708,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 543707125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &544353261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
+    type: 3}
+  m_PrefabInstance: {fileID: 330203429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &545615955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -17863,6 +17879,8 @@ MonoBehaviour:
   - {fileID: 1016681785}
   - {fileID: 1706696778}
   - {fileID: 513114693}
+  Inventaire: []
+  ItemPick: {fileID: 0}
   goArmoireChoose: {fileID: 0}
   Player: {fileID: 1683411675}
   ArmoireManager: {fileID: 1984291803}
@@ -17872,6 +17890,7 @@ MonoBehaviour:
     m_Bits: 2147483648
   clientspawn: 1
   IndexRandomArmoire: 0
+  targetArmoire: {fileID: 0}
 --- !u!195 &553913264
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17961,9 +17980,9 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -23083,6 +23102,7 @@ MonoBehaviour:
   BouttonMetero: {fileID: 0}
   MeteroSite: {fileID: 0}
   PanierMeteroSite: {fileID: 0}
+  Page_1: {fileID: 0}
 --- !u!4 &728382404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -23907,7 +23927,7 @@ PrefabInstance:
     - target: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 150.434
+      value: 145.76
       objectReference: {fileID: 0}
     - target: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
@@ -23917,7 +23937,7 @@ PrefabInstance:
     - target: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -184.148
+      value: -178.65
       objectReference: {fileID: 0}
     - target: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
@@ -28536,7 +28556,7 @@ PrefabInstance:
     - target: {fileID: 2882730452510179058, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
       propertyPath: NombreItem
-      value: 6
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3845772582197724717, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
@@ -31856,6 +31876,11 @@ PrefabInstance:
       propertyPath: ItemPickup
       value: 
       objectReference: {fileID: 999520218}
+    - target: {fileID: 5682726629970318939, guid: 512bf815d5f0e524eac1fa056b112100,
+        type: 3}
+      propertyPath: RecupPoint
+      value: 
+      objectReference: {fileID: 1315975957}
     - target: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
         type: 3}
       propertyPath: m_Name
@@ -35471,6 +35496,8 @@ MonoBehaviour:
   ArmoirePosition4: {fileID: 0}
   goArmoire4: {fileID: 0}
   armoires: []
+  Inventaire: []
+  ItemPick: {fileID: 0}
   goArmoireChoose: {fileID: 0}
   Player: {fileID: 0}
   ArmoireManager: {fileID: 0}
@@ -35480,6 +35507,7 @@ MonoBehaviour:
     m_Bits: 0
   clientspawn: 1
   IndexRandomArmoire: 0
+  targetArmoire: {fileID: 0}
 --- !u!195 &1148243757
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -38138,6 +38166,8 @@ MonoBehaviour:
   ArmoirePosition4: {fileID: 0}
   goArmoire4: {fileID: 0}
   armoires: []
+  Inventaire: []
+  ItemPick: {fileID: 0}
   goArmoireChoose: {fileID: 0}
   Player: {fileID: 0}
   ArmoireManager: {fileID: 0}
@@ -38147,6 +38177,7 @@ MonoBehaviour:
     m_Bits: 0
   clientspawn: 1
   IndexRandomArmoire: 0
+  targetArmoire: {fileID: 0}
 --- !u!195 &1242390161
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -40531,6 +40562,12 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &1315975957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1020076464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1318213005 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2345787190756996246, guid: c00ab184b918a4747b4530d8f79b1128,
@@ -43060,6 +43097,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2681681095150893343, guid: 0378987e45d2c114dbfd9680621f7410,
     type: 3}
   m_PrefabInstance: {fileID: 916884218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1377034681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
+    type: 3}
+  m_PrefabInstance: {fileID: 2118269886}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1378074324 stripped
 Transform:
@@ -53388,7 +53431,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683411673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.66, y: 1.296, z: -182.81}
+  m_LocalPosition: {x: 151.323, y: 1.296, z: -192.913}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71270,6 +71313,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f08b6e174579828419232239318e9007, type: 3}
+--- !u!1 &2038457364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
+    type: 3}
+  m_PrefabInstance: {fileID: 108338227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2038740866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74312,6 +74361,11 @@ PrefabInstance:
       propertyPath: ItemPickup
       value: 
       objectReference: {fileID: 999520218}
+    - target: {fileID: 5682726629970318939, guid: 512bf815d5f0e524eac1fa056b112100,
+        type: 3}
+      propertyPath: RecupPoint
+      value: 
+      objectReference: {fileID: 1377034681}
     - target: {fileID: 6158813980677373952, guid: 512bf815d5f0e524eac1fa056b112100,
         type: 3}
       propertyPath: m_Name

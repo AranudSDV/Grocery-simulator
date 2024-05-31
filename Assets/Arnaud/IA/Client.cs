@@ -27,6 +27,9 @@ public class Client : MonoBehaviour
 
     public GameObject[] armoires;
 
+    public GameObject[] Inventaire;
+    public GameObject ItemPick;
+
 
     Transform aArmoireChoose;
 
@@ -46,6 +49,8 @@ public class Client : MonoBehaviour
 
     public int IndexRandomArmoire;
 
+    public Armoire targetArmoire;
+
     void Start()
     {
         client = GetComponent<NavMeshAgent>();
@@ -60,14 +65,18 @@ public class Client : MonoBehaviour
 
         if(bClientArrive == true)
         {
-            Debug.Log("client arrive = true");
+        
+            IndexRandomArmoire = targetArmoire.GetRandomOccupiedIndex();
+            Debug.Log(IndexRandomArmoire);
             client.ResetPath();
             bClientArrive = false;
+            
+            
         }
 
         if(clientspawn == true)
         {
-            StartCoroutine(FinGame());
+            StartCoroutine(Debut());
             clientspawn = false;
             
         }
@@ -82,7 +91,7 @@ public class Client : MonoBehaviour
         //bClientArrive = NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit,  NavMesh.AllAreas);
     }
 
-    IEnumerator FinGame()
+    IEnumerator Debut()
     {
         yield return new WaitForSeconds(10);
         ClientSpawn();
@@ -93,7 +102,7 @@ public class Client : MonoBehaviour
     public void ClientSpawn()
     {
         
-        Armoire targetArmoire = ArmoireManager.GetRandomNonEmptyShelf();
+        targetArmoire = ArmoireManager.GetRandomNonEmptyShelf();
 
         if (targetArmoire != null)
         {
@@ -105,6 +114,11 @@ public class Client : MonoBehaviour
         {
             Debug.Log("Toutes les armoires sont vides.");
         }
+
+        if(bClientArrive == true)
+        {
+            
+        }
     
     }
     
@@ -112,8 +126,9 @@ public class Client : MonoBehaviour
     public void ClientArrive()
     {
         bClientArrive = true;
-        IndexRandomArmoire = Armoire.GetRandomOccupiedIndex();
-        Debug.Log(IndexRandomArmoire);
+        
+        
+        
     }
 
     
