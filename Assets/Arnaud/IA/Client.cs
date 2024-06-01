@@ -6,53 +6,34 @@ using UnityEngine.AI;
 public class Client : MonoBehaviour
 {
     private NavMeshAgent client;
+    public GameObject GOclient;
 
     public bool bClientArrive = false;
 
     public int iNombreArmoireMax = 1;
     public int iNombreItemMax = 1;
 
-
-    public Transform ArmoirePosition1;
-    public  GameObject goArmoire1;
-
-    public Transform ArmoirePosition2;
-    public  GameObject goArmoire2;
-
-    public Transform ArmoirePosition3;
-    public  GameObject goArmoire3;
-
-    public Transform ArmoirePosition4;
-    public  GameObject goArmoire4;
-
     public GameObject[] armoires;
 
-    public GameObject[] Inventaire;
-    public GameObject ItemPick;
-
-
-    Transform aArmoireChoose;
-
-    public  GameObject goArmoireChoose;
-    
-    
-    public Transform Player;
+    public List<GameObject> IAInventaire;
 
     public ArmoireManager ArmoireManager;
     public Armoire Armoire;
 
     bool ClientFini = false;
 
-    public LayerMask ArmoireMask;
-
     public bool clientspawn = false;
 
-    public int IndexRandomArmoire;
-
     public Armoire targetArmoire;
+    public GameObject ItemSelected;
+    public int ItemSelectedIndex;
+
+    public int IANombreMaxItem = 10;
+
 
     void Start()
     {
+        List<GameObject> IAInventaire = new List<GameObject>();
         client = GetComponent<NavMeshAgent>();
         clientspawn = true;
         
@@ -65,10 +46,30 @@ public class Client : MonoBehaviour
 
         if(bClientArrive == true)
         {
-        
-            IndexRandomArmoire = targetArmoire.GetRandomOccupiedIndex();
-            Debug.Log(IndexRandomArmoire);
             client.ResetPath();
+            int NombreItemCHoisi = Random.Range(1, IANombreMaxItem);
+
+            Debug.Log("Nombre item choisi" + NombreItemCHoisi);
+
+            for(int i = 0; i < NombreItemCHoisi; i++)
+            {
+                var itemWithIndex = targetArmoire.GetRandomOccupiedObject();
+                if (itemWithIndex != null)
+                {
+                    ItemSelected = itemWithIndex.GameObject;
+                    ItemSelectedIndex = itemWithIndex.Index; 
+                    IAInventaire.Add(ItemSelected);
+
+                    targetArmoire.IATake();
+
+                    ItemSelected.transform.SetParent(GOclient.transform);
+                    ItemSelected.transform.localPosition = new Vector3(0f, 0f, 0f);
+                }
+                
+                
+            }
+            
+            Debug.Log("Client Sortie boucle for");
             bClientArrive = false;
             
             
@@ -93,7 +94,7 @@ public class Client : MonoBehaviour
 
     IEnumerator Debut()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(20);
         ClientSpawn();
     }
         
@@ -135,15 +136,3 @@ public class Client : MonoBehaviour
 
 }
     
-    
-    
-
-
-
-    
-
-
-
-
-
-

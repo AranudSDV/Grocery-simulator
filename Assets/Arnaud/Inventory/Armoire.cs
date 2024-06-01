@@ -220,15 +220,10 @@ public class Armoire : MonoBehaviour
 
     public GameObject RecupPoint;
 
-    
-    
-    
 
-    
-    
-    void Start()
+  void Start()
   {
-    
+    GameObjectWithIndex selectedObject = GetRandomOccupiedObject();
   }
 
     
@@ -1863,28 +1858,46 @@ public class Armoire : MonoBehaviour
     }
   }
 
-  
-  public int GetRandomOccupiedIndex()
+
+
+  public class GameObjectWithIndex
     {
-        List<int> occupiedIndices = new List<int>();
-
-        
-        for (int i = 0; i < ItemInArmoire.Count; i++)
-        {
-            if (ItemInArmoire[i] != null)
-            {
-                occupiedIndices.Add(i);
-            }
-        }
-
-        
-        if (occupiedIndices.Count == 0)
-        {
-            return -1;
-        }
-
-        
-        int randomIndex = Random.Range(0, occupiedIndices.Count);
-        return occupiedIndices[randomIndex];
+      public GameObject GameObject { get; set; }
+      public int Index { get; set; }
     }
+
+    public GameObjectWithIndex GetRandomOccupiedObject()
+    {
+      List<GameObjectWithIndex> occupiedObjects = new List<GameObjectWithIndex>();
+
+      for (int i = 0; i < ItemInArmoire.Count; i++)
+      {
+        if (ItemInArmoire[i] != null)
+        {
+          occupiedObjects.Add(new GameObjectWithIndex { GameObject = ItemInArmoire[i], Index = i });
+        }
+      }
+
+      if (occupiedObjects.Count == 0)
+      {
+       return null;
+      }
+
+      
+
+      int randomIndex = Random.Range(0, occupiedObjects.Count);
+      return occupiedObjects[randomIndex];
+    }
+
+    public void IATake()
+    {
+      GameObjectWithIndex randomObject = GetRandomOccupiedObject();
+      GameObject gameObject = randomObject.GameObject;
+      int index = randomObject.Index;
+      Debug.Log(index);
+
+      ItemInArmoire.RemoveAt(index);
+      ItemInArmoire.Insert(index, null);
+    }
+    
 }

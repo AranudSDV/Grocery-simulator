@@ -17863,34 +17863,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GOclient: {fileID: 553913262}
   bClientArrive: 0
   iNombreArmoireMax: 5
   iNombreItemMax: 1
-  ArmoirePosition1: {fileID: 670244618}
-  goArmoire1: {fileID: 0}
-  ArmoirePosition2: {fileID: 1189736675}
-  goArmoire2: {fileID: 0}
-  ArmoirePosition3: {fileID: 1629215915}
-  goArmoire3: {fileID: 0}
-  ArmoirePosition4: {fileID: 1434214952}
-  goArmoire4: {fileID: 0}
   armoires:
   - {fileID: 116965901}
   - {fileID: 1016681785}
   - {fileID: 1706696778}
   - {fileID: 513114693}
-  Inventaire: []
-  ItemPick: {fileID: 0}
-  goArmoireChoose: {fileID: 0}
-  Player: {fileID: 1683411675}
+  IAInventaire: []
   ArmoireManager: {fileID: 1984291803}
   Armoire: {fileID: 0}
-  ArmoireMask:
-    serializedVersion: 2
-    m_Bits: 2147483648
   clientspawn: 1
-  IndexRandomArmoire: 0
   targetArmoire: {fileID: 0}
+  ItemSelected: {fileID: 0}
+  ItemSelectedIndex: 0
+  IANombreMaxItem: 3
 --- !u!195 &553913264
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21523,12 +21512,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1309823536}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &670244618 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7184593236698710751, guid: 512bf815d5f0e524eac1fa056b112100,
-    type: 3}
-  m_PrefabInstance: {fileID: 793953763}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &672459522 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -23103,6 +23086,14 @@ MonoBehaviour:
   MeteroSite: {fileID: 0}
   PanierMeteroSite: {fileID: 0}
   Page_1: {fileID: 0}
+  Page_2: {fileID: 0}
+  Page_3: {fileID: 0}
+  FlecheP1: {fileID: 0}
+  FlecheP2: {fileID: 0}
+  FlecheP22: {fileID: 0}
+  FlecheP3: {fileID: 0}
+  Page2Lock: {fileID: 0}
+  Page3Lock: {fileID: 0}
 --- !u!4 &728382404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -23927,7 +23918,7 @@ PrefabInstance:
     - target: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 145.76
+      value: 145.35
       objectReference: {fileID: 0}
     - target: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
         type: 3}
@@ -35484,30 +35475,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GOclient: {fileID: 0}
   bClientArrive: 0
   iNombreArmoireMax: 1
   iNombreItemMax: 1
-  ArmoirePosition1: {fileID: 0}
-  goArmoire1: {fileID: 0}
-  ArmoirePosition2: {fileID: 0}
-  goArmoire2: {fileID: 0}
-  ArmoirePosition3: {fileID: 0}
-  goArmoire3: {fileID: 0}
-  ArmoirePosition4: {fileID: 0}
-  goArmoire4: {fileID: 0}
   armoires: []
-  Inventaire: []
-  ItemPick: {fileID: 0}
-  goArmoireChoose: {fileID: 0}
-  Player: {fileID: 0}
+  IAInventaire: []
   ArmoireManager: {fileID: 0}
   Armoire: {fileID: 0}
-  ArmoireMask:
-    serializedVersion: 2
-    m_Bits: 0
   clientspawn: 1
-  IndexRandomArmoire: 0
   targetArmoire: {fileID: 0}
+  ItemSelected: {fileID: 0}
+  ItemSelectedIndex: 0
+  IANombreMaxItem: 3
 --- !u!195 &1148243757
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36658,12 +36638,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8181783024793394966, guid: 625bda1d8a5fa0940ba218b990d5bf1b,
     type: 3}
   m_PrefabInstance: {fileID: 793207185}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1189736675 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7184593236698710751, guid: 512bf815d5f0e524eac1fa056b112100,
-    type: 3}
-  m_PrefabInstance: {fileID: 330203429}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1189752137
 PrefabInstance:
@@ -38154,30 +38128,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GOclient: {fileID: 0}
   bClientArrive: 0
   iNombreArmoireMax: 1
   iNombreItemMax: 1
-  ArmoirePosition1: {fileID: 0}
-  goArmoire1: {fileID: 0}
-  ArmoirePosition2: {fileID: 0}
-  goArmoire2: {fileID: 0}
-  ArmoirePosition3: {fileID: 0}
-  goArmoire3: {fileID: 0}
-  ArmoirePosition4: {fileID: 0}
-  goArmoire4: {fileID: 0}
   armoires: []
-  Inventaire: []
-  ItemPick: {fileID: 0}
-  goArmoireChoose: {fileID: 0}
-  Player: {fileID: 0}
+  IAInventaire: []
   ArmoireManager: {fileID: 0}
   Armoire: {fileID: 0}
-  ArmoireMask:
-    serializedVersion: 2
-    m_Bits: 0
   clientspawn: 1
-  IndexRandomArmoire: 0
   targetArmoire: {fileID: 0}
+  ItemSelected: {fileID: 0}
+  ItemSelectedIndex: 0
+  IANombreMaxItem: 3
 --- !u!195 &1242390161
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44761,12 +44724,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8190e6daf82bec0459c9b9b86b679ff3, type: 3}
---- !u!4 &1434214952 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7184593236698710751, guid: 512bf815d5f0e524eac1fa056b112100,
-    type: 3}
-  m_PrefabInstance: {fileID: 108338227}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1434591773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52640,12 +52597,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8190e6daf82bec0459c9b9b86b679ff3, type: 3}
---- !u!4 &1629215915 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7184593236698710751, guid: 512bf815d5f0e524eac1fa056b112100,
-    type: 3}
-  m_PrefabInstance: {fileID: 2118269886}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629253530
 GameObject:
   m_ObjectHideFlags: 0
