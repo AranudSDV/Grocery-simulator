@@ -2559,6 +2559,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 1c515b350b31e074c94140aebf0594f0, type: 2}
+  - {fileID: 2100000, guid: b4241abf722713642a104ea7af87bd8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2896,6 +2897,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  RecupPoint: {fileID: 0}
 --- !u!208 &6732113073104921854
 NavMeshObstacle:
   m_ObjectHideFlags: 0
