@@ -4,205 +4,9 @@ using UnityEngine;
 
 public class Armoire : MonoBehaviour
 {
-    //EMPLACEMENT 1
-    public GameObject Slot1;
-    public bool Solt1Occuped = false;
-    public GameObject ItemSlot1;
-
-    public GameObject Slot2;
-    public bool Solt2Occuped = false;
-    public GameObject ItemSlot2;
-
-    public GameObject Slot3;
-    public bool Solt3Occuped = false;
-    public GameObject ItemSlot3;
-
-    public GameObject Slot4;
-    public bool Solt4Occuped = false;
-    public GameObject ItemSlot4;
-
-    public GameObject Slot5;
-    public bool Solt5Occuped = false;
-    public GameObject ItemSlot5;
-
-    public GameObject Slot6;
-    public bool Solt6Occuped = false;
-    public GameObject ItemSlot6;
-
-    //EMPLACEMENT 2
-    public GameObject Slot7;
-    public bool Solt7Occuped = false;
-    public GameObject ItemSlot7;
-
-    public GameObject Slot8;
-    public bool Solt8Occuped = false;
-    public GameObject ItemSlot8;
-
-    public GameObject Slot9;
-    public bool Solt9Occuped = false;
-    public GameObject ItemSlot9;
-
-    public GameObject Slot10;
-    public bool Solt10Occuped = false;
-    public GameObject ItemSlot10;
-
-    public GameObject Slot11;
-    public bool Solt11Occuped = false;
-    public GameObject ItemSlot11;
-
-    public GameObject Slot12;
-    public bool Solt12Occuped = false;
-    public GameObject ItemSlot12;
-
-    //EMPLACEMENT 3
-    public GameObject Slot13;
-    public bool Solt13Occuped = false;
-    public GameObject ItemSlot13;
-
-    public GameObject Slot14;
-    public bool Solt14Occuped = false;
-    public GameObject ItemSlot14;
-
-    public GameObject Slot15;
-    public bool Solt15Occuped = false;
-    public GameObject ItemSlot15;
-
-    public GameObject Slot16;
-    public bool Solt16Occuped = false;
-    public GameObject ItemSlot16;
-
-    public GameObject Slot17;
-    public bool Solt17Occuped = false;
-    public GameObject ItemSlot17;
-
-    public GameObject Slot18;
-    public bool Solt18Occuped = false;
-    public GameObject ItemSlot18;
-
-    //EMPLACEMENT 4
-    public GameObject Slot19;
-    public bool Solt19Occuped = false;
-    public GameObject ItemSlot19;
-
-    public GameObject Slot20;
-    public bool Solt20Occuped = false;
-    public GameObject ItemSlot20;
-
-    public GameObject Slot21;
-    public bool Solt21Occuped = false;
-    public GameObject ItemSlot21;
-
-    public GameObject Slot22;
-    public bool Solt22Occuped = false;
-    public GameObject ItemSlot22;
-
-    public GameObject Slot23;
-    public bool Solt23Occuped = false;
-    public GameObject ItemSlot23;
-
-    public GameObject Slot24;
-    public bool Solt24Occuped = false;
-    public GameObject ItemSlot24;
-
-    //EMPLACEMENT 5
-    public GameObject Slot25;
-    public bool Solt25Occuped = false;
-    public GameObject ItemSlot25;
-
-    public GameObject Slot26;
-    public bool Solt26Occuped = false;
-    public GameObject ItemSlot26;
-
-    public GameObject Slot27;
-    public bool Solt27Occuped = false;
-    public GameObject ItemSlot27;
-
-    public GameObject Slot28;
-    public bool Solt28Occuped = false;
-    public GameObject ItemSlot28;
-
-    public GameObject Slot29;
-    public bool Solt29Occuped = false;
-    public GameObject ItemSlot29;
-
-    public GameObject Slot30;
-    public bool Solt30Occuped = false;
-    public GameObject ItemSlot30;
-
-    //EMPLACEMENT 6
-    public GameObject Slot31;
-    public bool Solt31Occuped = false;
-    public GameObject ItemSlot31;
-
-    public GameObject Slot32;
-    public bool Solt32Occuped = false;
-    public GameObject ItemSlot32;
-
-    public GameObject Slot33;
-    public bool Solt33Occuped = false;
-    public GameObject ItemSlot33;
-
-    public GameObject Slot34;
-    public bool Solt34Occuped = false;
-    public GameObject ItemSlot34;
-
-    public GameObject Slot35;
-    public bool Solt35Occuped = false;
-    public GameObject ItemSlot35;
-
-    public GameObject Slot36;
-    public bool Solt36Occuped = false;
-    public GameObject ItemSlot36;
-
-    //EMPLACEMENT 7
-    public GameObject Slot37;
-    public bool Solt37Occuped = false;
-    public GameObject ItemSlot37;
-
-    public GameObject Slot38;
-    public bool Solt38Occuped = false;
-    public GameObject ItemSlot38;
-
-    public GameObject Slot39;
-    public bool Solt39Occuped = false;
-    public GameObject ItemSlot39;
-
-    public GameObject Slot40;
-    public bool Solt40Occuped = false;
-    public GameObject ItemSlot40;
-
-    public GameObject Slot41;
-    public bool Solt41Occuped = false;
-    public GameObject ItemSlot41;
-
-    public GameObject Slot42;
-    public bool Solt42Occuped = false;
-    public GameObject ItemSlot42;
-
-    //EMPLACEMENT 8
-    public GameObject Slot43;
-    public bool Solt43Occuped = false;
-    public GameObject ItemSlot43;
-
-    public GameObject Slot44;
-    public bool Solt44Occuped = false;
-    public GameObject ItemSlot44;
-
-    public GameObject Slot45;
-    public bool Solt45Occuped = false;
-    public GameObject ItemSlot45;
-
-    public GameObject Slot46;
-    public bool Solt46Occuped = false;
-    public GameObject ItemSlot46;
-
-    public GameObject Slot47;
-    public bool Solt47Occuped = false;
-    public GameObject ItemSlot47;
-
-    public GameObject Slot48;
-    public bool Solt48Occuped = false;
-    public GameObject ItemSlot48;
+    public List<GameObject> Slots = new List<GameObject>();
+    public List<bool> SlotsOccupied = new List<bool>();
+    public List<GameObject> ItemSlots = new List<GameObject>();
 
     //RESTE
 
@@ -223,6 +27,13 @@ public class Armoire : MonoBehaviour
 
   void Start()
   {
+    for (int i = 0; i < 48; i++)
+        {
+            SlotsOccupied.Add(false);
+            ItemSlots.Add(null);
+            ItemInArmoire.Add(null);
+        }
+
     GameObjectWithIndex selectedObject = GetRandomOccupiedObject();
   }
 
@@ -231,28 +42,83 @@ public class Armoire : MonoBehaviour
   {
     ObjetInHand = Player.GetComponent<PlayerMovement>().ObjetInHand;
 
-    if( Solt1Occuped == true || Solt2Occuped == true || Solt3Occuped == true || Solt4Occuped == true || Solt5Occuped == true || Solt6Occuped == true || Solt7Occuped == true || Solt8Occuped == true || Solt9Occuped == true || Solt10Occuped == true || Solt11Occuped == true || Solt12Occuped == true || Solt13Occuped == true || Solt14Occuped == true || Solt15Occuped == true || Solt16Occuped == true || Solt17Occuped == true || Solt18Occuped == true || Solt19Occuped == true || Solt20Occuped == true || Solt21Occuped == true || Solt22Occuped == true || Solt23Occuped == true || Solt23Occuped == true || Solt24Occuped == true || Solt25Occuped == true || Solt26Occuped == true || Solt27Occuped == true || Solt28Occuped == true || Solt29Occuped == true || Solt30Occuped == true || Solt31Occuped == true || Solt32Occuped == true || Solt33Occuped == true || Solt34Occuped == true || Solt35Occuped == true || Solt36Occuped == true || Solt37Occuped == true || Solt38Occuped == true || Solt39Occuped == true || Solt40Occuped == true || Solt41Occuped == true || Solt42Occuped == true || Solt43Occuped == true || Solt44Occuped == true || Solt45Occuped == true || Solt46Occuped == true || Solt47Occuped == true || Solt48Occuped == true)
-    {
-      EstVide = false;
-    }
-    else
-    {
-      EstVide = true;
-    }
+    EstVide = !SlotsOccupied.Contains(true);
+    
   }
 
   
 
-  
+  public void Place()
+    {
+       if (ObjetInHand == null) return;
 
-  public void place()
+        for (int i = 0; i < Slots.Count; i++)
+        {
+            if (!SlotsOccupied[i])
+            {
+                PlaceItemInSlot(i);
+                return;
+            }
+        }
+    }
+
+    private void PlaceItemInSlot(int index)
+    {
+        var itemPickup = ObjetInHand.GetComponent<ItemPickup>();
+        itemPickup.ItemInArmoire();
+        ObjetInHand.transform.SetParent(Slots[index].transform);
+        ObjetInHand.transform.localPosition = Vector3.zero;
+        ObjetInHand.transform.rotation = Quaternion.identity;
+
+        SlotsOccupied[index] = true;
+        Rigidbody myRigidbody = ObjetInHand.GetComponent<Rigidbody>();
+        myRigidbody.isKinematic = true;
+        myRigidbody.detectCollisions = false;
+        ItemSlots[index] = ObjetInHand;
+        ItemInArmoire[index] = ObjetInHand;
+    }
+
+    public void Take()
+    {
+        for (int i = 0; i < Slots.Count; i++)
+        {
+            if (SlotsOccupied[i])
+            {
+                TakeItemFromSlot(i);
+                return;
+            }
+        }
+    }
+
+    private void TakeItemFromSlot(int index)
+    {
+        if (ItemSlots[index] == null) return;
+
+        ItemSlots[index].transform.SetParent(Camera.main.transform);
+        ItemSlots[index].transform.localPosition = new Vector3(0f, 0f, 1f);
+
+        SlotsOccupied[index] = false;
+        ObjectTake = ItemSlots[index];
+
+        ItemPickup.Itempickup = true;
+        Rigidbody myRigidbody = ObjectTake.GetComponent<Rigidbody>();
+        myRigidbody.isKinematic = false;
+        myRigidbody.detectCollisions = true;
+        ItemInArmoire[index] = null;
+    }
+
+
+  /*public void place()
   {
     
     if(Solt1Occuped == false)
     {
+      var itemPickup = ObjetInHand.GetComponent<ItemPickup>();
+      itemPickup.ItemInArmoire();
+      ObjetInHand.transform.SetParent(Slot1.transform);
       ObjetInHand.transform.localPosition = new Vector3(0f, 0f, 0f);
       ObjetInHand.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-      ObjetInHand.transform.SetParent(Slot1.transform);
+      
       
         
       Solt1Occuped = true;
@@ -1857,6 +1723,7 @@ public class Armoire : MonoBehaviour
       return;
     }
   }
+  */
 
 
 

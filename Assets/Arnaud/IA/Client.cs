@@ -8,7 +8,10 @@ public class Client : MonoBehaviour
     private NavMeshAgent client;
     public GameObject GOclient;
 
-    public bool bClientArrive = false;
+    public bool bClientArriveArmoire = false;
+    public bool bClientRecupereItem = false;
+
+    public bool bClientArriveCaisse = false;
 
     public int iNombreArmoireMax = 1;
     public int iNombreItemMax = 1;
@@ -29,6 +32,15 @@ public class Client : MonoBehaviour
     public int ItemSelectedIndex;
 
     public int IANombreMaxItem = 10;
+    public int IANombreMinItem = 3;
+
+    public GameObject TargetCaisse;
+    public GameObject ItemCaissePos;
+
+    private bool itemsPlaced = false;
+    private float DistanceCaisse = 0.5f;
+
+    public ItemPickup ItemPickup;
 
 
     void Start()
@@ -44,10 +56,10 @@ public class Client : MonoBehaviour
     void Update()
     {
 
-        if(bClientArrive == true)
+        if(bClientArriveArmoire == true)
         {
             client.ResetPath();
-            int NombreItemCHoisi = Random.Range(1, IANombreMaxItem);
+            int NombreItemCHoisi = Random.Range(IANombreMinItem, IANombreMaxItem);
 
             Debug.Log("Nombre item choisi" + NombreItemCHoisi);
 
@@ -69,10 +81,15 @@ public class Client : MonoBehaviour
                 
             }
             
-            Debug.Log("Client Sortie boucle for");
-            bClientArrive = false;
-            
-            
+
+            bClientRecupereItem = true;
+            bClientArriveArmoire = false;
+        
+        }
+
+        if(bClientRecupereItem == true && bClientArriveCaisse == false)
+        {
+            client.SetDestination(TargetCaisse.transform.position);
         }
 
         if(clientspawn == true)
@@ -82,14 +99,14 @@ public class Client : MonoBehaviour
             
         }
         
+        if (bClientRecupereItem && !bClientArriveCaisse && HasReachedDestination(TargetCaisse.transform.position))
+        {
+
+            PlaceItemsAtCaisse();
+            bClientArriveCaisse = true;
+        }
 
         
-
-        //Debug.DrawRay(transform.position, client.transform.TransformDirection(Vector3.forward), Color.green);
-
-        //NavMeshHit hit;
-        
-        //bClientArrive = NavMesh.Raycast(transform.position, client.transform.TransformDirection(Vector3.forward), out hit,  NavMesh.AllAreas);
     }
 
     IEnumerator Debut()
@@ -115,21 +132,34 @@ public class Client : MonoBehaviour
         {
             Debug.Log("Toutes les armoires sont vides.");
         }
-
-        if(bClientArrive == true)
-        {
-            
-        }
     
     }
     
 
     public void ClientArrive()
     {
-        bClientArrive = true;
-        
-        
-        
+        bClientArriveArmoire = true;
+    }
+
+    private void PlaceItemsAtCaisse()
+    {
+
+        foreach (GameObject item in IAInventaire)
+        {
+            var itemPickup = item.GetComponent<ItemPickup>();
+            itemPickup.ItemPlaceCaisse();
+            item.transform.SetParent(ItemCaissePos.transform);
+            item.transform.localPosition = new Vector3(0f, 0f, 0f);
+            
+            
+        }
+        itemsPlaced = true;
+    }
+
+    private bool HasReachedDestination(Vector3 destination)
+    {
+        float distance = Vector3.Distance(client.transform.position, destination);
+        return distance < DistanceCaisse;
     }
 
     

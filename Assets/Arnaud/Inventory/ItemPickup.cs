@@ -37,6 +37,19 @@ public class ItemPickup : MonoBehaviour
         GOItem.transform.SetParent(null);
     }
 
+    public void ItemInArmoire()
+    {
+        Itempickup = false;
+    }
+
+    public void ItemPlaceCaisse()
+    {
+        Rigidbody myRigidbody = GetComponent<Rigidbody>();
+        myRigidbody.useGravity = true;
+        myRigidbody.isKinematic = false;
+        myRigidbody.detectCollisions = true;
+    }
+
     void Update()
     {
         if(Itempickup == true)
