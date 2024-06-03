@@ -181,13 +181,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 if(itempickup == false)
                 {    
-                    hit.transform.GetComponent<Armoire>().take();
+                    hit.transform.GetComponent<Armoire>().Take();
                     itemPickuped = true;
                 }
 
                 if(itempickup == true)
                 {
-                    hit.transform.GetComponent<Armoire>().place();
+                    hit.transform.GetComponent<Armoire>().Place();
                     ObjetInHand = null;
                     itemDroped = true;
                 }
