@@ -7555,6 +7555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rain
       objectReference: {fileID: 0}
+    - target: {fileID: 1730619761028853099, guid: bf896a2ba86ffcf4389e01c154824eec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5781183015567977652, guid: bf896a2ba86ffcf4389e01c154824eec,
         type: 3}
       propertyPath: m_RootOrder
