@@ -445,6 +445,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: b4241abf722713642a104ea7af87bd8b, type: 2}
+    - target: {fileID: 496588809085960997, guid: 0673a28c36929ab4daa6bac9b52b725c,
+        type: 3}
+      propertyPath: m_Name
+      value: Ecran
+      objectReference: {fileID: 0}
+    - target: {fileID: 496588809085960997, guid: 0673a28c36929ab4daa6bac9b52b725c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 801069082749560911, guid: 0673a28c36929ab4daa6bac9b52b725c,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -542,6 +552,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3908022403615796890}
+    - targetCorrespondingSourceObject: {fileID: 496588809085960997, guid: 0673a28c36929ab4daa6bac9b52b725c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 372227035974904843}
     - targetCorrespondingSourceObject: {fileID: 8487167654232718067, guid: 0673a28c36929ab4daa6bac9b52b725c,
         type: 3}
       insertIndex: -1
@@ -740,6 +754,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.133266, y: 0.60609144, z: 2.4237208}
   m_Center: {x: 0, y: 0.00000023841858, z: 1.2118604}
+--- !u!1 &8940565313871122932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 496588809085960997, guid: 0673a28c36929ab4daa6bac9b52b725c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8860682925024694993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &372227035974904843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8940565313871122932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.585046, y: 0.13979235, z: 0.48984495}
+  m_Center: {x: 0.07844302, y: 0.013524788, z: 0.2449225}
 --- !u!1 &8982646900000994035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8764077512085610462, guid: 0673a28c36929ab4daa6bac9b52b725c,

@@ -14857,6 +14857,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 832637689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &454122232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6579622894600462287, guid: 43cfa94e046cbb9429396ed6d3380c67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597088750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &458109523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -37922,6 +37928,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1948167444}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1227721651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1096772447383379048, guid: 43cfa94e046cbb9429396ed6d3380c67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597088750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1230841415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2352966969036800465, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -51778,10 +51790,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1096772447383379048, guid: 43cfa94e046cbb9429396ed6d3380c67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2750918057962926515, guid: 43cfa94e046cbb9429396ed6d3380c67,
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746538610916486632, guid: 43cfa94e046cbb9429396ed6d3380c67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4513885048392896081, guid: 43cfa94e046cbb9429396ed6d3380c67,
         type: 3}
@@ -53714,9 +53736,9 @@ MonoBehaviour:
     m_Bits: 2048
   icamera: {fileID: 1315938342}
   rangePickUp: 10
-  Shop: {fileID: 0}
-  cameraUI: {fileID: 0}
-  Pc: {fileID: 0}
+  Shop: {fileID: 1227721651}
+  cameraUI: {fileID: 1978833085}
+  Pc: {fileID: 454122232}
   ObjetInHand: {fileID: 0}
   itempickup: 0
   itemPickuped: 0
@@ -64049,6 +64071,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4039145981955753086, guid: 2fad49338377a414ba626eb430ffe42d,
     type: 3}
   m_PrefabInstance: {fileID: 1978078441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1978833085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3746538610916486632, guid: 43cfa94e046cbb9429396ed6d3380c67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597088750}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1979144151
 PrefabInstance:
