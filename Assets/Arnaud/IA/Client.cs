@@ -150,8 +150,6 @@ public class Client : MonoBehaviour
             itemPickup.ItemPlaceCaisse();
             item.transform.SetParent(ItemCaissePos.transform);
             item.transform.localPosition = new Vector3(0f, 0f, 0f);
-            
-            
         }
         itemsPlaced = true;
     }
