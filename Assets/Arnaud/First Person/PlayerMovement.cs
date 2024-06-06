@@ -48,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
     private float forceMagnitude;
 
     public GameObject Caisse;
+    private float MaintiensBouttonStart;
+    public ItemPickup ItemPickup;
 
     
     void Update()
@@ -111,6 +113,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                MaintiensBouttonStart = Time.time;
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
                 if(itempickup == false)
                 {
                     hit.transform.GetComponent<ItemPickup>().PickUp();
@@ -139,6 +146,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+
+
         if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Carton))
         {
             
@@ -154,6 +163,7 @@ public class PlayerMovement : MonoBehaviour
                 
                 if(cartonpickup == true)
                 {
+                    
                     hit.transform.GetComponent<ItemPickup>().Drop();
                     ObjetInHand = null;
                     cartonDroped = true;
@@ -259,4 +269,13 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = pushDir * pushPower;
     }
     
+    /*private float CalculTempsMaintiensBOutton(float TempsMaintiens)
+        {
+            ObjetInHand = hit.transform.gameObject;
+            float ForceMaxMaintiens = 2f;
+            float MaintiensTempsNormalized = Mathf.Clamp01(TempsMaintiens / ForceMaxMaintiens);
+            float Force = MaintiensTempsNormalized * hit.transform.GetComponent<ItemPickup>().Force_Max;
+            return Force;
+        }
+        */
 }

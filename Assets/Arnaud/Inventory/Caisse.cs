@@ -21,7 +21,8 @@ public class Caisse : MonoBehaviour
 
   public List<GameObject> panier = new List<GameObject>();
 
-  public bool encaissement = false;
+  public PlayerScanner PlayerScanner;
+
 
   
   
@@ -81,14 +82,16 @@ public class Caisse : MonoBehaviour
     }
 
     panier.Clear();
-    encaissement = true;
-    StartCoroutine(AttenteEncaissement());
+    
+    PlayerScanner.Encaisse = true;
+    StartCoroutine(CaisseEncaisse());
   }
+
+  IEnumerator CaisseEncaisse()
+    {
+      yield return new WaitForSeconds(1);
+      PlayerScanner.Encaisse = false;
+    }
   
-  IEnumerator AttenteEncaissement()
-  {
-    yield return new WaitForSeconds(1);
-    encaissement = false;
-  }
 
 }
