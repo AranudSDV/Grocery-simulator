@@ -7,6 +7,8 @@ public class ItemPickup : MonoBehaviour
 
     public bool Itempickup = false;
     public GameObject GOItem;
+    public float Force_Max = 500f;
+    float force;
     //public Transform ItemPos;
 
     
@@ -28,7 +30,8 @@ public class ItemPickup : MonoBehaviour
    
     public void Drop()
     {
-
+        
+        Debug.Log(force);
         Itempickup = false;
 
         Rigidbody myRigidbody = GetComponent<Rigidbody>();

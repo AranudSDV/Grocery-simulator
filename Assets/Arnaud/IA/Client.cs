@@ -42,6 +42,12 @@ public class Client : MonoBehaviour
 
     public ItemPickup ItemPickup;
 
+    public Caisse Caisse;
+    public bool encaisse;
+    public bool CLientCaisse = false;
+
+    public GameObject SortieClient;
+
 
     void Start()
     {
@@ -106,6 +112,10 @@ public class Client : MonoBehaviour
             bClientArriveCaisse = true;
         }
 
+        if(CLientCaisse == true)
+        {
+            client.SetDestination(SortieClient.transform.position);
+        }
         
     }
 
@@ -113,6 +123,12 @@ public class Client : MonoBehaviour
     {
         yield return new WaitForSeconds(20);
         ClientSpawn();
+    }
+
+    IEnumerator Fin()
+    {
+        yield return new WaitForSeconds(60);
+        Destroy(this);
     }
         
     
@@ -124,10 +140,10 @@ public class Client : MonoBehaviour
 
         if (targetArmoire != null)
         {
-            
             client.SetDestination(targetArmoire.RecupPoint.transform.position);
             
         }
+
         else
         {
             Debug.Log("Toutes les armoires sont vides.");
@@ -158,6 +174,11 @@ public class Client : MonoBehaviour
     {
         float distance = Vector3.Distance(client.transform.position, destination);
         return distance < DistanceCaisse;
+    }
+
+    public void encaissement()
+    {
+        CLientCaisse = true;
     }
 
     
