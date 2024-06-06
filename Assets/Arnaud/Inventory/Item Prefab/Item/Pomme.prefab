@@ -193,7 +193,7 @@ MonoBehaviour:
   name: Pomme
   icon: {fileID: 21300000, guid: 44a29be1f588ca941a5728fb5358e599, type: 3}
   BuyPrice: 2
-  SellPrice: 4
+  SellPrice: 0
 --- !u!1001 &7747547047007277365
 PrefabInstance:
   m_ObjectHideFlags: 0
