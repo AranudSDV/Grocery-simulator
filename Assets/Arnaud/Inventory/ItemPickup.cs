@@ -7,8 +7,10 @@ public class ItemPickup : MonoBehaviour
 
     public bool Itempickup = false;
     public GameObject GOItem;
-    public float Force_Max = 2f;
-    float force;
+    public float ForceActuelle = 0f;
+    public float ForceAugmentation = 3f;
+    public float MaxForce = 15f;
+    
 
 
     public void PickUp()
@@ -24,15 +26,23 @@ public class ItemPickup : MonoBehaviour
    
     public void Drop()
     {
-        
-        Debug.Log(force);
+        if (Input.GetMouseButton(0))
+        {
+            ForceActuelle += ForceAugmentation * Time.deltaTime;
+            if(ForceActuelle > MaxForce)
+            {
+                ForceActuelle = MaxForce;
+            }
+        }
+        Debug.Log(ForceActuelle);
         Itempickup = false;
 
+        var direction = Camera.main.transform.forward * ForceActuelle;
         Rigidbody myRigidbody = GetComponent<Rigidbody>();
         myRigidbody.useGravity = true;
 
         GOItem.transform.SetParent(null);
-        myRigidbody.AddForce(0, 0, Force_Max, ForceMode.Impulse);
+        myRigidbody.AddForce(direction, ForceMode.Impulse);
     }
 
     public void ItemInArmoire()
