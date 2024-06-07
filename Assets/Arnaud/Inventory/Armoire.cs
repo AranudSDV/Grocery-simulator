@@ -145,6 +145,8 @@ public class Armoire : MonoBehaviour
       int index = randomObject.Index;
       Debug.Log(index);
 
+      SlotsOccupied[index] = false;
+
       ItemInArmoire.RemoveAt(index);
       ItemInArmoire.Insert(index, null);
     }

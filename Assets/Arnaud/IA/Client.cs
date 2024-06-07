@@ -48,6 +48,8 @@ public class Client : MonoBehaviour
 
     public GameObject SortieClient;
 
+    GameObject ItemAvecID;
+
 
     void Start()
     {
@@ -162,10 +164,14 @@ public class Client : MonoBehaviour
 
         foreach (GameObject item in IAInventaire)
         {
+            ItemAvecID = item.GetComponent<ItemSansID>().IteamAvecID;
             var itemPickup = item.GetComponent<ItemPickup>();
             itemPickup.ItemPlaceCaisse();
-            item.transform.SetParent(ItemCaissePos.transform);
-            item.transform.localPosition = new Vector3(0f, 0f, 0f);
+            Instantiate(ItemAvecID, new Vector3(0, 0, 0), Quaternion.identity);
+
+            ItemAvecID.transform.SetParent(ItemCaissePos.transform);
+            ItemAvecID.transform.localPosition = new Vector3(0f, 0f, 0f);
+            Destroy(item);
         }
         itemsPlaced = true;
     }

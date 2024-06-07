@@ -7,14 +7,8 @@ public class ItemPickup : MonoBehaviour
 
     public bool Itempickup = false;
     public GameObject GOItem;
-    public float Force_Max = 500f;
+    public float Force_Max = 2f;
     float force;
-    //public Transform ItemPos;
-
-    
-
-    
-    
 
 
     public void PickUp()
@@ -38,6 +32,7 @@ public class ItemPickup : MonoBehaviour
         myRigidbody.useGravity = true;
 
         GOItem.transform.SetParent(null);
+        myRigidbody.AddForce(0, 0, Force_Max, ForceMode.Impulse);
     }
 
     public void ItemInArmoire()

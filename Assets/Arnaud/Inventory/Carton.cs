@@ -14,6 +14,10 @@ public class Carton : MonoBehaviour
 
     Vector3 positionCarton;
 
+    public MeshRenderer RenderCarton;
+    public Collider ColliderCArton;
+    public Rigidbody rigCarton;
+
 
     
     void Start()
@@ -31,14 +35,24 @@ public class Carton : MonoBehaviour
     {
         positionCarton = carton.transform.position;
 
-
-        FX.transform.SetParent(null);
-        FX.SetActive(true);
+        StartCoroutine(cartonfx());
 
         for (var i = 0; i < NombreItem; i++)
         {
             Instantiate(Item,positionCarton, Quaternion.identity);
         }
+        
+        Destroy(RenderCarton);
+        Destroy(ColliderCArton);
+        Destroy(rigCarton);
+
+    }
+
+    IEnumerator cartonfx()
+    {
+        FX.SetActive(true);
+        yield return new WaitForSeconds(2);
+        Destroy(FX);
         Destroy(carton);
     }
 }

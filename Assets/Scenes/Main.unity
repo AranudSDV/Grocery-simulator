@@ -9410,6 +9410,10 @@ MonoBehaviour:
   TargetCaisse: {fileID: 0}
   ItemCaissePos: {fileID: 0}
   ItemPickup: {fileID: 0}
+  Caisse: {fileID: 0}
+  encaisse: 0
+  CLientCaisse: 0
+  SortieClient: {fileID: 0}
 --- !u!195 &223866524
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41146,7 +41150,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8ce2e092632b25044b0ac281950d909c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.27058825}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.101960786}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -63160,6 +63164,10 @@ MonoBehaviour:
   TargetCaisse: {fileID: 0}
   ItemCaissePos: {fileID: 0}
   ItemPickup: {fileID: 0}
+  Caisse: {fileID: 0}
+  encaisse: 0
+  CLientCaisse: 0
+  SortieClient: {fileID: 0}
 --- !u!33 &1344644366
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -78444,6 +78452,7 @@ MonoBehaviour:
   UIOn: 0
   pushPower: 2
   Caisse: {fileID: 279611656}
+  ItemPickup: {fileID: 0}
 --- !u!143 &1687285870
 CharacterController:
   m_ObjectHideFlags: 0
@@ -93495,6 +93504,10 @@ MonoBehaviour:
   TargetCaisse: {fileID: 0}
   ItemCaissePos: {fileID: 0}
   ItemPickup: {fileID: 0}
+  Caisse: {fileID: 0}
+  encaisse: 0
+  CLientCaisse: 0
+  SortieClient: {fileID: 0}
 --- !u!195 &2042449365
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -97007,6 +97020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itempickup: 0
   GOItem: {fileID: 0}
+  Force_Max: 500
 --- !u!4 &2106960904
 Transform:
   m_ObjectHideFlags: 0

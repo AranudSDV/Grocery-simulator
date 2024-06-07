@@ -9,6 +9,8 @@ public class item : MonoBehaviour
     public Sprite icon = null;
     public float BuyPrice = 0;
     public float SellPrice = 0;
+    public GameObject ItemSansID;
+    
 
     
     void Start()
