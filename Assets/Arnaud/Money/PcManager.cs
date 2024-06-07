@@ -20,7 +20,7 @@ public class PcManager : MonoBehaviour
 
     public GameObject BouttonLVLUP;
     public GameObject LvlupSite;
-
+    public GameObject Page_AmeliorationMagasin;
 
     void Start()
     {
@@ -36,11 +36,6 @@ public class PcManager : MonoBehaviour
     public void Meterosite()
     {
         MeteroSite.SetActive(true);
-    }
-
-    public void MeterositePanier()
-    {
-        PanierMeteroSite.SetActive(true);
     }
 
     public void Page1()
@@ -84,5 +79,10 @@ public class PcManager : MonoBehaviour
     public void Lvlupsite()
     {
         LvlupSite.SetActive(true);
+    }
+
+    public void PageMagasin()
+    {
+        Page_AmeliorationMagasin.SetActive(true);
     }
 }
