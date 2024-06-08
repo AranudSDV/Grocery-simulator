@@ -21,6 +21,8 @@ public class PcManager : MonoBehaviour
     public GameObject BouttonLVLUP;
     public GameObject LvlupSite;
     public GameObject Page_AmeliorationMagasin;
+    public GameObject Page_AmeliorationArticles;
+    
 
     void Start()
     {
