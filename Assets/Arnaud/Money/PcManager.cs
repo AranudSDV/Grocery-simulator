@@ -20,8 +20,7 @@ public class PcManager : MonoBehaviour
 
     public GameObject BouttonLVLUP;
     public GameObject LvlupSite;
-    public GameObject Page_AmeliorationMagasin;
-    public GameObject Page_AmeliorationArticles;
+    public GameObject LvlUpMagasin;
     
 
     void Start()
@@ -83,8 +82,8 @@ public class PcManager : MonoBehaviour
         LvlupSite.SetActive(true);
     }
 
-    public void PageMagasin()
+    public void LVLUP_Magasin()
     {
-        Page_AmeliorationMagasin.SetActive(true);
+        LvlUpMagasin.SetActive(true);
     }
 }

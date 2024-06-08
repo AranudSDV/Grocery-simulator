@@ -426,7 +426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9245807
 RectTransform:
   m_ObjectHideFlags: 0
@@ -67806,7 +67806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1418030410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -87132,8 +87132,7 @@ MonoBehaviour:
   Page3Lock: {fileID: 0}
   BouttonLVLUP: {fileID: 1250102226}
   LvlupSite: {fileID: 9245806}
-  Page_AmeliorationMagasin: {fileID: 152001767}
-  Page_AmeliorationArticles: {fileID: 0}
+  LvlUpMagasin: {fileID: 152001767}
 --- !u!1 &1859780487
 GameObject:
   m_ObjectHideFlags: 0
@@ -94032,7 +94031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2009876759
 RectTransform:
   m_ObjectHideFlags: 0
