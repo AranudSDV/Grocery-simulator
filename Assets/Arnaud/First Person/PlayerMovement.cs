@@ -113,8 +113,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                MaintiensBouttonStart = Time.time;
+                if(itempickup == true)
+                {
+                hit.transform.GetComponent<ItemPickup>().MaintienForce = true;     
+                }
             }
+            
 
             if (Input.GetMouseButtonUp(0))
             {
@@ -128,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
                 if(itempickup == true)
                 {
                     hit.transform.GetComponent<ItemPickup>().Drop();
+                    hit.transform.GetComponent<ItemPickup>().MaintienForce = false;  
                     ObjetInHand = null;
                     itemDroped = true;
                 }

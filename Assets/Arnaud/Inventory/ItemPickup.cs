@@ -10,8 +10,9 @@ public class ItemPickup : MonoBehaviour
     public float ForceActuelle = 0f;
     public float ForceAugmentation = 3f;
     public float MaxForce = 15f;
-    
 
+    public bool MaintienForce = false;
+    
 
     public void PickUp()
     {
@@ -26,15 +27,7 @@ public class ItemPickup : MonoBehaviour
    
     public void Drop()
     {
-        if (Input.GetMouseButton(0))
-        {
-            ForceActuelle += ForceAugmentation * Time.deltaTime;
-            if(ForceActuelle > MaxForce)
-            {
-                ForceActuelle = MaxForce;
-            }
-        }
-        Debug.Log(ForceActuelle);
+            
         Itempickup = false;
 
         var direction = Camera.main.transform.forward * ForceActuelle;
@@ -64,6 +57,19 @@ public class ItemPickup : MonoBehaviour
         {   
             transform.localPosition = new Vector3(0f, 0f, 1f);
         }
+        if(MaintienForce == true)
+        {
+            ForceActuelle += ForceAugmentation * Time.deltaTime;
+            Debug.Log("Forec" + ForceActuelle);
+
+            if(ForceActuelle > MaxForce)
+            {
+            ForceActuelle = MaxForce;
+            }
+        }
+        
+        
     }
+
 
 }
