@@ -426,7 +426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9245807
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10085,6 +10085,10 @@ MonoBehaviour:
   encaisse: 0
   CLientCaisse: 0
   SortieClient: {fileID: 0}
+  CLientALaCaisse: 0
+  CLientAttente1: 0
+  CLientAttente2: 0
+  CLientAttente3: 0
 --- !u!195 &223866524
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -58414,13 +58418,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 88b7eebdee04692419c0fad0c4277065, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1859501501}
+        m_TargetAssemblyTypeName: PcManager, Assembly-CSharp
+        m_MethodName: LVLUP_Magasin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -64801,6 +64805,10 @@ MonoBehaviour:
   encaisse: 0
   CLientCaisse: 0
   SortieClient: {fileID: 0}
+  CLientALaCaisse: 0
+  CLientAttente1: 0
+  CLientAttente2: 0
+  CLientAttente3: 0
 --- !u!33 &1344644366
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -87133,6 +87141,7 @@ MonoBehaviour:
   BouttonLVLUP: {fileID: 1250102226}
   LvlupSite: {fileID: 9245806}
   LvlUpMagasin: {fileID: 152001767}
+  LvlUpArticles: {fileID: 767568579}
 --- !u!1 &1859780487
 GameObject:
   m_ObjectHideFlags: 0
@@ -95735,6 +95744,10 @@ MonoBehaviour:
   encaisse: 0
   CLientCaisse: 0
   SortieClient: {fileID: 0}
+  CLientALaCaisse: 0
+  CLientAttente1: 0
+  CLientAttente2: 0
+  CLientAttente3: 0
 --- !u!195 &2042449365
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -99385,6 +99398,7 @@ MonoBehaviour:
   ForceAugmentation: 3
   MaxForce: 15
   MaintienForce: 0
+  imageRevealScript: {fileID: 0}
 --- !u!4 &2106960904
 Transform:
   m_ObjectHideFlags: 0
