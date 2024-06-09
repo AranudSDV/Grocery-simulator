@@ -23,8 +23,6 @@ public class Client : MonoBehaviour
     public ArmoireManager ArmoireManager;
     public Armoire Armoire;
 
-    bool ClientFini = false;
-
     public bool clientspawn = false;
 
     public Armoire targetArmoire;
@@ -37,7 +35,6 @@ public class Client : MonoBehaviour
     public GameObject TargetCaisse;
     public GameObject ItemCaissePos;
 
-    private bool itemsPlaced = false;
     private float DistanceCaisse = 0.5f;
 
     public ItemPickup ItemPickup;
@@ -50,14 +47,17 @@ public class Client : MonoBehaviour
 
     GameObject ItemAvecID;
 
+    public bool CLientALaCaisse = false;
+    public bool CLientAttente1 = false;
+    public bool CLientAttente2 = false;
+    public bool CLientAttente3 = false;
+
 
     void Start()
     {
         List<GameObject> IAInventaire = new List<GameObject>();
         client = GetComponent<NavMeshAgent>();
         clientspawn = true;
-        
-        
     }
 
    
@@ -173,7 +173,7 @@ public class Client : MonoBehaviour
             ItemAvecID.transform.localPosition = new Vector3(0f, 0f, 0f);
             Destroy(item);
         }
-        itemsPlaced = true;
+        
     }
 
     private bool HasReachedDestination(Vector3 destination)

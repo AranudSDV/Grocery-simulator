@@ -6,35 +6,47 @@ using UnityEngine.UI;
 
 public class TestImage : MonoBehaviour
 {
-
-    public Image image;
-    public float vitesseRevelation = 1f;  
+    public Image image;  
+    public float revealSpeed = 10f;  
     private RectTransform rectTransform;
-    private float largeurActuelle;
-    private float largeurCible;
+    private float currentWidth;
+    private float targetWidth;
+    private bool isRevealing = false;
 
     void Start()
     {
         rectTransform = image.GetComponent<RectTransform>();
-        largeurCible = rectTransform.rect.width;
-        largeurActuelle = 0;
-        
-        // Assurez-vous que le pivot est à gauche
-        rectTransform.pivot = new Vector2(0, 0.5f);
-
-        // Initialisez la taille de l'image à 0 de largeur
-        rectTransform.sizeDelta = new Vector2(largeurActuelle, rectTransform.sizeDelta.y);
+        targetWidth = rectTransform.rect.width; 
+        currentWidth = 0;
+        rectTransform.sizeDelta = new Vector2(currentWidth, rectTransform.sizeDelta.y);
     }
 
     void Update()
     {
-        if (largeurActuelle < largeurCible)
+        if (isRevealing)
         {
-            largeurActuelle += vitesseRevelation * Time.deltaTime;
-            largeurActuelle = Mathf.Min(largeurActuelle, largeurCible);
-            rectTransform.sizeDelta = new Vector2(largeurActuelle, rectTransform.sizeDelta.y);
+            currentWidth += revealSpeed * Time.deltaTime;
+            //Debug.Log(currentWidth);
+            if (currentWidth > targetWidth)
+                currentWidth = targetWidth;
+            rectTransform.sizeDelta = new Vector2(currentWidth, rectTransform.sizeDelta.y);
         }
-        Debug.Log(largeurActuelle);
+        if(isRevealing == false)
+        {
+            currentWidth = 0;
+            rectTransform.sizeDelta = new Vector2(currentWidth, rectTransform.sizeDelta.y);
+            //rectTransform.sizeDelta = new Vector2(0,0);
+        }
     }
 
+    public void StartReveal()
+    {
+        isRevealing = true;
+    }
+
+    public void EndReveal()
+    {
+        isRevealing = false;
+        Debug.Log("isReavling = false");
+    }
 }
