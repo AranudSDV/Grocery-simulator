@@ -90990,7 +90990,7 @@ MonoBehaviour:
   clientPrefabs:
   - {fileID: 553913262}
   numberOfClients: 10
-  dayDuration: 600
+  dayDuration: 60
   spawnPoint: {fileID: 490031485}
 --- !u!4 &2145446001 stripped
 Transform:
