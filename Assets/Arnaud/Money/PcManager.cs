@@ -22,6 +22,12 @@ public class PcManager : MonoBehaviour
     public GameObject LvlupSite;
     public GameObject LvlUpMagasin;
     public GameObject LvlUpArticles;
+    public GameObject LvlUpVente;
+    public GameObject LvlUpPNJ;
+    public GameObject LvlUpPUB;
+    public GameObject LvlUpStockage;
+
+    public gameObject Fleche_LVLUP;
 
     void Start()
     {
@@ -85,11 +91,60 @@ public class PcManager : MonoBehaviour
     public void LVLUP_Magasin()
     {
         LvlUpMagasin.SetActive(true);
+        LvlUpArticles.SetActive(false);
+        LvlUpVente.SetActive(false);
+        LvlUpPNJ.SetActive(false);
+        LvlUpPUB.SetActive(false);
+        LvlUpStockage.SetActive(false);
     }
 
     public void LVLUP_Articles()
     {
         LvlUpArticles.SetActive(true);
         LvlUpMagasin.SetActive(false);
+        LvlUpVente.SetActive(false);
+        LvlUpPNJ.SetActive(false);
+        LvlUpPUB.SetActive(false);
+        LvlUpStockage.SetActive(false);
+    }
+
+    public void LVLUP_Vente()
+    {
+        LvlUpVente.SetActive(true);
+        LvlUpMagasin.SetActive(false);
+        LvlUpArticles.SetActive(false);
+        LvlUpPNJ.SetActive(false);
+        LvlUpPUB.SetActive(false);
+        LvlUpStockage.SetActive(false);
+    }
+
+    public void LVLUP_PNJ()
+    {
+        LvlUpPNJ.SetActive(true);
+        LvlUpMagasin.SetActive(false);
+        LvlUpArticles.SetActive(false);
+        LvlUpVente.SetActive(false);
+        LvlUpPUB.SetActive(false);
+        LvlUpStockage.SetActive(false);
+    }
+
+    public void LVLUP_PUB()
+    {
+        LvlUpPUB.SetActive(true);
+        LvlUpMagasin.SetActive(false);
+        LvlUpArticles.SetActive(false);
+        LvlUpVente.SetActive(false);
+        LvlUpPNJ.SetActive(false);
+        LvlUpStockage.SetActive(false);
+    }
+
+    public void LVLUP_Stockage()
+    {
+        LvlUpStockage.SetActive(true);
+        LvlUpMagasin.SetActive(false);
+        LvlUpArticles.SetActive(false);
+        LvlUpVente.SetActive(false);
+        LvlUpPNJ.SetActive(false);
+        LvlUpPUB.SetActive(false);
     }
 }
