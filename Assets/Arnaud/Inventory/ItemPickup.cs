@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class ItemPickup : MonoBehaviour
 {
@@ -12,7 +14,25 @@ public class ItemPickup : MonoBehaviour
     public float MaxForce = 15f;
 
     public bool MaintienForce = false;
+
+    public Image image;
+    public float vitesseRevelation = 1f;  
+    private RectTransform rectTransform;
+    private float largeurActuelle;
+    private float largeurCible;
     
+    void Start()
+    {
+        
+        rectTransform = image.GetComponent<RectTransform>();
+        Debug.Log("Initial width: " + rectTransform.rect.width);
+        largeurCible = rectTransform.sizeDelta.x;
+        largeurActuelle = 0;
+        rectTransform.pivot = new Vector2(0, 0.5f);
+        rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, largeurActuelle);
+        Debug.Log("Initial sizeDelta: " + rectTransform.sizeDelta);
+        
+    }
 
     public void PickUp()
     {
@@ -60,12 +80,23 @@ public class ItemPickup : MonoBehaviour
         if(MaintienForce == true)
         {
             ForceActuelle += ForceAugmentation * Time.deltaTime;
-            Debug.Log("Forec" + ForceActuelle);
+            //Debug.Log("Forec" + ForceActuelle);
 
             if(ForceActuelle > MaxForce)
             {
             ForceActuelle = MaxForce;
             }
+
+            Debug.Log("DeltaTime: " + Time.deltaTime);
+            if (largeurActuelle < largeurCible)
+            {
+                Debug.Log("Updating width");
+                largeurActuelle += ForceActuelle;
+                largeurActuelle = Mathf.Min(largeurActuelle, largeurCible);
+                rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, largeurActuelle);
+                Debug.Log(largeurActuelle);
+            }
+            
         }
         
         

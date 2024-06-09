@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -51,10 +52,15 @@ public class PlayerMovement : MonoBehaviour
     private float MaintiensBouttonStart;
     public ItemPickup ItemPickup;
 
-    
-    void Update()
+    void Start()
     {
 
+    }
+
+
+    void Update()
+    {
+        
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDIstance, groundMask);
 
         if(isGrounded && velocity.y < 0)
@@ -113,9 +119,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                
                 if(itempickup == true)
                 {
-                hit.transform.GetComponent<ItemPickup>().MaintienForce = true;     
+
+                    hit.transform.GetComponent<ItemPickup>().MaintienForce = true;
+                    
                 }
             }
             
@@ -132,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
                 if(itempickup == true)
                 {
                     hit.transform.GetComponent<ItemPickup>().Drop();
-                    hit.transform.GetComponent<ItemPickup>().MaintienForce = false;  
+                    hit.transform.GetComponent<ItemPickup>().MaintienForce = false;
                     ObjetInHand = null;
                     itemDroped = true;
                 }
@@ -274,13 +283,5 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = pushDir * pushPower;
     }
     
-    /*private float CalculTempsMaintiensBOutton(float TempsMaintiens)
-        {
-            ObjetInHand = hit.transform.gameObject;
-            float ForceMaxMaintiens = 2f;
-            float MaintiensTempsNormalized = Mathf.Clamp01(TempsMaintiens / ForceMaxMaintiens);
-            float Force = MaintiensTempsNormalized * hit.transform.GetComponent<ItemPickup>().Force_Max;
-            return Force;
-        }
-        */
+
 }
