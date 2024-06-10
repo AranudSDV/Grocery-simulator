@@ -41336,15 +41336,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GOclient: {fileID: 0}
+  GOclient: {fileID: 553913262}
   bClientArriveArmoire: 0
   bClientRecupereItem: 0
   bClientArriveCaisse: 0
-  iNombreArmoireMax: 1
+  iNombreArmoireMax: 5
   iNombreItemMax: 1
-  armoires: []
+  armoires:
+  - {fileID: 116965901}
+  - {fileID: 1016681785}
+  - {fileID: 1706696778}
+  - {fileID: 513114693}
   IAInventaire: []
-  ArmoireManager: {fileID: 0}
+  ArmoireManager: {fileID: 1984291803}
   Armoire: {fileID: 0}
   clientspawn: 1
   targetArmoire: {fileID: 0}
@@ -41352,13 +41356,13 @@ MonoBehaviour:
   ItemSelectedIndex: 0
   IANombreMaxItem: 3
   IANombreMinItem: 3
-  TargetCaisse: {fileID: 0}
-  ItemCaissePos: {fileID: 0}
-  ItemPickup: {fileID: 0}
-  Caisse: {fileID: 0}
+  TargetCaisse: {fileID: 694622123}
+  ItemCaissePos: {fileID: 859992626}
+  ItemPickup: {fileID: 999520218}
+  Caisse: {fileID: 1086813800}
   encaisse: 0
   CLientCaisse: 0
-  SortieClient: {fileID: 0}
+  SortieClient: {fileID: 1575333816}
   CLientALaCaisse: 0
   CLientAttente1: 0
   CLientAttente2: 0
@@ -44528,6 +44532,7 @@ GameObject:
   - component: {fileID: 1242390162}
   - component: {fileID: 1242390161}
   - component: {fileID: 1242390160}
+  - component: {fileID: 1242390164}
   m_Layer: 0
   m_Name: Chien2
   m_TagString: Untagged
@@ -44643,6 +44648,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242390158}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1242390164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242390158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3aecfe4208c2c7448a82049d2343601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GOclient: {fileID: 553913262}
+  bClientArriveArmoire: 0
+  bClientRecupereItem: 0
+  bClientArriveCaisse: 0
+  iNombreArmoireMax: 5
+  iNombreItemMax: 1
+  armoires:
+  - {fileID: 116965901}
+  - {fileID: 1016681785}
+  - {fileID: 1706696778}
+  - {fileID: 513114693}
+  IAInventaire: []
+  ArmoireManager: {fileID: 1984291803}
+  Armoire: {fileID: 0}
+  clientspawn: 1
+  targetArmoire: {fileID: 0}
+  ItemSelected: {fileID: 0}
+  ItemSelectedIndex: 0
+  IANombreMaxItem: 3
+  IANombreMinItem: 3
+  TargetCaisse: {fileID: 694622123}
+  ItemCaissePos: {fileID: 859992626}
+  ItemPickup: {fileID: 999520218}
+  Caisse: {fileID: 1086813800}
+  encaisse: 0
+  CLientCaisse: 0
+  SortieClient: {fileID: 1575333816}
+  CLientALaCaisse: 0
+  CLientAttente1: 0
+  CLientAttente2: 0
+  CLientAttente3: 0
 --- !u!4 &1248413574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3165109497322199915, guid: 2addf370a42bdd940888b5b47c6f975a,
@@ -91100,7 +91148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clientPrefabs:
   - {fileID: 553913262}
-  numberOfClients: 1
+  - {fileID: 1148243754}
+  - {fileID: 1242390158}
+  numberOfClients: 10
   dayDuration: 10
   spawnPoint: {fileID: 490031485}
 --- !u!4 &2145446001 stripped
