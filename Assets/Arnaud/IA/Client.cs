@@ -89,7 +89,7 @@ public class Client : MonoBehaviour
                 
             }
             
-
+            targetArmoire.GetComponent<Armoire>().IsTargeted = false;
             bClientRecupereItem = true;
             bClientArriveArmoire = false;
         
@@ -139,9 +139,11 @@ public class Client : MonoBehaviour
     {
         
         targetArmoire = ArmoireManager.GetRandomNonEmptyShelf();
+        targetArmoire.GetComponent<Armoire>().IsTargeted = true;
 
         if (targetArmoire != null)
         {
+
             client.SetDestination(targetArmoire.RecupPoint.transform.position);
             
         }
@@ -167,10 +169,10 @@ public class Client : MonoBehaviour
             ItemAvecID = item.GetComponent<ItemSansID>().IteamAvecID;
             var itemPickup = item.GetComponent<ItemPickup>();
             itemPickup.ItemPlaceCaisse();
-            Instantiate(ItemAvecID, new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject go = Instantiate(ItemAvecID, new Vector3(0, 0, 0), Quaternion.identity);
 
-            ItemAvecID.transform.SetParent(ItemCaissePos.transform);
-            ItemAvecID.transform.localPosition = new Vector3(0f, 0f, 0f);
+            go.transform.SetParent(ItemCaissePos.transform);
+            go.transform.localPosition = new Vector3(0f, 0f, 0f);
             Destroy(item);
         }
         

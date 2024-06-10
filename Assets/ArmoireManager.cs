@@ -28,7 +28,7 @@ public class ArmoireManager : MonoBehaviour
                 continue;
             }
 
-            if (!armoire.EstVide)
+            if (!armoire.EstVide && !armoire.IsTargeted)
             {
                 nonEmptyShelves.Add(armoire);
             }
