@@ -27,7 +27,7 @@ public class PcManager : MonoBehaviour
     public GameObject LvlUpPUB;
     public GameObject LvlUpStockage;
 
-    public gameObject Fleche_LVLUP;
+    public GameObject Fleche_LVLUP;
 
     void Start()
     {
