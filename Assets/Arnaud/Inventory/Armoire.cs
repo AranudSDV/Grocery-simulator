@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class Armoire : MonoBehaviour
 {
-    public List<GameObject> Slots = new List<GameObject>();
-    public List<bool> SlotsOccupied = new List<bool>();
-    public List<GameObject> ItemSlots = new List<GameObject>();
+  public List<GameObject> Slots = new List<GameObject>();
+  public List<bool> SlotsOccupied = new List<bool>();
+  public List<GameObject> ItemSlots = new List<GameObject>();
 
-    //RESTE
-
-    public GameObject Player;
-    public GameObject ObjetInHand;
-    public GameObject ObjectTake;
-    public ItemPickup ItemPickup;
+  public GameObject Player;
+  public GameObject ObjetInHand;
+  public GameObject ObjectTake;
+  public ItemPickup ItemPickup;
 
     
-    GameObject client;
+  GameObject client;
 
-    public bool EstVide = false;
+  public bool EstVide = false;
 
-    public List<GameObject> ItemInArmoire = new List<GameObject>();
+  public List<GameObject> ItemInArmoire = new List<GameObject>();
 
-    public GameObject RecupPoint;
+  public GameObject RecupPoint;
+
+  public bool IsTargeted = false;
 
 
   void Start()
@@ -46,7 +46,7 @@ public class Armoire : MonoBehaviour
     
   }
 
-  
+
 
   public void Place()
   {
@@ -143,7 +143,6 @@ public class Armoire : MonoBehaviour
       GameObjectWithIndex randomObject = GetRandomOccupiedObject();
       GameObject gameObject = randomObject.GameObject;
       int index = randomObject.Index;
-      Debug.Log(index);
 
       SlotsOccupied[index] = false;
 

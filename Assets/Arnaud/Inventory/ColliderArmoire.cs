@@ -7,7 +7,7 @@ public class ColliderArmoire : MonoBehaviour
 
     public bool IAWait = false;
     public Collider ClientArrive;
-    GameObject client;
+    public GameObject client;
 
 
 
@@ -26,6 +26,8 @@ public class ColliderArmoire : MonoBehaviour
     private void OnTriggerEnter (Collider ClientArrive)
    {
     IAWait = true;
+    
+
 
     if( IAWait == true)
     {
