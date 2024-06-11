@@ -10,11 +10,12 @@ public class SellButton : MonoBehaviour
     public GameObject item;
     public MoneyManagment MoneyManager;
     public SpriteRenderer Icon;
+    public GameObject Spawn;
 
     public float itemPrice = 0f;
     
 
-    public TMP_Text PriceTxt;
+    //public TMP_Text PriceTxt;
     float BPrice;
 
     
@@ -33,9 +34,9 @@ public class SellButton : MonoBehaviour
 
        
 
-        BPrice = itemPrice;
-        string SPrice = BPrice.ToString();
-        PriceTxt.text = SPrice;
+        //BPrice = itemPrice;
+        //string SPrice = BPrice.ToString();
+        //PriceTxt.text = SPrice;
 
         
     }
@@ -45,7 +46,7 @@ public class SellButton : MonoBehaviour
         if(itemPrice <= MoneyManager.Money)
         {
             MoneyManager.Money = MoneyManager.Money - itemPrice;
-            Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(prefab, new Vector3(15 ,2 ,-195), Quaternion.identity);
         }
         
     }

@@ -29,6 +29,8 @@ public class PcManager : MonoBehaviour
 
     public GameObject Fleche_LVLUP;
 
+    public GameObject item;
+
     void Start()
     {
         
@@ -82,6 +84,21 @@ public class PcManager : MonoBehaviour
         FlecheP22.SetActive(false);
         FlecheP3.SetActive(true);
     }
+
+    public void QuitMETOROR()
+    {
+        Page_1.SetActive(false);
+        Page_2.SetActive(false);
+        Page_3.SetActive(false);
+
+        FlecheP1.SetActive(false);
+        FlecheP2.SetActive(false);
+        FlecheP22.SetActive(false);
+        FlecheP3.SetActive(false);
+        MeteroSite.SetActive(false);
+    }
+        
+    
 
     public void Lvlupsite()
     {
@@ -147,4 +164,11 @@ public class PcManager : MonoBehaviour
         LvlUpPNJ.SetActive(false);
         LvlUpPUB.SetActive(false);
     }
+
+    public void TEST()
+    {
+        Instantiate(item, new Vector3(0 ,0 ,0), Quaternion.identity);
+    }
+
+    
 }
