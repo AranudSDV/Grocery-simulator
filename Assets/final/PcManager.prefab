@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4505710194443979516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2768834344822860454}
+  - component: {fileID: 8910872326282728439}
+  m_Layer: 0
+  m_Name: PcManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2768834344822860454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505710194443979516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8910872326282728439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505710194443979516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b7eebdee04692419c0fad0c4277065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouttonMetero: {fileID: 0}
+  MeteroSite: {fileID: 0}
+  PanierMeteroSite: {fileID: 0}
+  Page_1: {fileID: 0}
+  Page_2: {fileID: 0}
+  Page_3: {fileID: 0}
+  FlecheP1: {fileID: 0}
+  FlecheP2: {fileID: 0}
+  FlecheP22: {fileID: 0}
+  FlecheP3: {fileID: 0}
+  Page2Lock: {fileID: 0}
+  Page3Lock: {fileID: 0}
+  BouttonLVLUP: {fileID: 0}
+  LvlupSite: {fileID: 0}
+  LvlUpMagasin: {fileID: 0}
+  LvlUpArticles: {fileID: 0}
+  LvlUpVente: {fileID: 0}
+  LvlUpPNJ: {fileID: 0}
+  LvlUpPUB: {fileID: 0}
+  LvlUpStockage: {fileID: 0}
+  Fleche_LVLUP: {fileID: 0}
