@@ -2017,7 +2017,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 31.2
 --- !u!1 &401733800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,7 +2180,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 12
 --- !u!4 &408374713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7607747961861091420, guid: c29e4bcd131220e4db980ef418ac62ff,
@@ -2734,6 +2734,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 740839419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &504394575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504394576}
+  m_Layer: 0
+  m_Name: EcranFInDeJournee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504394576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504394575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1772541988}
+  m_Father: {fileID: 1782755484}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &509076374
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,7 +4274,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 7.2
 --- !u!1 &708670814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8845167402226402732, guid: 625bda1d8a5fa0940ba218b990d5bf1b,
@@ -4271,7 +4303,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 4.8
 --- !u!1 &714084679
 GameObject:
   m_ObjectHideFlags: 0
@@ -5044,7 +5076,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 6
 --- !u!1 &815276891
 GameObject:
   m_ObjectHideFlags: 0
@@ -10806,6 +10838,142 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b858180e202fd14aa96950e6b3869c0, type: 3}
+--- !u!1 &1007304310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007304311}
+  - component: {fileID: 1007304313}
+  - component: {fileID: 1007304312}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1007304311
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007304310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1772541988}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -160}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1007304312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007304310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Jour '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4db725fbe30d80241aab4166d5776967, type: 2}
+  m_sharedMaterial: {fileID: 8736964779145143954, guid: 4db725fbe30d80241aab4166d5776967,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1007304313
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007304310}
+  m_CullTransparentMesh: 1
 --- !u!1 &1016681785 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4836826208964220313, guid: 512bf815d5f0e524eac1fa056b112100,
@@ -12407,7 +12575,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 3
 --- !u!1 &1261267729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8727885745204214201, guid: 58e3aa3827df0104f95f394848240d2b,
@@ -12430,7 +12598,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 7.8
 --- !u!4 &1261362704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8238347586971886339, guid: 58e3aa3827df0104f95f394848240d2b,
@@ -17918,7 +18086,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 8.9
 --- !u!1 &1399832359
 GameObject:
   m_ObjectHideFlags: 0
@@ -17972,7 +18140,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 10
+  itemPrice: 10.8
 --- !u!4 &1430981124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4508989799620463227, guid: f5f4c1fb8f60a214881030548869d75d,
@@ -18112,7 +18280,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 30
 --- !u!43 &1513122894
 Mesh:
   m_ObjectHideFlags: 0
@@ -23386,6 +23554,82 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2063684922714478288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1560672214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1560672215}
+  - component: {fileID: 1560672217}
+  - component: {fileID: 1560672216}
+  m_Layer: 5
+  m_Name: fond
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1560672215
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560672214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1772541988}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1560672216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560672214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.008674579, b: 0.3301887, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1560672217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560672214}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1567429206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24355,7 +24599,7 @@ PrefabInstance:
     - target: {fileID: 1241656548974731708, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1379956006273278623, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
@@ -24370,7 +24614,7 @@ PrefabInstance:
     - target: {fileID: 1672611280254639545, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1825512525594111879, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
@@ -24500,7 +24744,7 @@ PrefabInstance:
     - target: {fileID: 2729304686744559654, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2858838144512283574, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
@@ -24535,12 +24779,12 @@ PrefabInstance:
     - target: {fileID: 3035476431391653346, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3189052005493915332, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3568422799117369222, guid: bce18225edcc98d46b73c355b755820c,
         type: 3}
@@ -25362,7 +25606,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 18.5
 --- !u!1 &1706696778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4836826208964220313, guid: 512bf815d5f0e524eac1fa056b112100,
@@ -25409,13 +25653,117 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 10.8
 --- !u!1 &1763157176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1863483374129761523, guid: bce18225edcc98d46b73c355b755820c,
     type: 3}
   m_PrefabInstance: {fileID: 1674881928}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1772541987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772541988}
+  - component: {fileID: 1772541991}
+  - component: {fileID: 1772541990}
+  - component: {fileID: 1772541989}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1772541988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772541987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1560672215}
+  - {fileID: 1007304311}
+  m_Father: {fileID: 504394576}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1772541989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772541987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1772541990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772541987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1772541991
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772541987}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &1779821724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25518,6 +25866,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1927523380}
   m_SourcePrefab: {fileID: 100100000, guid: 58e3aa3827df0104f95f394848240d2b, type: 3}
+--- !u!4 &1782755484 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4513885048392896081, guid: 43cfa94e046cbb9429396ed6d3380c67,
+    type: 3}
+  m_PrefabInstance: {fileID: 2060625116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1784472263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8727885745204214201, guid: 58e3aa3827df0104f95f394848240d2b,
@@ -25540,7 +25894,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 5.4
 --- !u!224 &1800930706 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5743624843108584899, guid: 43cfa94e046cbb9429396ed6d3380c67,
@@ -26069,7 +26423,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 7.8
 --- !u!4 &1965105281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3690899579254554672, guid: 644125600386fcf48bd48ad8cb01aada,
@@ -31744,7 +32098,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 10.8
 --- !u!1 &2036759001
 GameObject:
   m_ObjectHideFlags: 0
@@ -32168,6 +32522,10 @@ PrefabInstance:
     - {fileID: 2776496010732327777, guid: 43cfa94e046cbb9429396ed6d3380c67, type: 3}
     - {fileID: 3746538610916486632, guid: 43cfa94e046cbb9429396ed6d3380c67, type: 3}
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4513885048392896081, guid: 43cfa94e046cbb9429396ed6d3380c67,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 504394576}
     - targetCorrespondingSourceObject: {fileID: 5743624843108584899, guid: 43cfa94e046cbb9429396ed6d3380c67,
         type: 3}
       insertIndex: -1
@@ -32196,7 +32554,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 18
 --- !u!4 &2063800931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5211803192415538979, guid: 512bf815d5f0e524eac1fa056b112100,
@@ -32237,7 +32595,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 10.5
 --- !u!4 &2083057337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7b858180e202fd14aa96950e6b3869c0,
@@ -32607,7 +32965,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 0
+  itemPrice: 13.2
 --- !u!1 &2143895356
 GameObject:
   m_ObjectHideFlags: 0
@@ -32657,8 +33015,9 @@ MonoBehaviour:
   - {fileID: 1148243754}
   - {fileID: 1242390158}
   numberOfClients: 10
-  dayDuration: 60
+  dayDuration: 600
   spawnPoint: {fileID: 490031485}
+  EcranFinJOurnee: {fileID: 0}
 --- !u!1 &2147290804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 221436731375376471, guid: 9136ecf5eac13274a8e225e66fdee9b7,
@@ -35141,7 +35500,7 @@ MonoBehaviour:
   MoneyManager: {fileID: 1119723739}
   Icon: {fileID: 0}
   Spawn: {fileID: 741225481}
-  itemPrice: 10
+  itemPrice: 12
 --- !u!1001 &8010537520966329388
 PrefabInstance:
   m_ObjectHideFlags: 0

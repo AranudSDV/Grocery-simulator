@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public int numberOfClients = 10;
 
 
-    public float dayDuration = 600f;
+    public float dayDuration = 0f;
 
 
     public Transform spawnPoint;
@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     private float spawnInterval;
     private float timeSinceLastSpawn;
     private int clientsSpawned;
+
+    public GameObject EcranFinJOurnee;
+
 
     void Start()
     {
@@ -43,5 +46,15 @@ public class GameManager : MonoBehaviour
 
             clientsSpawned++;
         }
+    }
+
+    IEnumerator Journee()
+    {
+        yield return new WaitForSeconds(dayDuration);
+        EcranFinJOurnee.SetActive(true);
+        
+        yield return new WaitForSeconds(5);
+        EcranFinJOurnee.SetActive(false);
+
     }
 }
