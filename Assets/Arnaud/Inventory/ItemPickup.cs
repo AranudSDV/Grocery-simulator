@@ -10,7 +10,7 @@ public class ItemPickup : MonoBehaviour
     public bool Itempickup = false;
     public GameObject GOItem;
     public float ForceActuelle = 0f;
-    public float ForceAugmentation = 4f;
+    public float ForceAugmentation;
     public float MaxForce = 15f;
 
     public bool MaintienForce = false;
@@ -19,7 +19,7 @@ public class ItemPickup : MonoBehaviour
 
     void Start()
     {
-
+        ForceAugmentation = 6f;
     }
 
     public void PickUp()
@@ -75,12 +75,10 @@ public class ItemPickup : MonoBehaviour
             {
             ForceActuelle = MaxForce;
             }
-
-            
         }
-        
-        
-    }
-
-
+        else
+        {
+            ForceActuelle = 0f;
+        }
+    }   
 }

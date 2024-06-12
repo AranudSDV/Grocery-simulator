@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject cameraUI;
     public GameObject Pc;
     public GameObject ObjetInHand;
+    public GameObject PlayerUI;
 
 
     public bool itempickup = false;
@@ -51,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Caisse;
     private float MaintiensBouttonStart;
     public ItemPickup ItemPickup;
+    public TestImage TestImage;
 
     void Start()
     {
@@ -90,7 +92,6 @@ public class PlayerMovement : MonoBehaviour
         Debug.DrawRay(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward) * rangePickUp, Color.red);
 
 
-
         if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, InteractibleMask))
         {
             if(Input.GetMouseButtonDown(0))
@@ -99,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
                 cameraUI.SetActive(true);
                 Shop.SetActive(true);
                 Pc.SetActive(true);
+                PlayerUI.SetActive(false);
                 UIOn = true;
             }
         }
@@ -109,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             cameraUI.SetActive(false);
             Pc.SetActive(false);
             UIOn = false;
-
+            PlayerUI.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
         }
         
@@ -164,8 +166,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Carton))
         {
-            
             if (Input.GetMouseButtonDown(0))
+            {
+                
+                if(cartonpickup == true)
+                {
+
+                    hit.transform.GetComponent<ItemPickup>().MaintienForce = true;
+                    
+                }
+            }
+            
+            if (Input.GetMouseButtonUp(0))
             {
                 
                 if(cartonpickup == false)
@@ -179,6 +191,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     
                     hit.transform.GetComponent<ItemPickup>().Drop();
+                    hit.transform.GetComponent<ItemPickup>().MaintienForce = false;
                     ObjetInHand = null;
                     cartonDroped = true;
                 }

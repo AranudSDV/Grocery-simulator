@@ -1923,8 +1923,8 @@ MonoBehaviour:
   item: {fileID: 221436731375376471, guid: 9136ecf5eac13274a8e225e66fdee9b7, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 7.8
-  PriceTxt: {fileID: 269335591126302571}
 --- !u!1 &1095249193850002565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,9 +2224,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5842831541024365883}
   - {fileID: 856776885438899512}
   - {fileID: 7703018546550162720}
-  - {fileID: 5842831541024365883}
   m_Father: {fileID: 396801441442099872}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2450,8 +2450,8 @@ MonoBehaviour:
   item: {fileID: 5171128511540810625, guid: f08b6e174579828419232239318e9007, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 30
-  PriceTxt: {fileID: 4780620628389273229}
 --- !u!1 &1301836569203087906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,8 +3127,8 @@ MonoBehaviour:
   item: {fileID: 114656181127482399, guid: a855cf8333126bc4c8d859f20874627b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 7426683037671525511}
 --- !u!1 &1494443313145721782
 GameObject:
   m_ObjectHideFlags: 0
@@ -4800,8 +4800,8 @@ MonoBehaviour:
   item: {fileID: 5475199105304289973, guid: 6e7866921dfc14b4e82118454190e473, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 3
-  PriceTxt: {fileID: 6155272801159701162}
 --- !u!1 &1857303396037290901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5158,8 +5158,8 @@ MonoBehaviour:
   item: {fileID: 5171128511540810625, guid: f08b6e174579828419232239318e9007, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 18.5
-  PriceTxt: {fileID: 4657832121411558407}
 --- !u!1 &1906111725361745985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5573,8 +5573,8 @@ MonoBehaviour:
   item: {fileID: 5475199105304289973, guid: 6e7866921dfc14b4e82118454190e473, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 7551947500266470133}
 --- !u!1 &2075351335621405798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7457,8 +7457,8 @@ MonoBehaviour:
   item: {fileID: 1373464612712361949, guid: b6478df5bdb2343498bb70a914553b09, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 3351519384783853576}
 --- !u!1 &2735505951225754557
 GameObject:
   m_ObjectHideFlags: 0
@@ -7881,8 +7881,8 @@ MonoBehaviour:
   item: {fileID: 114656181127482399, guid: a855cf8333126bc4c8d859f20874627b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 10.5
-  PriceTxt: {fileID: 8286901127223615354}
 --- !u!1 &2974763503214353366
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,8 +8035,8 @@ MonoBehaviour:
   item: {fileID: 8845167402226402732, guid: 625bda1d8a5fa0940ba218b990d5bf1b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 13.2
-  PriceTxt: {fileID: 4287316219857343311}
 --- !u!1 &3035476431391653346
 GameObject:
   m_ObjectHideFlags: 0
@@ -8358,8 +8358,8 @@ MonoBehaviour:
   item: {fileID: 5966314490526319707, guid: 4aedc1e8b64e2ea48a8ad5927f1f6f28, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 9088427608034372905}
 --- !u!1 &3065314093402548770
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,8 +8649,8 @@ MonoBehaviour:
   item: {fileID: 5171128511540810625, guid: f08b6e174579828419232239318e9007, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 5060077124225203512}
 --- !u!1 &3112090913250864467
 GameObject:
   m_ObjectHideFlags: 0
@@ -8931,8 +8931,8 @@ MonoBehaviour:
   item: {fileID: 5475199105304289973, guid: 6e7866921dfc14b4e82118454190e473, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 12
-  PriceTxt: {fileID: 5138329572249580631}
 --- !u!1 &3213132065392450157
 GameObject:
   m_ObjectHideFlags: 0
@@ -9086,8 +9086,8 @@ MonoBehaviour:
   item: {fileID: 221436731375376471, guid: 9136ecf5eac13274a8e225e66fdee9b7, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 9216615436657237309}
 --- !u!1 &3232206967867967032
 GameObject:
   m_ObjectHideFlags: 0
@@ -10352,8 +10352,8 @@ MonoBehaviour:
   item: {fileID: 5475199105304289973, guid: 6e7866921dfc14b4e82118454190e473, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 10.8
-  PriceTxt: {fileID: 4073550746657278862}
 --- !u!1 &3812106362548922584
 GameObject:
   m_ObjectHideFlags: 0
@@ -11134,8 +11134,8 @@ MonoBehaviour:
   item: {fileID: 1373464612712361949, guid: b6478df5bdb2343498bb70a914553b09, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 10.8
-  PriceTxt: {fileID: 7729211658280597355}
 --- !u!1 &4076642990378475518
 GameObject:
   m_ObjectHideFlags: 0
@@ -11683,8 +11683,8 @@ MonoBehaviour:
   item: {fileID: 114656181127482399, guid: a855cf8333126bc4c8d859f20874627b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 6
-  PriceTxt: {fileID: 6575157083743107747}
 --- !u!1 &4194539642441204166
 GameObject:
   m_ObjectHideFlags: 0
@@ -12109,8 +12109,8 @@ MonoBehaviour:
   item: {fileID: 221436731375376471, guid: 9136ecf5eac13274a8e225e66fdee9b7, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 7.2
-  PriceTxt: {fileID: 404573533475259256}
 --- !u!1 &4309359981753476997
 GameObject:
   m_ObjectHideFlags: 0
@@ -13021,8 +13021,8 @@ MonoBehaviour:
   item: {fileID: 5966314490526319707, guid: 4aedc1e8b64e2ea48a8ad5927f1f6f28, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 10.8
-  PriceTxt: {fileID: 9188033516787596628}
 --- !u!1 &5038412258116334442
 GameObject:
   m_ObjectHideFlags: 0
@@ -13479,8 +13479,8 @@ MonoBehaviour:
   item: {fileID: 5171128511540810625, guid: f08b6e174579828419232239318e9007, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 7973765865054535774}
 --- !u!1 &5215383966800876409
 GameObject:
   m_ObjectHideFlags: 0
@@ -14503,8 +14503,8 @@ MonoBehaviour:
   item: {fileID: 8845167402226402732, guid: 625bda1d8a5fa0940ba218b990d5bf1b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 5.4
-  PriceTxt: {fileID: 7721274631296149310}
 --- !u!1 &5417841051867144915
 GameObject:
   m_ObjectHideFlags: 0
@@ -14657,8 +14657,8 @@ MonoBehaviour:
   item: {fileID: 5966314490526319707, guid: 4aedc1e8b64e2ea48a8ad5927f1f6f28, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 8.9
-  PriceTxt: {fileID: 3954101839588730855}
 --- !u!1 &5436808127856782459
 GameObject:
   m_ObjectHideFlags: 0
@@ -15710,8 +15710,8 @@ MonoBehaviour:
   item: {fileID: 5475199105304289973, guid: 6e7866921dfc14b4e82118454190e473, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 1895013024459303982}
 --- !u!1 &5902197144126773812
 GameObject:
   m_ObjectHideFlags: 0
@@ -15864,8 +15864,8 @@ MonoBehaviour:
   item: {fileID: 1373464612712361949, guid: b6478df5bdb2343498bb70a914553b09, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 7.2
-  PriceTxt: {fileID: 144395188400341171}
 --- !u!1 &5954792343274997869
 GameObject:
   m_ObjectHideFlags: 0
@@ -17052,8 +17052,8 @@ MonoBehaviour:
   item: {fileID: 8845167402226402732, guid: 625bda1d8a5fa0940ba218b990d5bf1b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 8850185188044614741}
 --- !u!1 &6199217751725308978
 GameObject:
   m_ObjectHideFlags: 0
@@ -17752,8 +17752,8 @@ MonoBehaviour:
   item: {fileID: 8845167402226402732, guid: 625bda1d8a5fa0940ba218b990d5bf1b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 2125576277332825993}
 --- !u!1 &6394913852591281050
 GameObject:
   m_ObjectHideFlags: 0
@@ -19222,8 +19222,8 @@ MonoBehaviour:
   item: {fileID: 114656181127482399, guid: a855cf8333126bc4c8d859f20874627b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 12
-  PriceTxt: {fileID: 4106913404344788417}
 --- !u!1 &6893863208541519473
 GameObject:
   m_ObjectHideFlags: 0
@@ -19839,6 +19839,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3298314908854898090}
+  - {fileID: 3205156862396297156}
   m_Father: {fileID: 396801441442099872}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19865,7 +19866,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -21024,6 +21025,82 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7439384637463943543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3205156862396297156}
+  - component: {fileID: 6892503544149622550}
+  - component: {fileID: 7399033779921752667}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3205156862396297156
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7439384637463943543}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.169362, y: 0.6707694, z: 1.169362}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6691250425041415223}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -876, y: 424}
+  m_SizeDelta: {x: 800, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6892503544149622550
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7439384637463943543}
+  m_CullTransparentMesh: 1
+--- !u!114 &7399033779921752667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7439384637463943543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7de5ab4e11e3fc840bd7b0429556836b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7491868003236849125
 GameObject:
   m_ObjectHideFlags: 0
@@ -21395,8 +21472,8 @@ MonoBehaviour:
   item: {fileID: 5171128511540810625, guid: f08b6e174579828419232239318e9007, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 4.8
-  PriceTxt: {fileID: 3515374483929955122}
 --- !u!1 &7628709085737152915
 GameObject:
   m_ObjectHideFlags: 0
@@ -22636,8 +22713,8 @@ MonoBehaviour:
   item: {fileID: 221436731375376471, guid: 9136ecf5eac13274a8e225e66fdee9b7, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 18
-  PriceTxt: {fileID: 7432180289283364439}
 --- !u!1 &8186885108677574241
 GameObject:
   m_ObjectHideFlags: 0
@@ -22790,8 +22867,8 @@ MonoBehaviour:
   item: {fileID: 8845167402226402732, guid: 625bda1d8a5fa0940ba218b990d5bf1b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 31.2
-  PriceTxt: {fileID: 6771879390502308513}
 --- !u!1 &8195197224613288466
 GameObject:
   m_ObjectHideFlags: 0
@@ -23044,7 +23121,7 @@ Transform:
   - {fileID: 744270542766230294}
   - {fileID: 6691250425041415223}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8279663720437679579
 GameObject:
@@ -23321,8 +23398,8 @@ MonoBehaviour:
   item: {fileID: 221436731375376471, guid: 9136ecf5eac13274a8e225e66fdee9b7, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 6764304556278820573}
 --- !u!1 &8368361800262656402
 GameObject:
   m_ObjectHideFlags: 0
@@ -23884,8 +23961,8 @@ MonoBehaviour:
   item: {fileID: 114656181127482399, guid: a855cf8333126bc4c8d859f20874627b, type: 3}
   MoneyManager: {fileID: 0}
   Icon: {fileID: 0}
+  Spawn: {fileID: 0}
   itemPrice: 0
-  PriceTxt: {fileID: 55885110443691082}
 --- !u!1 &8554248606827105383
 GameObject:
   m_ObjectHideFlags: 0

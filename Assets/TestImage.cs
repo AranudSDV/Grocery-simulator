@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class TestImage : MonoBehaviour
 {
     public Image image;  
-    public float revealSpeed = 10f;  
+    public float revealSpeed;  
     private RectTransform rectTransform;
-    private float currentWidth;
+    public float currentWidth;
     private float targetWidth;
     private bool isRevealing = false;
 
