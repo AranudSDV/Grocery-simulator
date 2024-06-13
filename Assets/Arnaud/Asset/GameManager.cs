@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> clientPrefabs;
 
-    public int numberOfClients = 10;
+    public int numberOfClients;
 
 
     public float dayDuration = 0f;

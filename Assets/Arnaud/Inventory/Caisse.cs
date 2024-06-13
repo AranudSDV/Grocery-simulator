@@ -23,10 +23,20 @@ public class Caisse : MonoBehaviour
 
   public PlayerScanner PlayerScanner;
 
+  public GameObject File1;
+  public GameObject File2;
+  public GameObject File3;
+  public GameObject File4;
+
+  public bool BFile1;
+  public bool BFile2;
+  public bool BFile3;
+  public bool BFile4;
+
 
   
   
-
+  public float MultipcateurPrice = 1f;
   public float Price = 0;
   public float PanierPrice = 0;
     
@@ -45,7 +55,7 @@ public class Caisse : MonoBehaviour
   {
     scanne = true;
 
-    if(scanne == true)
+    if(scanne == true && lecteur.gameObject.tag == "Item")
     {
       
       itemScanne = lecteur.gameObject;
@@ -58,14 +68,16 @@ public class Caisse : MonoBehaviour
 
       panier.Add(itemScanne);
       
-      Price = itemScanne.GetComponent<item>().SellPrice;
+      Price = itemScanne.GetComponent<item>().SellPrice * MultipcateurPrice;
 
       priceItem.text = "Prix de " + lecteur.gameObject.name + " est à " + Price;
       
       PanierPrice = PanierPrice + Price;
       
       Destroy(itemScanne.GetComponent<item>());
+
       scanne = false;
+
     }
   }
 

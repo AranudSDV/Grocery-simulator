@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PcManager : MonoBehaviour
 {
-    public GameObject BouttonMetero;
+    
     public GameObject MeteroSite;
-    public GameObject PanierMeteroSite;
     public GameObject Page_1;
     public GameObject Page_2;
     public GameObject Page_3;
@@ -22,8 +21,6 @@ public class PcManager : MonoBehaviour
     public GameObject FlecheGD2Lock;
    
 
-
-    public GameObject BouttonLVLUP;
     public GameObject LvlupSite;
     public GameObject LvlUpMagasin;
     public GameObject LvlUpArticles;
@@ -57,6 +54,8 @@ public class PcManager : MonoBehaviour
         Page_1.SetActive(true);
         Page_2.SetActive(false);
         Page_3.SetActive(false);
+        Page2Lock.SetActive(false);
+        Page3Lock.SetActive(false);
 
         FlecheP1.SetActive(true);
         FlecheP2.SetActive(false);
@@ -70,6 +69,8 @@ public class PcManager : MonoBehaviour
         Page_1.SetActive(false);
         Page_2.SetActive(true);
         Page_3.SetActive(false);
+        Page3Lock.SetActive(false);
+        Page2Lock.SetActive(false);
 
 
         FlecheP1.SetActive(false);
@@ -94,25 +95,21 @@ public class PcManager : MonoBehaviour
     {
         Page2Lock.SetActive(true);
         Page_1.SetActive(false);
+        Page_2.SetActive(false);
+        Page_3.SetActive(false);
+        Page3Lock.SetActive(false);
     }
 
     public void Page3LockF()
     {
         Page3Lock.SetActive(true);
         Page2Lock.SetActive(false);
+        Page_2.SetActive(false);
         Page_1.SetActive(false);
     }
 
     public void QuitMETOROR()
     {
-        Page_1.SetActive(false);
-        Page_2.SetActive(false);
-        Page_3.SetActive(false);
-
-        FlecheP1.SetActive(false);
-        FlecheP2.SetActive(false);
-        FlecheP22.SetActive(false);
-        FlecheP3.SetActive(false);
         MeteroSite.SetActive(false);
     }
         
@@ -128,7 +125,6 @@ public class PcManager : MonoBehaviour
         LvlUpMagasin.SetActive(true);
         LvlUpArticles.SetActive(false);
         LvlUpVente.SetActive(false);
-        LvlUpPNJ.SetActive(false);
         LvlUpPUB.SetActive(false);
         LvlUpStockage.SetActive(false);
     }
@@ -138,7 +134,6 @@ public class PcManager : MonoBehaviour
         LvlUpArticles.SetActive(true);
         LvlUpMagasin.SetActive(false);
         LvlUpVente.SetActive(false);
-        LvlUpPNJ.SetActive(false);
         LvlUpPUB.SetActive(false);
         LvlUpStockage.SetActive(false);
     }
@@ -148,20 +143,10 @@ public class PcManager : MonoBehaviour
         LvlUpVente.SetActive(true);
         LvlUpMagasin.SetActive(false);
         LvlUpArticles.SetActive(false);
-        LvlUpPNJ.SetActive(false);
         LvlUpPUB.SetActive(false);
         LvlUpStockage.SetActive(false);
     }
 
-    public void LVLUP_PNJ()
-    {
-        LvlUpPNJ.SetActive(true);
-        LvlUpMagasin.SetActive(false);
-        LvlUpArticles.SetActive(false);
-        LvlUpVente.SetActive(false);
-        LvlUpPUB.SetActive(false);
-        LvlUpStockage.SetActive(false);
-    }
 
     public void LVLUP_PUB()
     {
@@ -169,7 +154,6 @@ public class PcManager : MonoBehaviour
         LvlUpMagasin.SetActive(false);
         LvlUpArticles.SetActive(false);
         LvlUpVente.SetActive(false);
-        LvlUpPNJ.SetActive(false);
         LvlUpStockage.SetActive(false);
     }
 
@@ -179,14 +163,14 @@ public class PcManager : MonoBehaviour
         LvlUpMagasin.SetActive(false);
         LvlUpArticles.SetActive(false);
         LvlUpVente.SetActive(false);
-        LvlUpPNJ.SetActive(false);
         LvlUpPUB.SetActive(false);
     }
 
-    public void TEST()
+    public void QuitLVLUP()
     {
-        Instantiate(item, new Vector3(0 ,0 ,0), Quaternion.identity);
+        LvlupSite.SetActive(false);
     }
+
 
     
 }

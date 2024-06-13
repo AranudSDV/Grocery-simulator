@@ -85,8 +85,6 @@ public class Client : MonoBehaviour
                     ItemSelected.transform.SetParent(GOclient.transform);
                     ItemSelected.transform.localPosition = new Vector3(0f, 0f, 0f);
                 }
-                
-                
             }
             
             targetArmoire.GetComponent<Armoire>().IsTargeted = false;
