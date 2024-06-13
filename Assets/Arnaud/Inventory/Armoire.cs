@@ -148,6 +148,7 @@ public class Armoire : MonoBehaviour
 
       ItemInArmoire.RemoveAt(index);
       ItemInArmoire.Insert(index, null);
+      IsTargeted = false;
     }
     
 }

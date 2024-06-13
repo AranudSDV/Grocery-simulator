@@ -17,6 +17,11 @@ public class PcManager : MonoBehaviour
 
     public GameObject Page2Lock;
     public GameObject Page3Lock;
+    public GameObject FlecheDD2Lock;
+    public GameObject FlecheDD3Lock;
+    public GameObject FlecheGD2Lock;
+   
+
 
     public GameObject BouttonLVLUP;
     public GameObject LvlupSite;
@@ -83,6 +88,19 @@ public class PcManager : MonoBehaviour
         FlecheP2.SetActive(false);
         FlecheP22.SetActive(false);
         FlecheP3.SetActive(true);
+    }
+
+    public void Page2LockF()
+    {
+        Page2Lock.SetActive(true);
+        Page_1.SetActive(false);
+    }
+
+    public void Page3LockF()
+    {
+        Page3Lock.SetActive(true);
+        Page2Lock.SetActive(false);
+        Page_1.SetActive(false);
     }
 
     public void QuitMETOROR()

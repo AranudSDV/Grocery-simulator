@@ -6,8 +6,8 @@ public class ArmoireManager : MonoBehaviour
 {
 
 
-
-  public Armoire[] armoires;
+    public Armoire ArmoireReturn;
+    public Armoire[] armoires;
 
     
     public Armoire GetRandomNonEmptyShelf()
@@ -28,7 +28,7 @@ public class ArmoireManager : MonoBehaviour
                 continue;
             }
 
-            if (!armoire.EstVide && !armoire.IsTargeted)
+            if (!armoire.EstVide && armoire.IsTargeted == false)
             {
                 nonEmptyShelves.Add(armoire);
             }
@@ -37,7 +37,9 @@ public class ArmoireManager : MonoBehaviour
         if (nonEmptyShelves.Count > 0)
         {
             int randomIndex = Random.Range(0, nonEmptyShelves.Count);
-            return nonEmptyShelves[randomIndex];
+            ArmoireReturn = nonEmptyShelves[randomIndex];
+            ArmoireReturn.IsTargeted = true;
+            return ArmoireReturn;
         }
         else
         {
