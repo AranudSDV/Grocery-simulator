@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     public ItemPickup ItemPickup;
     public TestImage TestImage;
 
+
     void Start()
     {
 
