@@ -69,7 +69,6 @@ public class ItemPickup : MonoBehaviour
         if(MaintienForce == true)
         {
             ForceActuelle += ForceAugmentation * Time.deltaTime;
-            Debug.Log("Forec" + ForceActuelle);
             imageRevealScript.StartReveal();
             if(ForceActuelle > MaxForce)
             {

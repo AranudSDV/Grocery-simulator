@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaitCaisse : MonoBehaviour
+public class WaitCaisse2 : MonoBehaviour
 {
     
     public Collider Scanner;
@@ -13,9 +13,8 @@ public class WaitCaisse : MonoBehaviour
     {
         if(Scanner.gameObject.tag == "Client")
         {
-            Caisse.GetComponent<Caisse>().BFile2 = true;
-            Scanner.GetComponent<Client>().CLientAttente1 = true;
-            
+            Caisse.GetComponent<Caisse>().BFile3 = true;
+            Scanner.GetComponent<Client>().CLientAttente2 = true;
         }
     }
 
@@ -23,12 +22,10 @@ public class WaitCaisse : MonoBehaviour
     {
         if(Scanner.gameObject.tag == "Client")
         {
-            Caisse.GetComponent<Caisse>().BFile2 = false;
-            Scanner.GetComponent<Client>().CLientAttente1 = false;
-
+            Caisse.GetComponent<Caisse>().BFile3 = false;
+            Scanner.GetComponent<Client>().CLientAttente2 = false;
         }
         
     }
-    
     
 }
