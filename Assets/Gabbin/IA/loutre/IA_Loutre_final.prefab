@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cd7c9f5e29bcd4e4eb3694a42fbefdc5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd7c9f5e29bcd4e4eb3694a42fbefdc5,
         type: 3}
@@ -66,8 +66,13 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd7c9f5e29bcd4e4eb3694a42fbefdc5,
         type: 3}
       propertyPath: m_Name
-      value: IA_Loutre_2
+      value: IA_Loutre_final
       objectReference: {fileID: 0}
+    - target: {fileID: 8839804986602154734, guid: cd7c9f5e29bcd4e4eb3694a42fbefdc5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 309d9530cdeeeb1469243788bfc9251f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

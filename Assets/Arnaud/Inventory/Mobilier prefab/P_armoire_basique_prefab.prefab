@@ -2805,6 +2805,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   RecupPoint: {fileID: 0}
+  IsTargeted: 0
 --- !u!208 &6732113073104921854
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3332,6 +3333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IAWait: 0
   ClientArrive: {fileID: 7655179278642437754}
+  client: {fileID: 0}
 --- !u!1 &6325631788723191647
 GameObject:
   m_ObjectHideFlags: 0
