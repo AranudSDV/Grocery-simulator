@@ -23,15 +23,17 @@ public class Caisse : MonoBehaviour
 
   public PlayerScanner PlayerScanner;
 
-  public GameObject File1;
-  public GameObject File2;
-  public GameObject File3;
-  public GameObject File4;
-
   public bool BFile1;
   public bool BFile2;
   public bool BFile3;
   public bool BFile4;
+
+  public GameObject GoBFile1;
+  public GameObject GoBFile2;
+  public GameObject GoBFile3;
+  public GameObject GoBFile4;
+
+  public bool CaisseFull;
 
 
   

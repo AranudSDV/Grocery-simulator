@@ -33,6 +33,7 @@ public class Client : MonoBehaviour
     public int IANombreMinItem = 3;
 
     public GameObject TargetCaisse;
+    public GameObject PointCaisse;
     public GameObject ItemCaissePos;
 
     private float DistanceCaisse = 0.5f;
@@ -58,6 +59,7 @@ public class Client : MonoBehaviour
         List<GameObject> IAInventaire = new List<GameObject>();
         client = GetComponent<NavMeshAgent>();
         clientspawn = true;
+        
     }
 
    
@@ -92,15 +94,40 @@ public class Client : MonoBehaviour
             bClientArriveArmoire = false;
         
         }
+        Caisse Caisse = TargetCaisse.GetComponent<Caisse>();
 
-        if(bClientRecupereItem == true && bClientArriveCaisse == false)
+        
+        
+        
+
+
+
+
+        if(bClientRecupereItem == true && CLientALaCaisse == false)
         {
-            client.SetDestination(TargetCaisse.transform.position);
+            ChoixPlace();
+            client.SetDestination(PointCaisse.transform.position);
         }
+        if(bClientRecupereItem == true && CLientAttente1 == true)
+        {
+            client.SetDestination(PointCaisse.transform.position);
+        }
+        if(bClientRecupereItem == true && CLientAttente2 == true)
+        {
+            client.SetDestination(PointCaisse.transform.position);
+        }
+        if(bClientRecupereItem == true && CLientAttente3 == true)
+        {
+            client.SetDestination(PointCaisse.transform.position);
+        }
+        
+
+
+
 
         if(clientspawn == true)
         {
-            StartCoroutine(Debut());
+            ClientSpawn();
             clientspawn = false;
             
         }
@@ -119,11 +146,7 @@ public class Client : MonoBehaviour
         
     }
 
-    IEnumerator Debut()
-    {
-        yield return new WaitForSeconds(20);
-        ClientSpawn();
-    }
+
 
     IEnumerator Fin()
     {
@@ -186,7 +209,31 @@ public class Client : MonoBehaviour
     {
         CLientCaisse = true;
     }
-
+    
+    public void ChoixPlace()
+    {
+        if(Caisse.BFile1 == false)
+        {
+            PointCaisse = Caisse.GoBFile1;
+        }
+        else if (Caisse.BFile2 == false)
+        {
+            PointCaisse = Caisse.GoBFile2;
+        }
+        else if (Caisse.BFile3 == false)
+        {
+            PointCaisse = Caisse.GoBFile3;
+        }
+        else if (Caisse.BFile4 == false)
+        {
+            PointCaisse = Caisse.GoBFile4;
+        }
+        else
+        {
+            Caisse.CaisseFull = true;
+        }
+    }
+    
     
 
 }

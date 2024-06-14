@@ -38,13 +38,14 @@ public class ArmoireManager : MonoBehaviour
         {
             int randomIndex = Random.Range(0, nonEmptyShelves.Count);
             ArmoireReturn = nonEmptyShelves[randomIndex];
-            ArmoireReturn.IsTargeted = true;
+            
             return ArmoireReturn;
         }
         else
         {
             return null;
         }
+        ArmoireReturn.IsTargeted = true;
     }
 
     
