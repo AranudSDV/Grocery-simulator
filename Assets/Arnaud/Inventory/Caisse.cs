@@ -98,7 +98,7 @@ public class Caisse : MonoBehaviour
     
     PlayerScanner.Encaisse = true;
     ManagerFilleDattente.EncaissementClient = true;
-    Debug.Log("player scanner encaisse dans sciprt caisse encaissement()");
+    
   }
 
   

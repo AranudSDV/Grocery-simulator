@@ -46,7 +46,7 @@ public class SellButton : MonoBehaviour
         if(itemPrice <= MoneyManager.Money)
         {
             MoneyManager.Money = MoneyManager.Money - itemPrice;
-            Instantiate(prefab, new Vector3(15 ,2 ,-195), Quaternion.identity);
+            Instantiate(prefab, new Vector3(15 ,2 ,-192), Quaternion.identity);
         }
         
     }

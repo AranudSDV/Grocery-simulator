@@ -189,6 +189,13 @@ public class Client : MonoBehaviour
 
     public void ClientArrive()
     {
+        
+        StartCoroutine(AttenteArmoire());
+    }
+
+    IEnumerator AttenteArmoire()
+    {
+        yield return new WaitForSeconds(4);
         bClientArriveArmoire = true;
     }
 
