@@ -84,8 +84,6 @@ public class Client : MonoBehaviour
             client.ResetPath();
             int NombreItemCHoisi = Random.Range(IANombreMinItem, IANombreMaxItem);
 
-            //Debug.Log("Nombre item choisi" + NombreItemCHoisi);
-
             for(int i = 0; i < NombreItemCHoisi; i++)
             {
                 var itemWithIndex = targetArmoire.GetRandomOccupiedObject();
