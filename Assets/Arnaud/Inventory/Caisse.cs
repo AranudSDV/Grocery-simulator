@@ -37,7 +37,7 @@ public class Caisse : MonoBehaviour
 
 
   
-  
+  public ManagerFilleDattente ManagerFilleDattente;
   public float MultipcateurPrice = 1f;
   public float Price = 0;
   public float PanierPrice = 0;
@@ -88,7 +88,6 @@ public class Caisse : MonoBehaviour
     MoneyManager.Money = MoneyManager.Money + PanierPrice;
     PanierPrice = 0;
     priceItem.text = "";
-    Debug.Log("encaissement()");
 
     for (int i = 0; i < panier.Count; i++)
     {
@@ -98,14 +97,11 @@ public class Caisse : MonoBehaviour
     panier.Clear();
     
     PlayerScanner.Encaisse = true;
-    StartCoroutine(CaisseEncaisse());
+    ManagerFilleDattente.EncaissementClient = true;
+    Debug.Log("player scanner encaisse dans sciprt caisse encaissement()");
   }
 
-  IEnumerator CaisseEncaisse()
-    {
-      yield return new WaitForSeconds(1);
-      PlayerScanner.Encaisse = false;
-    }
+  
   
 
 }

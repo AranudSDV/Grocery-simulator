@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerScanne: {fileID: 778636879889533542}
+  Caisse: {fileID: 0}
   Player: {fileID: 0}
   Client: {fileID: 0}
   Encaisse: 0
@@ -476,6 +477,16 @@ MonoBehaviour:
   MoneyManager: {fileID: 0}
   panier: []
   PlayerScanner: {fileID: 1400531329413897325}
+  BFile1: 0
+  BFile2: 0
+  BFile3: 0
+  BFile4: 0
+  GoBFile1: {fileID: 0}
+  GoBFile2: {fileID: 0}
+  GoBFile3: {fileID: 0}
+  GoBFile4: {fileID: 0}
+  CaisseFull: 0
+  MultipcateurPrice: 1
   Price: 0
   PanierPrice: 0
 --- !u!1 &5310798139888610446
@@ -517,8 +528,8 @@ Transform:
   - {fileID: 6906454728429868908}
   - {fileID: 8060076651505131551}
   - {fileID: 5744006800437202079}
-  - {fileID: 4537967227262479984}
   - {fileID: 753489899020712834}
+  - {fileID: 4537967227262479984}
   - {fileID: 4804260356764368875}
   - {fileID: 6853774477430014652}
   - {fileID: 979111781614386390}

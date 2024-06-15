@@ -6,15 +6,16 @@ public class WaitCaisse2 : MonoBehaviour
 {
     
     public Collider Scanner;
-    public Caisse Caisse;
+    public ManagerFilleDattente ManagerFilleDattente;
+    public GameObject Client;
 
 
     private void OnTriggerEnter (Collider Scanner)
     {
         if(Scanner.gameObject.tag == "Client")
         {
-            Caisse.GetComponent<Caisse>().BFile3 = true;
-            Scanner.GetComponent<Client>().CLientAttente2 = true;
+            Client = Scanner.gameObject;
+            ManagerFilleDattente.point2Occuped = true;
         }
     }
 
@@ -22,8 +23,8 @@ public class WaitCaisse2 : MonoBehaviour
     {
         if(Scanner.gameObject.tag == "Client")
         {
-            Caisse.GetComponent<Caisse>().BFile3 = false;
-            Scanner.GetComponent<Client>().CLientAttente2 = false;
+            Client = null;
+            ManagerFilleDattente.point2Occuped = false;
         }
         
     }

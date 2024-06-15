@@ -27,6 +27,8 @@ public class Armoire : MonoBehaviour
 
   void Start()
   {
+    StartCoroutine(TargetArmoire());
+
     for (int i = 0; i < 48; i++)
     {
       SlotsOccupied.Add(false);
@@ -44,6 +46,12 @@ public class Armoire : MonoBehaviour
 
     EstVide = !SlotsOccupied.Contains(true);
     
+  }
+
+  IEnumerator TargetArmoire()
+  {
+    yield return new WaitForSeconds(2);
+    IsTargeted = false;
   }
 
 

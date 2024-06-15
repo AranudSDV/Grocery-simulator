@@ -7,24 +7,26 @@ public class PlayerScanner : MonoBehaviour
     public Collider PlayerScanne;
     public GameObject Caisse;
     public GameObject Player;
-    public Client Client;
     public bool Encaisse = false;
+    Client client;
 
+    public void Update()
+    {
+        
+    }
 
     private void OnTriggerStay (Collider PlayerScanne)
     {
         if(PlayerScanne.gameObject.tag == "Client")
         {
-            Caisse.GetComponent<Caisse>().BFile1 = true;
-            PlayerScanne.GetComponent<Client>().CLientALaCaisse = true;
-
             Player = PlayerScanne.gameObject;
-            Client client = Player.GetComponent<Client>();
+            client = Player.GetComponent<Client>(); 
 
             if(Encaisse == true)
             {
-                client.CLientCaisse = true;
-            }
+            client.CLientCaisse = true;
+            Encaisse = false;
+            } 
         }
         
         
@@ -34,13 +36,13 @@ public class PlayerScanner : MonoBehaviour
     {
         if(PlayerScanne.gameObject.tag == "Client")
         {
-            Caisse.GetComponent<Caisse>().BFile1 = false;
-            PlayerScanne.GetComponent<Client>().CLientALaCaisse = false;
 
             Player = PlayerScanne.gameObject;
             Client client = Player.GetComponent<Client>();
 
             client.CLientCaisse = false;
+            Encaisse = false;
+            client.mort = true;
         }
         
 

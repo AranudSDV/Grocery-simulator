@@ -29,9 +29,8 @@ public class ColliderArmoire : MonoBehaviour
     
 
 
-    if( IAWait == true)
+    if( IAWait == true && ClientArrive.gameObject.tag == "Client")
     {
-      Debug.Log("Collider armoire ia wait");
 
       client = ClientArrive.gameObject;
 

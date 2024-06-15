@@ -45,7 +45,7 @@ public class ArmoireManager : MonoBehaviour
         {
             return null;
         }
-        ArmoireReturn.IsTargeted = true;
+
     }
 
     

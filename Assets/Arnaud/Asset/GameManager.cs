@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> clientPrefabs;
 
     public int numberOfClients;
+    public int NombreDeClientInWorld;
 
 
     public float dayDuration = 0f;
@@ -84,15 +85,19 @@ public class GameManager : MonoBehaviour
         while (clientsSpawned < numberOfClients)
         {
             yield return new WaitForSeconds(spawnInterval);
+            
+            if(NombreDeClientInWorld < 4)
+            {
+                GameObject clientPrefab = clientPrefabs[Random.Range(0, clientPrefabs.Count)];
 
+                Instantiate(clientPrefab, spawnPoint.position, spawnPoint.rotation);
 
-            GameObject clientPrefab = clientPrefabs[Random.Range(0, clientPrefabs.Count)];
-
-
-            Instantiate(clientPrefab, spawnPoint.position, spawnPoint.rotation);
-
-            clientsSpawned++;
+                NombreDeClientInWorld++;
+                clientsSpawned++;
+            }
         }
+            
+           
     }
 
     IEnumerator Journee()

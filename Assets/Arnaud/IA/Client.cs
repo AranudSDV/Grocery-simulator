@@ -48,10 +48,18 @@ public class Client : MonoBehaviour
 
     GameObject ItemAvecID;
 
-    public bool CLientALaCaisse = false;
-    public bool CLientAttente1 = false;
-    public bool CLientAttente2 = false;
-    public bool CLientAttente3 = false;
+    public GameObject Point1;
+    public GameObject Point2;
+    public GameObject Point3;
+    public GameObject Point4;
+
+    public int Place;
+    public ManagerFilleDattente ManagerFilleDattente;
+    bool BChoixCaisse;
+
+    public GameManager GameManager;
+    public bool mort;
+
 
 
     void Start()
@@ -59,19 +67,21 @@ public class Client : MonoBehaviour
         List<GameObject> IAInventaire = new List<GameObject>();
         client = GetComponent<NavMeshAgent>();
         clientspawn = true;
+        BChoixCaisse = false;
         
     }
 
    
     void Update()
     {
+        
 
         if(bClientArriveArmoire == true)
         {
             client.ResetPath();
             int NombreItemCHoisi = Random.Range(IANombreMinItem, IANombreMaxItem);
 
-            Debug.Log("Nombre item choisi" + NombreItemCHoisi);
+            //Debug.Log("Nombre item choisi" + NombreItemCHoisi);
 
             for(int i = 0; i < NombreItemCHoisi; i++)
             {
@@ -102,24 +112,13 @@ public class Client : MonoBehaviour
 
 
 
-
-        if(bClientRecupereItem == true && CLientALaCaisse == false)
+        //CHOIX CAISSE
+        if(bClientRecupereItem == true && BChoixCaisse == false)
         {
-            ChoixPlace();
-            client.SetDestination(PointCaisse.transform.position);
+            ChoixCaisse();
+            BChoixCaisse = true; 
         }
-        if(bClientRecupereItem == true && CLientAttente1 == true)
-        {
-            client.SetDestination(PointCaisse.transform.position);
-        }
-        if(bClientRecupereItem == true && CLientAttente2 == true)
-        {
-            client.SetDestination(PointCaisse.transform.position);
-        }
-        if(bClientRecupereItem == true && CLientAttente3 == true)
-        {
-            client.SetDestination(PointCaisse.transform.position);
-        }
+       
         
 
 
@@ -132,27 +131,37 @@ public class Client : MonoBehaviour
             
         }
         
-        if (bClientRecupereItem && !bClientArriveCaisse && HasReachedDestination(TargetCaisse.transform.position))
+        if (bClientRecupereItem && !bClientArriveCaisse && HasReachedDestination(Point1.transform.position))
         {
 
             PlaceItemsAtCaisse();
             bClientArriveCaisse = true;
         }
+        
+        if(HasReachedDestination(SortieClient.transform.position))
+        {
+            
+            Destroy(this);
+        }
 
         if(CLientCaisse == true)
         {
+            Debug.Log("Client caisse == true dans sscirpt client");
             client.SetDestination(SortieClient.transform.position);
+            
+            
+        }
+
+        if(mort == true)
+        {
+            int IAWorld = GameManager.NombreDeClientInWorld;
+            GameManager.NombreDeClientInWorld = IAWorld - 1;
+            Debug.Log(IAWorld);
+            mort = false;
         }
         
     }
 
-
-
-    IEnumerator Fin()
-    {
-        yield return new WaitForSeconds(60);
-        Destroy(this);
-    }
         
     
 
@@ -160,12 +169,13 @@ public class Client : MonoBehaviour
     {
         
         targetArmoire = ArmoireManager.GetRandomNonEmptyShelf();
-        targetArmoire.GetComponent<Armoire>().IsTargeted = true;
+        
 
         if (targetArmoire != null)
         {
 
             client.SetDestination(targetArmoire.RecupPoint.transform.position);
+            //targetArmoire.GetComponent<Armoire>().IsTargeted = true;
             
         }
 
@@ -210,30 +220,64 @@ public class Client : MonoBehaviour
         CLientCaisse = true;
     }
     
-    public void ChoixPlace()
+    
+    public void ChoixCaisse()
     {
-        if(Caisse.BFile1 == false)
+        if(ManagerFilleDattente.point1Occuped == true && ManagerFilleDattente.point2Occuped == true && ManagerFilleDattente.point3Occuped == true && ManagerFilleDattente.point4Occuped == true)
         {
-            PointCaisse = Caisse.GoBFile1;
+          
         }
-        else if (Caisse.BFile2 == false)
+        
+        if(ManagerFilleDattente.point1Occuped == true && ManagerFilleDattente.point2Occuped == true && ManagerFilleDattente.point3Occuped == true && ManagerFilleDattente.point4Occuped == false)
         {
-            PointCaisse = Caisse.GoBFile2;
+            client.SetDestination(Point4.transform.position);
+            Place = 4;
         }
-        else if (Caisse.BFile3 == false)
+
+        if(ManagerFilleDattente.point1Occuped == true && ManagerFilleDattente.point2Occuped == true && ManagerFilleDattente.point3Occuped == false && ManagerFilleDattente.point4Occuped == false)
         {
-            PointCaisse = Caisse.GoBFile3;
+            client.SetDestination(Point3.transform.position);
+            Place = 3;
         }
-        else if (Caisse.BFile4 == false)
+
+        if(ManagerFilleDattente.point1Occuped == true && ManagerFilleDattente.point2Occuped == false && ManagerFilleDattente.point3Occuped == false && ManagerFilleDattente.point4Occuped == false)
         {
-            PointCaisse = Caisse.GoBFile4;
+            client.SetDestination(Point2.transform.position);
+            Place = 2;
         }
-        else
+
+        if(ManagerFilleDattente.point1Occuped == false && ManagerFilleDattente.point2Occuped == false && ManagerFilleDattente.point3Occuped == false && ManagerFilleDattente.point4Occuped == false)
         {
-            Caisse.CaisseFull = true;
+            client.SetDestination(Point1.transform.position);
+            Place = 1;
         }
     }
-    
+
+    public void Avance()
+    {   
+
+        if(Place == 2)
+        {
+            
+            client.SetDestination(Point1.transform.position);
+            Place = 1;
+        }
+
+        if(Place == 3)
+        {
+           
+            client.SetDestination(Point2.transform.position);
+            Place = 2;
+        }
+
+        if(Place == 4)
+        {
+            client.SetDestination(Point3.transform.position);
+            Place = 3;
+        }
+        ManagerFilleDattente.EncaissementClient = false;
+
+    }
     
 
 }

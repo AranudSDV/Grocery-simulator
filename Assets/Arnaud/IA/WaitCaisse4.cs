@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaitCaisse3 : MonoBehaviour
+public class WaitCaisse4 : MonoBehaviour
 {
     public Collider Scanner;
     public ManagerFilleDattente ManagerFilleDattente;
@@ -14,7 +14,7 @@ public class WaitCaisse3 : MonoBehaviour
         if(Scanner.gameObject.tag == "Client")
         {
             Client = Scanner.gameObject;
-            ManagerFilleDattente.point3Occuped = true;
+            ManagerFilleDattente.point4Occuped = true;
         }
     }
 
@@ -23,9 +23,8 @@ public class WaitCaisse3 : MonoBehaviour
         if(Scanner.gameObject.tag == "Client")
         {
             Client = null;
-            ManagerFilleDattente.point3Occuped = false;
+            ManagerFilleDattente.point4Occuped = false;
         }
         
     }
-    
 }
