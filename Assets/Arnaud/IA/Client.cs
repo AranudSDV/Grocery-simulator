@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Client : MonoBehaviour
 {
+    
     private NavMeshAgent client;
     public GameObject GOclient;
 
@@ -60,6 +61,8 @@ public class Client : MonoBehaviour
     public GameManager GameManager;
     public bool mort;
 
+    private Animator animator;
+
 
 
     void Start()
@@ -68,7 +71,7 @@ public class Client : MonoBehaviour
         client = GetComponent<NavMeshAgent>();
         clientspawn = true;
         BChoixCaisse = false;
-        
+        animator = GOclient.GetComponent<Animator>();
     }
 
    
@@ -98,7 +101,7 @@ public class Client : MonoBehaviour
                     ItemSelected.transform.localPosition = new Vector3(0f, 0f, 0f);
                 }
             }
-            
+            animator.SetBool("Walk", true);
             targetArmoire.GetComponent<Armoire>().IsTargeted = false;
             bClientRecupereItem = true;
             bClientArriveArmoire = false;
@@ -133,9 +136,23 @@ public class Client : MonoBehaviour
         
         if (bClientRecupereItem && !bClientArriveCaisse && HasReachedDestination(Point1.transform.position))
         {
+            animator.SetBool("Walk", false);
 
             PlaceItemsAtCaisse();
             bClientArriveCaisse = true;
+        }
+
+        if (HasReachedDestination(Point2.transform.position))
+        {
+            animator.SetBool("Walk", false);
+        }
+        if (HasReachedDestination(Point3.transform.position))
+        {
+            animator.SetBool("Walk", false);
+        }
+        if (HasReachedDestination(Point4.transform.position))
+        {
+            animator.SetBool("Walk", false);
         }
         
         if(HasReachedDestination(SortieClient.transform.position))
@@ -146,10 +163,8 @@ public class Client : MonoBehaviour
 
         if(CLientCaisse == true)
         {
-            Debug.Log("Client caisse == true dans sscirpt client");
+            animator.SetBool("Walk", true);
             client.SetDestination(SortieClient.transform.position);
-            
-            
         }
 
         if(mort == true)
@@ -167,7 +182,7 @@ public class Client : MonoBehaviour
 
     public void ClientSpawn()
     {
-        
+        animator.SetBool("Walk", true);
         targetArmoire = ArmoireManager.GetRandomNonEmptyShelf();
         
 
@@ -189,13 +204,15 @@ public class Client : MonoBehaviour
 
     public void ClientArrive()
     {
-        
+        animator.SetBool("Walk", false);
         StartCoroutine(AttenteArmoire());
     }
 
     IEnumerator AttenteArmoire()
     {
         yield return new WaitForSeconds(4);
+        
+
         bClientArriveArmoire = true;
     }
 
