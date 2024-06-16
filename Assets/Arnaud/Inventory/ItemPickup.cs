@@ -30,6 +30,7 @@ public class ItemPickup : MonoBehaviour
 
         Rigidbody myRigidbody = GetComponent<Rigidbody>();
         myRigidbody.useGravity = false;
+        myRigidbody.isKinematic = true;
     }
 
    
@@ -41,6 +42,7 @@ public class ItemPickup : MonoBehaviour
         var direction = Camera.main.transform.forward * ForceActuelle;
         Rigidbody myRigidbody = GetComponent<Rigidbody>();
         myRigidbody.useGravity = true;
+        myRigidbody.isKinematic = false;
 
         GOItem.transform.SetParent(null);
         myRigidbody.AddForce(direction, ForceMode.Impulse);

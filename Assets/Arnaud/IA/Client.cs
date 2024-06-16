@@ -7,6 +7,7 @@ public class Client : MonoBehaviour
 {
     
     private NavMeshAgent client;
+    public GameObject GOclientPrefab;
     public GameObject GOclient;
 
     public bool bClientArriveArmoire = false;
@@ -20,6 +21,7 @@ public class Client : MonoBehaviour
     public GameObject[] armoires;
 
     public List<GameObject> IAInventaire;
+    public List<GameObject> IAInventaireFull;
 
     public ArmoireManager ArmoireManager;
     public Armoire Armoire;
@@ -38,6 +40,7 @@ public class Client : MonoBehaviour
     public GameObject ItemCaissePos;
 
     private float DistanceCaisse = 0.5f;
+    private float DistanceSpawn = 2f;
 
     public ItemPickup ItemPickup;
 
@@ -62,11 +65,13 @@ public class Client : MonoBehaviour
     public bool mort;
 
     private Animator animator;
+    public GameObject spawnPoint;
 
 
 
     void Start()
     {
+        GOclient = this.gameObject;
         List<GameObject> IAInventaire = new List<GameObject>();
         client = GetComponent<NavMeshAgent>();
         clientspawn = true;
@@ -99,17 +104,26 @@ public class Client : MonoBehaviour
                     ItemSelected.transform.localPosition = new Vector3(0f, 0f, 0f);
                 }
             }
+
             animator.SetBool("Walk", true);
-            targetArmoire.GetComponent<Armoire>().IsTargeted = false;
-            bClientRecupereItem = true;
-            bClientArriveArmoire = false;
+            if(IAInventaire.Count == 0)
+            {
+                CLientCaisse = true;
+                bClientArriveArmoire = false;
+                
+            }
+            else
+            {
+            
+
+                targetArmoire.GetComponent<Armoire>().IsTargeted = false;
+                bClientRecupereItem = true;
+                bClientArriveArmoire = false;
+            }
+            
         
         }
         Caisse Caisse = TargetCaisse.GetComponent<Caisse>();
-
-        
-        
-        
 
 
 
@@ -153,14 +167,21 @@ public class Client : MonoBehaviour
             animator.SetBool("Walk", false);
         }
         
-        if(HasReachedDestination(SortieClient.transform.position))
+        if(HasReachedDestinationSpawn(SortieClient.transform.position))
         {
-            
-            Destroy(this);
+            mort = true;
+            Destroy(GOclient);
         }
 
         if(CLientCaisse == true)
         {
+             foreach (GameObject itemm in IAInventaireFull)
+            {
+                if (itemm != null)
+                {
+                    Destroy(itemm);
+                }
+            }
             animator.SetBool("Walk", true);
             client.SetDestination(SortieClient.transform.position);
         }
@@ -186,15 +207,13 @@ public class Client : MonoBehaviour
 
         if (targetArmoire != null)
         {
-
             client.SetDestination(targetArmoire.RecupPoint.transform.position);
             //targetArmoire.GetComponent<Armoire>().IsTargeted = true;
-            
         }
-
-        else
+        if (targetArmoire == null && (HasReachedDestinationSpawn(spawnPoint.transform.position)))
         {
-            Debug.Log("Toutes les armoires sont vides.");
+            GameManager.NombreDeClientInWorld = GameManager.NombreDeClientInWorld - 1;
+            Destroy(GOclient);
         }
     
     }
@@ -216,14 +235,14 @@ public class Client : MonoBehaviour
 
     private void PlaceItemsAtCaisse()
     {
-
+        
         foreach (GameObject item in IAInventaire)
         {
             ItemAvecID = item.GetComponent<ItemSansID>().IteamAvecID;
             var itemPickup = item.GetComponent<ItemPickup>();
             itemPickup.ItemPlaceCaisse();
             GameObject go = Instantiate(ItemAvecID, new Vector3(0, 0, 0), Quaternion.identity);
-
+            IAInventaireFull.Add(go);
             go.transform.SetParent(ItemCaissePos.transform);
             go.transform.localPosition = new Vector3(0f, 0f, 0f);
             Destroy(item);
@@ -233,8 +252,13 @@ public class Client : MonoBehaviour
 
     private bool HasReachedDestination(Vector3 destination)
     {
-        float distance = Vector3.Distance(client.transform.position, destination);
+        float distance = Vector3.Distance(GOclient.transform.position, destination);
         return distance < DistanceCaisse;
+    }
+    private bool HasReachedDestinationSpawn(Vector3 destination)
+    {
+        float distanceSpawn = Vector3.Distance(GOclient.transform.position, destination);
+        return distanceSpawn < DistanceSpawn;
     }
 
     public void encaissement()

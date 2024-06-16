@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 5738e0c827e61834db721f96e68dae0a
   - enabled: 1
+    path: Assets/Scenes/Arnaud.unity
+    guid: 54b6667c18aa1174fb283777eb36ad67
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

@@ -16,7 +16,6 @@ public class footsteps : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
-                Debug.Log("Son outside marche");
                 footstepsSound.enabled = true;
             }
             else

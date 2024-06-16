@@ -49,9 +49,14 @@ public class GameManager : MonoBehaviour
     public GameObject Rain;
     public GameObject Cloud;
     public bool JourneeFini;
-    
-    
 
+    public GameObject Tuto;
+    public AudioSource SFXRain;
+    public AudioSource SFXZoiseaux;
+    public AudioSource SFXZoiseauxInterieur;
+    
+    
+    public List<GameObject> CommandeEnAttente = new List<GameObject>();
 
 
     void Start()
@@ -69,8 +74,13 @@ public class GameManager : MonoBehaviour
         
     }
 
+
     public void Update()
     {
+        if( NombreJours == 1)
+        {
+            Tuto.SetActive(false);
+        }
         if(JourneeFini == true)
         {
             TextHeure.text = "Journee fini Encaisse tous les clients";
@@ -141,9 +151,24 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Journee()
     {
+        for (int i = CommandeEnAttente.Count - 1; i >= 0; i--)
+        {
+            GameObject Carton = CommandeEnAttente[i];
+            if (Carton != null)
+            {
+                
+                Instantiate(Carton, new Vector3(15 ,2 ,-192), Quaternion.identity);
+                
+                CommandeEnAttente.RemoveAt(i);
+            }
+        }
+
         MoneyDayStart = MoneyManagment.Money;
         yield return new WaitForSeconds(dayDuration);
-        
+        if (NombreJours == 0)
+        {
+            ShaderAtlas.SetFloat("_Saturation", 0.1f);
+        }
         if(NombreJours == 10)
         {
             if(MoneyManagment.Money < 300)
@@ -155,6 +180,8 @@ public class GameManager : MonoBehaviour
                 MoneyManagment.Money = MoneyManagment.Money - 300;
                 ShaderAtlas.SetFloat("_Saturation", 0.3f);
                 Rain.SetActive(false);
+                SFXRain.enabled = false;
+                SFXZoiseaux.enabled = true;
 
             }
         }

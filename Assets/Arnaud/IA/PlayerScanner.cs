@@ -42,7 +42,7 @@ public class PlayerScanner : MonoBehaviour
 
             client.CLientCaisse = false;
             Encaisse = false;
-            client.mort = true;
+            
         }
         
 

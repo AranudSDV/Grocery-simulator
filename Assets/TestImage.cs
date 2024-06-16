@@ -47,6 +47,6 @@ public class TestImage : MonoBehaviour
     public void EndReveal()
     {
         isRevealing = false;
-        Debug.Log("isReavling = false");
+        
     }
 }
