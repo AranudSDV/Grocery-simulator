@@ -12,8 +12,8 @@ public class MoneyManagment : MonoBehaviour
     
     void Update()
     {
-        MoneyTxt.text = "Money :" + Money;
-        MoneyTxt2.text = "Money :" + Money;
+        MoneyTxt.text = "Monux :" + Money;
+        MoneyTxt2.text = "Monux :" + Money;
         
     }
 

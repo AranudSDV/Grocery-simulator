@@ -27,12 +27,28 @@ public class GameManager : MonoBehaviour
 
     public GameObject EcranFinJOurnee;
     public TMP_Text TextJour;
+
+    public TMP_Text TextPret;
+    public TMP_Text TextMoneyDay;
+    
     public TMP_Text TextHeure;
     public GameObject Player;
     public GameObject PlayerTpMatin;
 
     private bool TimerOn;
 
+    public MoneyManagment MoneyManagment;
+    public GameObject EcranFin;
+
+    public Material ShaderAtlas;
+    public float TempsPret;
+
+    public float MoneyMakeDay;
+    public float MoneyDayStart;
+
+    public GameObject Rain;
+    public GameObject Cloud;
+    public bool JourneeFini;
     
     
 
@@ -40,6 +56,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        
+
         TimerOn = true;
         spawnInterval = dayDuration / numberOfClients;
         timeSinceLastSpawn = 0f;
@@ -53,6 +71,27 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+        if(JourneeFini == true)
+        {
+            TextHeure.text = "Journee fini Encaisse tous les clients";
+            if(NombreDeClientInWorld == 0)
+            {
+                StartCoroutine(CFinJournee());
+            }
+        }
+        
+        if(NombreJours <= 10)
+        {
+            TempsPret = 10f;
+        }
+        if(NombreJours > 10 && NombreJours <= 20)
+        {
+            TempsPret = 20f;
+        }
+        if(NombreJours > 20 && NombreJours <= 30)
+        {
+            TempsPret = 30f;
+        }
         
         if(TimerOn == true)
         {
@@ -102,24 +141,94 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Journee()
     {
+        MoneyDayStart = MoneyManagment.Money;
         yield return new WaitForSeconds(dayDuration);
-        Player.GetComponent<CharacterController>().enabled = false;
-        EcranFinJOurnee.SetActive(true);
-        Player.transform.position = PlayerTpMatin.transform.position;
-        NombreJours = NombreJours + 1f;
-        TextJour.text =  "jours " + NombreJours;
         
-        yield return new WaitForSeconds(5);
+        if(NombreJours == 10)
+        {
+            if(MoneyManagment.Money < 300)
+            {
+                StartCoroutine(FInGame());
+            }
+            if(MoneyManagment.Money > 300)
+            {
+                MoneyManagment.Money = MoneyManagment.Money - 300;
+                ShaderAtlas.SetFloat("_Saturation", 0.3f);
+                Rain.SetActive(false);
+
+            }
+        }
+        if(NombreJours == 20)
+        {
+            if(MoneyManagment.Money < 300)
+            {
+                StartCoroutine(FInGame());
+            }
+            if(MoneyManagment.Money > 300)
+            {
+                MoneyManagment.Money = MoneyManagment.Money - 300;
+                ShaderAtlas.SetFloat("_Saturation", 0.6f);
+                Cloud.SetActive(false);
+
+            }
+        }
+        if(NombreJours == 30)
+        {
+            if(MoneyManagment.Money < 300)
+            {
+                StartCoroutine(FInGame());
+            }
+            if(MoneyManagment.Money > 300)
+            {
+                MoneyManagment.Money = MoneyManagment.Money - 300;
+                ShaderAtlas.SetFloat("_Saturation", 1f);
+
+            }
+        }
+
+        
+        
+        
+        NombreJours = NombreJours + 1f;
+        TextJour.text =  "jours " + NombreJours + " est fini !";
+
+        float JourRestant = TempsPret - NombreJours;
+
+        TextPret.text = "Dans " + JourRestant + " jours tu devras rembourser 300 Monux de pret a la banque";
+        
+        JourneeFini = true;
+        
+
+    }
+
+    IEnumerator CFinJournee()
+    {
+        MoneyMakeDay = MoneyManagment.Money - MoneyDayStart;
+        TextMoneyDay.text = "Aujourdhui tu as gagne " + MoneyMakeDay + " Monux";
+        EcranFinJOurnee.SetActive(true);
+        Player.GetComponent<CharacterController>().enabled = false;
+        Player.transform.position = PlayerTpMatin.transform.position;
+
+        JourneeFini = false;
+        yield return new WaitForSeconds(7);
         EcranFinJOurnee.SetActive(false);
         Player.GetComponent<CharacterController>().enabled = true;
-
+        
         RelanceJournee();
+    }
 
+    IEnumerator FInGame()
+    {
+        EcranFin.SetActive(true);
+        yield return new WaitForSeconds(10);
+        Application.Quit();
     }
 
     public void RelanceJournee()
     {
+        clientsSpawned = 0;
         StartCoroutine(Journee());
+        StartCoroutine(SpawnClients());
         TempsRestant = dayDuration;
     }
 }

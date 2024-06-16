@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask Place1Mask;
     public LayerMask Encaissement;
     public LayerMask Carton;
+    public LayerMask CartonArmoire;
 
     public GameObject icamera;
     public float rangePickUp;
@@ -213,7 +214,7 @@ public class PlayerMovement : MonoBehaviour
 
         
 
-        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Place1Mask))
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Place1Mask) && cartonpickup == false)
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
@@ -245,6 +246,43 @@ public class PlayerMovement : MonoBehaviour
             }
 
             if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, ItemMask) )
+            {
+                ObjetInHand = hit.transform.gameObject;
+            }
+        }
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, CartonArmoire) && itempickup == false)
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                if(cartonpickup == false)
+                {    
+                    hit.transform.GetComponent<ArmoireCarton>().Take();
+                    cartonPickuped = true;
+                }
+
+                if(cartonpickup == true)
+                {
+                    hit.transform.GetComponent<ArmoireCarton>().Place();
+                    ObjetInHand = null;
+                    cartonDroped = true;
+                }
+
+                if(cartonPickuped == true)
+                {
+                    cartonpickup = true;
+                    cartonPickuped = false;
+                }
+
+                if(cartonDroped == true)
+                {
+                    cartonpickup = false;
+                    cartonDroped = false;
+                }
+                
+            }
+
+            if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Carton) )
             {
                 ObjetInHand = hit.transform.gameObject;
             }
