@@ -34,9 +34,9 @@ public class Magasin : MonoBehaviour
 
     public void Magasin1()
     {
-        if(MoneyManager.Money > 450)
+        if(MoneyManager.Money > 250)
         {
-            MoneyManager.Money = MoneyManager.Money - 450;
+            MoneyManager.Money = MoneyManager.Money - 250;
             UpMagasin1.SetActive(false);
             Destroy(GOMagasin1);
         }
@@ -45,9 +45,9 @@ public class Magasin : MonoBehaviour
 
     public void Magasin2()
     {
-        if(MoneyManager.Money > 500)
+        if(MoneyManager.Money > 300)
         {
-            MoneyManager.Money = MoneyManager.Money - 500;
+            MoneyManager.Money = MoneyManager.Money - 300;
             UpMagasin2.SetActive(false);
             Destroy(GOMagasin2);
 
@@ -57,9 +57,9 @@ public class Magasin : MonoBehaviour
 
     public void ObjetCommande2()
     {
-        if(MoneyManager.Money > 450)
+        if(MoneyManager.Money > 250)
         {
-            MoneyManager.Money = MoneyManager.Money - 450;
+            MoneyManager.Money = MoneyManager.Money - 250;
             Destroy(FleshLock2);
             Destroy(FleshLockPage3GD2);
             Destroy(GOObjectCommande2);
@@ -69,9 +69,9 @@ public class Magasin : MonoBehaviour
 
     public void ObjetCommande3()
     {
-        if(MoneyManager.Money > 500)
+        if(MoneyManager.Money > 300)
         {
-            MoneyManager.Money = MoneyManager.Money - 500;
+            MoneyManager.Money = MoneyManager.Money - 300;
             Destroy(FleshLock3);
             Destroy(FleshLockPage2DLock);
             Destroy(GOObjectCommande3);
@@ -81,10 +81,10 @@ public class Magasin : MonoBehaviour
 
     public void PUB1()
     {
-        if(MoneyManager.Money > 400)
+        if(MoneyManager.Money > 200)
         {
-            MoneyManager.Money = MoneyManager.Money - 400;
-            GameManager.numberOfClients = GameManager.numberOfClients + 2;
+            MoneyManager.Money = MoneyManager.Money - 200;
+            GameManager.numberOfClients = GameManager.numberOfClients + 3;
             Destroy(GOPUB1);
         }
         
@@ -92,10 +92,10 @@ public class Magasin : MonoBehaviour
 
     public void PUB2()
     {
-        if(MoneyManager.Money > 500)
+        if(MoneyManager.Money > 300)
         {
-            MoneyManager.Money = MoneyManager.Money - 500;
-            GameManager.numberOfClients = GameManager.numberOfClients + 3;
+            MoneyManager.Money = MoneyManager.Money - 300;
+            GameManager.numberOfClients = GameManager.numberOfClients + 4;
             Destroy(GOPUB2);
         }
         
@@ -103,10 +103,10 @@ public class Magasin : MonoBehaviour
 
     public void Vente1()
     {
-        if(MoneyManager.Money > 400)
+        if(MoneyManager.Money > 200)
         {
-            MoneyManager.Money = MoneyManager.Money - 400;
-            Caisse.MultipcateurPrice = Caisse.MultipcateurPrice * 1.05f;
+            MoneyManager.Money = MoneyManager.Money - 200;
+            Caisse.MultipcateurPrice = Caisse.MultipcateurPrice * 1.15f;
             Destroy(GOVente1);
             
         }
@@ -114,11 +114,11 @@ public class Magasin : MonoBehaviour
 
     public void Vente2()
     {
-        if(MoneyManager.Money > 500)
+        if(MoneyManager.Money > 300)
         {
-            MoneyManager.Money = MoneyManager.Money - 500;
+            MoneyManager.Money = MoneyManager.Money - 300;
             Caisse.MultipcateurPrice = 1;
-            Caisse.MultipcateurPrice = Caisse.MultipcateurPrice * 1.10f;
+            Caisse.MultipcateurPrice = Caisse.MultipcateurPrice * 1.25f;
             Destroy(GOVente2);
         }
         
@@ -127,11 +127,11 @@ public class Magasin : MonoBehaviour
 
     public void Vente3()
     {
-        if(MoneyManager.Money > 600)
+        if(MoneyManager.Money > 400)
         {
-            MoneyManager.Money = MoneyManager.Money - 600;
+            MoneyManager.Money = MoneyManager.Money - 400;
             Caisse.MultipcateurPrice = 1;
-            Caisse.MultipcateurPrice = Caisse.MultipcateurPrice * 1.20f;
+            Caisse.MultipcateurPrice = Caisse.MultipcateurPrice * 1.50f;
             Destroy(GOVente3);
         }
         
@@ -140,9 +140,9 @@ public class Magasin : MonoBehaviour
 
     public void Stockage()
     {
-        if(MoneyManager.Money > 450)
+        if(MoneyManager.Money > 150)
         {
-            MoneyManager.Money = MoneyManager.Money - 450;
+            MoneyManager.Money = MoneyManager.Money - 150;
             Destroy(PorteStockage);
             Destroy(GOStockage);
         }

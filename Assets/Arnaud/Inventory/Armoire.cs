@@ -152,10 +152,10 @@ public class Armoire : MonoBehaviour
       GameObject gameObject = randomObject.GameObject;
       int index = randomObject.Index;
 
-      SlotsOccupied[index] = false;
+      //SlotsOccupied[index] = false;
 
-      ItemInArmoire.RemoveAt(index);
-      ItemInArmoire.Insert(index, null);
+      //ItemInArmoire.RemoveAt(index);
+      //ItemInArmoire.Insert(index, null);
       IsTargeted = false;
     }
     

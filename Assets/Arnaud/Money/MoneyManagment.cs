@@ -12,8 +12,8 @@ public class MoneyManagment : MonoBehaviour
     
     void Update()
     {
-        MoneyTxt.text = "Monux :" + Money;
-        MoneyTxt2.text = "Monux :" + Money;
+        MoneyTxt.text = "Monux :" + Money.ToString("F2");
+        MoneyTxt2.text = "Monux :" + Money.ToString("F2");
         
     }
 

@@ -94,11 +94,17 @@ public class Client : MonoBehaviour
                 var itemWithIndex = targetArmoire.GetRandomOccupiedObject();
                 if (itemWithIndex != null)
                 {
+                    targetArmoire.IATake();
                     ItemSelected = itemWithIndex.GameObject;
-                    ItemSelectedIndex = itemWithIndex.Index; 
+                    ItemSelectedIndex = itemWithIndex.Index;
+                    //MODIF
+                    targetArmoire.SlotsOccupied[ItemSelectedIndex] = false;
+                    targetArmoire.ItemInArmoire.RemoveAt(ItemSelectedIndex);
+                    targetArmoire.ItemInArmoire.Insert(ItemSelectedIndex, null); 
+                    //MODIF
                     IAInventaire.Add(ItemSelected);
 
-                    targetArmoire.IATake();
+                    
 
                     ItemSelected.transform.SetParent(GOclient.transform);
                     ItemSelected.transform.localPosition = new Vector3(0f, 0f, 0f);

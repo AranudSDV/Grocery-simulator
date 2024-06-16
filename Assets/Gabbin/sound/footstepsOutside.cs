@@ -25,6 +25,10 @@ public class footstepsOutside : MonoBehaviour
 
     void OnTriggerExit(Collider collider)
     {
-        Player.Outside = false;
+        if ( collider.gameObject.tag == "Player")
+        {
+            Player.Outside = false;
+        }
+        
     }
 }

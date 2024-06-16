@@ -23,6 +23,10 @@ public class footstepsInside : MonoBehaviour
 
     void OnTriggerExit(Collider collider)
     {
-        Player.Inside = false;
+        if ( collider.gameObject.tag == "Player")
+        {
+            Player.Inside = false;
+        }
+        
     }
 }

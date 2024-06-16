@@ -24,7 +24,7 @@ public class footsteps : MonoBehaviour
             }
             
         }
-        else
+        if (Outside == false)
         {
             footstepsSound.enabled = false;
         }
@@ -42,7 +42,7 @@ public class footsteps : MonoBehaviour
             
         }
 
-        else
+        if(Inside == false)
         {
             footstepsSoundInside.enabled = false;
         }

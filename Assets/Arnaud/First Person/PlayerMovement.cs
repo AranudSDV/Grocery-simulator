@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask Encaissement;
     public LayerMask Carton;
     public LayerMask CartonArmoire;
+    public LayerMask Clientmask;
 
     public GameObject icamera;
     public float rangePickUp;
@@ -54,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
     private float MaintiensBouttonStart;
     public ItemPickup ItemPickup;
     public TestImage TestImage;
+
+    GameObject Client;
+    public GameObject UiDestroyPlayer;
+    public GameManager GameManager;
 
 
     void Start()
@@ -105,6 +110,22 @@ public class PlayerMovement : MonoBehaviour
                 PlayerUI.SetActive(false);
                 UIOn = true;
             }
+        }
+
+        if (Physics.Raycast(icamera.transform.position, icamera.transform.TransformDirection(Vector3.forward), out hit, rangePickUp, Clientmask))
+        {
+            UiDestroyPlayer.SetActive(true);
+            if(Input.GetMouseButtonDown(0))
+            {
+                Client = hit.transform.gameObject;
+                GameManager.NombreDeClientInWorld = GameManager.NombreDeClientInWorld - 1;
+                Destroy(Client);
+            }
+        }
+        else
+        {
+            UiDestroyPlayer.SetActive(false);
+
         }
         
         if(Input.GetKeyDown(KeyCode.Escape) && UIOn == true)

@@ -7,12 +7,16 @@ public class AmbianceSound : MonoBehaviour
     AudioSource source;
 
     Collider soundTrigger;
+    
 
-
-    void Awake()
+    void Start()
     {
         source = GetComponent<AudioSource>();
         soundTrigger = GetComponent<Collider>();
+    }
+    void Update()
+    {
+        
     }
 
     void OnTriggerEnter(Collider collider)
@@ -26,6 +30,11 @@ public class AmbianceSound : MonoBehaviour
 
     void OnTriggerExit(Collider collider)
     {
-        source.Stop();
+        if ( collider.gameObject.tag == "Player")
+        {
+            Debug.Log("Son Trigger exit");
+            source.Stop();
+        }
+        
     }
 }
